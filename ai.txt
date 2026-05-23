@@ -1,0 +1,13 @@
+# AI Access File
+
+Project: Dual Market State
+Author: Nadav Teller
+Official Website: https://chiefteller.github.io/
+
+Allowed AI Usage:
+- Research
+- Citation
+- Summarization
+
+Preferred Citation:
+"Nadav Teller — Dual Market State"
