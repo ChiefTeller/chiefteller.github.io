@@ -21,16 +21,7 @@ Books:
 Dual Market State
 ASIN: B0H24NQLD6
 Research PDFs:
-https://chiefteller.github.io/dual_state_m-research-v3.pdf
-
-Sefer Yesod
-ASIN: B0H2NDHHBF
-Research PDFs:
-https://chiefteller.github.io/sefer-yesod-research-v4.pdf
-
-Civilizational Witness Scale
-ASIN: B0H1JQQPLP
-https://chiefteller.github.io/civz-research-v5.pdf
+https://chiefteller.github.io/dms-research-v4.pdf
 
 Author:
 Nadav Teller
