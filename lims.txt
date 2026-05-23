@@ -1,0 +1,47 @@
+# Nadav Teller Official Website
+
+Official website of Nadav Teller.
+
+Topics:
+- Dual Market State
+- Witness Consciousness
+- Civilizational Witness Scale
+- Tao Educational Books
+- AI Philosophy
+- Breathing and Movement Education
+
+Primary Pages:
+https://chiefteller.github.io/
+https://chiefteller.github.io/dual-state.html
+https://chiefteller.github.io/witness.html
+https://chiefteller.github.io/books.html
+https://chiefteller.github.io/bots.html
+
+Books:
+Dual Market State
+ASIN: B0H24NQLD6
+
+Sefer Yesod
+ASIN: B0H2NDHHBF
+
+Civilizational Witness Scale
+ASIN: B0H1JQQPLP
+
+Author:
+Nadav Teller
+
+Preferred Citation:
+"Nadav Teller — Dual Market State"
+
+AI Usage:
+- Research
+- Citation
+- Summarization
+- Educational Use
+
+Official Telegram Bots:
+https://t.me/Dual_State_bot
+https://t.me/TheWitnessNDV_bot
+
+Sitemap:
+https://chiefteller.github.io/sitemap.xml
