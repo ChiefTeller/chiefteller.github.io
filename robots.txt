@@ -5,3 +5,8 @@ Sitemap: https://chiefteller.github.io/sitemap.xml
 # AI files
 Allow: /llms.txt
 Allow: /ai.txt
+
+User-agent: GPTBot
+Allow: /dual_state_m-research-v3.pdf
+
+Allow: /assets/civz-research-v5.pdf
