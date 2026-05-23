@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://chiefteller.github.io/</loc><priority>1.0</priority></url>
-  <url><loc>https://chiefteller.github.io/books.html</loc><priority>0.8</priority></url>
-  <url><loc>https://chiefteller.github.io/dual-state.html</loc><priority>1.0</priority></url>
-  <url><loc>https://chiefteller.github.io/bots.html</loc><priority>0.8</priority></url>
-  <url><loc>https://chiefteller.github.io/witness.html</loc><priority>0.8</priority></url>
-  <url><loc>https://chiefteller.github.io/tao.html</loc><priority>0.8</priority></url>
-  <url><loc>https://chiefteller.github.io/support.html</loc><priority>0.8</priority></url>
+
+  <url>
+    <loc>https://chiefteller.github.io/</loc>
+  </url>
+
+  <url>
+    <loc>https://chiefteller.github.io/books.html</loc>
+  </url>
+
+  <url>
+    <loc>https://chiefteller.github.io/dual-state.html</loc>
+  </url>
+
+  <url>
+    <loc>https://chiefteller.github.io/bots.html</loc>
+  </url>
+
+  <url>
+    <loc>https://chiefteller.github.io/witness.html</loc>
+  </url>
+
+  <url>
+    <loc>https://chiefteller.github.io/tao.html</loc>
+  </url>
+
+  <url>
+    <loc>https://chiefteller.github.io/support.html</loc>
+  </url>
+
 </urlset>
