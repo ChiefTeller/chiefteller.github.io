@@ -1,0 +1,17 @@
+{
+  "name": "נדב טלר — ספרים, בוטים ומודלים",
+  "short_name": "נדב טלר",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f2e7",
+  "theme_color": "#0b2b5b",
+  "dir": "rtl",
+  "lang": "he",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

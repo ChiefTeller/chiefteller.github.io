@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chiefteller.github.io/nadav-teller-official/sitemap.xml
