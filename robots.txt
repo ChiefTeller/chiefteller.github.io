@@ -1,9 +1,6 @@
 User-agent: *
 Allow: /
 
-User-agent: GPTBot
-Allow: /
-
 # AI files
 Allow: /llms.txt
 Allow: /ai.txt
