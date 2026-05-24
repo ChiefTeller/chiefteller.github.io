@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>נדב טלר | ספרים, בוטים ומודלים לעולם חדש</title>
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://chiefteller.github.io/sitemap.xml">
+  <meta>
+  <link rel="canonical">
+  <meta name="description" content="האתר הרשמי של נדב טלר: תורת המדינה הדואלית, ספר יסוד, אוצרות הטאו, סולם העדות הציוויליזציונית ובוטים בטלגרם.">
+  <meta name="keywords" content="נדב טלר, תורת המדינה הדואלית, מדינת שוק דואלי, אוצרות הטאו, ספר יסוד, בוטים בטלגרם">
+  <meta name="author" content="נדב טלר">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://chiefteller.github.io/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="נדב טלר — ספרים, בוטים ומודלים">
+  <meta property="og:title" content="נדב טלר | ספרים, בוטים ומודלים לעולם חדש">
+  <meta property="og:description" content="האתר הרשמי של נדב טלר: תורת המדינה הדואלית, ספר יסוד, אוצרות הטאו, סולם העדות הציוויליזציונית ובוטים בטלגרם.">
+  <meta property="og:url" content="https://chiefteller.github.io">
+  <meta property="og:image" content="https://chiefteller.github.io/assets/img/og-dual-state.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b2b5b">
+   <meta name="google-site-verification" content="BOpUPe-pyDQYOpijfGgAyJegfofPszbroZPNrhVaZOs" />
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Search Console: הדבק כאן תג אימות של Google Search Console אם תקבל כזה מגוגל -->
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Person", "name": "Nadav Teller", "alternateName": "נדב טלר", "url": "https://chiefteller.github.io/", "sameAs": ["https://www.amazon.com/dp/B0H24NQLD6", "https://www.e-vrit.co.il/Author/19479/%D7%A0%D7%93%D7%91_%D7%98%D7%9C%D7%A8"], "knowsAbout": ["תורת המדינה הדואלית", "מודל מדינת שוק דואלי", "תודעת העד", "אוצרות הטאו", "ספר יסוד", "בוטים חכמים"]}
+  </script>
+ 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nadav Teller",
+  "alternateName": "נדב טלר",
+  "url": "https://chiefteller.github.io/",
+  "sameAs": [
+    "https://www.amazon.com/dp/B0H24NQLD6",
+    "https://www.e-vrit.co.il/Author/19479/%D7%A0%D7%93%D7%91_%D7%98%D7%9C%D7%A8"
+  ],
+  "jobTitle": "Author",
+  "knowsAbout": [
+    "Dual Market State",
+    "מודל מדינת שוק דואלי",
+    "תורת המדינה הדואלית",
+    "Witness Consciousness",
+    "תודעת העד",
+    "Civilizational Witness Scale",
+    "Tao Philosophy",
+    "AI Philosophy"
+  ],
+  "authorOf": [
+    {
+      "@type": "Book",
+      "name": "תורת המדינה הדואלית",
+      "alternateName": "Dual Market State",
+      "isbn": "B0H24NQLD6",
+      "url": "https://www.amazon.com/dp/B0H24NQLD6"
+    },
+    {
+      "@type": "Book",
+      "name": "ספר יסוד",
+      "isbn": "B0H2NDHHBF"
+    },
+    {
+      "@type": "Book",
+      "name": "Civilizational Witness Scale",
+      "isbn": "B0H1JQQPLP"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">דלג לתוכן המרכזי</a>
+  <div class="read-progress" aria-hidden="true"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="דף הבית של נדב טלר">
+        <span class="brand-mark logo-mark" aria-hidden="true">
+          <img src="assets/img/logo.webp" alt="">
+        </span>
+        <span class="brand-name">נדב טלר<small>ספרים · בוטים · מודלים</small></span>
+      </a>
+      <nav class="main-nav" data-main-nav aria-label="ניווט ראשי"><a href="index.html">בית</a><a href="books.html">ספרים</a><a href="dual-state.html">מדינה דואלית</a><a href="bots.html">בוטים</a><a href="witness.html">סולם העדות</a><a href="tao.html">טאו וספר יסוד</a><a href="support.html">תמיכה</a></nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-search-open aria-expanded="false" aria-label="חיפוש באתר">⌕</button>
+        <button class="icon-btn" type="button" data-access-open aria-expanded="false" aria-label="פתיחת אפשרויות נגישות">נגישות</button>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="פתיחת תפריט">☰</button>
+      </div>
+    </div>
+  </header>
+  <aside class="access-panel" data-access-panel aria-label="אפשרויות נגישות">
+    <h2>אפשרויות נגישות</h2>
+    <div class="toggle-row"><span>ניגודיות גבוהה</span><button type="button" data-pref="contrast">הפעל/כבה</button></div>
+    <div class="toggle-row"><span>טקסט גדול</span><button type="button" data-pref="largeText">הפעל/כבה</button></div>
+    <div class="toggle-row"><span>צמצום תנועה</span><button type="button" data-pref="reduceMotion">הפעל/כבה</button></div>
+    <p class="small">האתר כולל ניווט מקלדת, טקסט חלופי לתמונות, יחס ניגודיות משופר וכפתור דילוג לתוכן.</p>
+  </aside>
+  <section class="search-panel" data-search-panel aria-label="חיפוש באתר">
+    <div class="search-box" role="dialog" aria-modal="true" aria-labelledby="search-title">
+      <button class="icon-btn" type="button" data-search-close aria-label="סגירת חיפוש">×</button>
+      <h2 id="search-title">חיפוש מהיר באתר</h2>
+      <label class="visually-hidden" for="site-search">הקלד מילת חיפוש</label>
+      <input id="site-search" data-site-search type="search" placeholder="חפש: מדינה דואלית, ספר יסוד, במבוק, בוטים...">
+      <div class="site-search-results" data-site-results aria-live="polite"></div>
+    </div>
+  </section>
+
+  <main id="main">
+
+<!-- ===== Home Gateway: Main Idea Map ===== -->
+<style>
+  .home-gateway {
+    padding: 3.5rem 0 2.5rem;
+    background:
+      radial-gradient(circle at top right, rgba(212, 175, 55, 0.22), transparent 34%),
+      linear-gradient(135deg, #111827, #2b2110);
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .home-gateway .gateway-head {
+    max-width: 980px;
+    margin: 0 auto 1.8rem;
+    text-align: center;
+  }
+
+  .home-gateway .gateway-head h2 {
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.12;
+    margin: 0.6rem 0;
+    letter-spacing: -0.035em;
+  }
+
+  .home-gateway .gateway-head p {
+    color: rgba(255,255,255,0.82);
+    font-size: 1.12rem;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .home-gateway-tabs {
+    display: grid;
+    grid-template-columns: minmax(260px, 380px) 1fr;
+    gap: 1.2rem;
+    align-items: stretch;
+    margin-top: 2rem;
+  }
+
+  .home-gateway-buttons {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .home-gateway-btn {
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.88);
+    border-radius: 18px;
+    padding: 0.9rem 1rem;
+    font-weight: 800;
+    font-size: 0.98rem;
+    transition: 0.2s ease;
+  }
+
+  .home-gateway-btn:hover,
+  .home-gateway-btn.active {
+    background: rgba(212, 175, 55, 0.18);
+    border-color: rgba(212, 175, 55, 0.55);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  .home-gateway-panel-wrap {
+    background: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,255,255,0.17);
+    border-radius: 30px;
+    padding: clamp(1.2rem, 3vw, 2.2rem);
+    box-shadow: 0 22px 70px rgba(0,0,0,0.24);
+    backdrop-filter: blur(12px);
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+  }
+
+  .home-gateway-panel {
+    display: none;
+    animation: homeGatewayFade 0.25s ease;
+  }
+
+  .home-gateway-panel.active {
+    display: block;
+  }
+
+  .home-gateway-panel .home-gateway-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(212, 175, 55, 0.18);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    color: #f8df8a;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .home-gateway-panel h3 {
+    color: #fff;
+    font-size: clamp(1.65rem, 3vw, 2.55rem);
+    line-height: 1.18;
+    margin: 0.2rem 0 0.8rem;
+  }
+
+  .home-gateway-panel p {
+    color: rgba(255,255,255,0.86);
+    font-size: 1.12rem;
+    line-height: 1.95;
+    max-width: 820px;
+    margin: 0 0 1.3rem;
+  }
+
+  .home-gateway-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 1.2rem;
+  }
+
+  .home-gateway-shout {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.95rem 1.35rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f5d76e, #b89542);
+    color: #15110a;
+    text-decoration: none;
+    font-weight: 950;
+    font-size: 1.02rem;
+    letter-spacing: -0.015em;
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.26);
+    transition: 0.2s ease;
+  }
+
+  .home-gateway-shout:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.35);
+  }
+
+  .home-gateway-small-link {
+    color: rgba(255,255,255,0.78);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .home-gateway-small-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  @keyframes homeGatewayFade {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 900px) {
+    .home-gateway-tabs {
+      grid-template-columns: 1fr;
+    }
+
+    .home-gateway-panel-wrap {
+      min-height: auto;
+    }
+  }
+</style>
+
+<section class="home-gateway" id="home-gateway" aria-labelledby="home-gateway-title">
+  <div class="container">
+
+    <div class="gateway-head">
+      <span class="eyebrow">מפת הרעיונות של נדב טלר</span>
+      <h2 id="home-gateway-title">מאיפה להתחיל?</h2>
+      <p>
+        האתר בנוי כמערכת רעיונית אחת: מדינה, תודעה, בריאות, חינוך, בוטים,
+        ספרים וציוויליזציה. בחרו שער כניסה — והמשיכו לעמוד המתאים.
+      </p>
+    </div>
+
+    <div class="home-gateway-tabs" data-home-gateway>
+
+      <div class="home-gateway-buttons" role="tablist" aria-label="מפת האתר הראשית">
+
+        <button class="home-gateway-btn active" type="button" data-home-target="map-dual-state">
+          1. תורת המדינה הדואלית
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-bots">
+          2. בוטים
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-health">
+          3. בריאות וספר יסוד
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-witness">
+          4. עדות וסולם הציוויליזציות
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-tao">
+          5. ספרי טאו
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-support">
+          6. תמיכה ועדכונים
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-faq">
+          7. שאלות ותשובות
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-articles">
+          8. מאמרים ומחקר
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-community">
+          9. קהילה והרצאות
+        </button>
+
+      </div>
+
+      <div class="home-gateway-panel-wrap">
+
+        <article class="home-gateway-panel active" data-home-panel="map-dual-state">
+          <span class="home-gateway-kicker">מודל הדגל</span>
+          <h3>תורת המדינה הדואלית</h3>
+          <p>
+            מודל מדינה חדש לעידן של AI, משבר דיור, קיטוב חברתי ואובדן אמון במוסדות:
+            שוק חופשי לצד מסלול אזרחי יציב, בנק דואלי, קונצרן לאומי ולולאת הון בלתי נזילה.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="dual-state.html">לעמוד תורת המדינה הדואלית !!</a>
+            <a class="home-gateway-small-link" href="articles/what-is-dual-market-state.html">למאמר הפתיחה</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-bots">
+          <span class="home-gateway-kicker">כלים חיים</span>
+          <h3>בוטים חכמים</h3>
+          <p>
+            הבוטים נועדו להפוך רעיונות לכלי שימושי: בוט למדינת שוק דואלי,
+            ובוט “העד” שמכוון לחשיבה בהירה, התבוננות, איזון והבנת מערכות.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="bots.html">לעמוד הבוטים !!</a>
+            <a class="home-gateway-small-link" href="https://t.me/Dual_State_bot" target="_blank" rel="noopener noreferrer">כניסה ל־Dual State Bot</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-health">
+          <span class="home-gateway-kicker">הבסיס האישי</span>
+          <h3>בריאות, גוף, נשימה וספר יסוד</h3>
+          <p>
+            לפני מדינה חדשה, צריך אדם יציב יותר. ספר יסוד מחבר בין יציבה,
+            תנועה, נשימה ותודעת העד — כבסיס אישי פשוט ובריא לחיים מודעים יותר.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="books.html#sefer-yesod">לספר יסוד !!</a>
+            <a class="home-gateway-small-link" href="books.html">לכל הספרים</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-witness">
+          <span class="home-gateway-kicker">העומק הפילוסופי</span>
+          <h3>עדות וסולם העדות הציוויליזציונית</h3>
+          <p>
+            סולם העדות מציע מבט חדש על ציוויליזציות: לא רק כמה כוח וטכנולוגיה יש להן,
+            אלא איזו תודעה מחזיקה את הכוח הזה — ריסון, אחריות, מודעות ומטא־קוגניציה.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="witness.html">לעמוד סולם העדות !!</a>
+            <a class="home-gateway-small-link" href="articles/civilizational-witness-scale.html">למאמר העתידי</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-tao">
+          <span class="home-gateway-kicker">חינוך ודור הבא</span>
+          <h3>ספרי טאו לילדים</h3>
+          <p>
+            אוצרות הטאו הם שער עדין לילדים ולעולם הפנימי: סיפורים על נשימה,
+            סבלנות, טבע, תנועה, קבלה ושקט — בשפה פשוטה שמלמדת דרך חיים.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="tao.html">לעמוד ספרי הטאו !!</a>
+            <a class="home-gateway-small-link" href="books.html">לספרים באמזון ובעברית</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-support">
+          <span class="home-gateway-kicker">הצטרפות למעגל</span>
+          <h3>תמיכה ועדכונים</h3>
+          <p>
+            מי שמרגיש שהרעיונות האלה צריכים להמשיך להתפתח יכול להצטרף לעדכונים:
+            מאמרים חדשים, ספרים, בוטים, פיתוחים, הרצאות וכלים לעתיד.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="support.html">להצטרפות ותמיכה !!</a>
+            <a class="home-gateway-small-link" href="https://forms.gle/Pm6Scd9xNanFKUUW9" target="_blank" rel="noopener noreferrer">לטופס הישיר</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-faq">
+          <span class="home-gateway-kicker">בקרוב</span>
+          <h3>שאלות ותשובות</h3>
+          <p>
+            עמוד עתידי שיאסוף תשובות פשוטות לשאלות המרכזיות:
+            האם המדינה הדואלית היא סוציאליזם? מה ההבדל מקפיטליזם? איך הבנק עובד?
+            ולמה AI משנה את כללי המשחק?
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="faq.html">לעמוד שאלות ותשובות !!</a>
+            <a class="home-gateway-small-link" href="dual-state.html">בינתיים: לעמוד המודל</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-articles">
+          <span class="home-gateway-kicker">בקרוב</span>
+          <h3>מאמרים ומחקר</h3>
+          <p>
+            עמוד מרכזי שיאגד את שמונת מאמרי הליבה:
+            המדינה הדואלית, המטוטלת ההיסטורית, לולאת ההון, הבנק, AI,
+            הקונצרן הלאומי, תודעת העד וסולם העדות הציוויליזציונית.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="articles.html">לעמוד המאמרים !!</a>
+            <a class="home-gateway-small-link" href="articles/what-is-dual-market-state.html">למאמר הראשון</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-community">
+          <span class="home-gateway-kicker">בקרוב</span>
+          <h3>קהילה, שיתופי פעולה והרצאות</h3>
+          <p>
+            עמוד עתידי למי שרוצה להזמין שיחה, הרצאה, שיתוף פעולה, קבוצת לימוד,
+            פיתוח בוטים או דיון עומק סביב מודלים חדשים לאדם, חברה וציוויליזציה.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="community.html">לעמוד הקהילה !!</a>
+            <a class="home-gateway-small-link" href="support.html">בינתיים: הצטרפות לעדכונים</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const gateway = document.querySelector("[data-home-gateway]");
+    if (!gateway) return;
+
+    const buttons = gateway.querySelectorAll("[data-home-target]");
+    const panels = gateway.querySelectorAll("[data-home-panel]");
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const target = button.getAttribute("data-home-target");
+
+        buttons.forEach(function (btn) {
+          btn.classList.remove("active");
+        });
+
+        panels.forEach(function (panel) {
+          panel.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const activePanel = gateway.querySelector('[data-home-panel="' + target + '"]');
+        if (activePanel) {
+          activePanel.classList.add("active");
+        }
+      });
+    });
+  });
+</script>
+<!-- ===== End Home Gateway ===== -->
+
+    
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <span class="eyebrow">פה תמצאו</span>
+          <h1>ספרים, בוטים ומודלים שמחברים בין תודעה, גוף וחברה.</h1>
+          <p class="lead">מאת נדב טלר — תורת המדינה הדואלית, ספר יסוד, אוצרות הטאו, סולם העדות הציוויליזציונית ובוטים חכמים להתבוננות וללמידה.</p>
+          <div class="hero-actions">
+            <a class="btn gold" href="dual-state.html">למודל המדינה הדואלית</a>
+            <a class="btn" href="books.html">לספרים</a>
+            <a class="btn ghost" href="bots.html">לבוטים</a>
+          </div>
+          <div class="stat-strip" aria-label="נתוני האתר">
+            <div class="stat"><strong>7+</strong><span>ספרים וקישורים</span></div>
+            <div class="stat"><strong>20+</strong><span>נשואים במודל המדינה</span></div>
+            <div class="stat"><strong>2</strong><span>בוטים בטלגרם</span></div>
+            <div class="stat"><strong>1</strong><span>פילוסופיה</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="תצוגת כריכת תורת המדינה הדואלית">
+          <div class="device"><div class="device-screen"><img src="assets/img/dual-state-cover-dark.webp" width="933" height="1400" alt="כריכת הספר תורת המדינה הדואלית מאת נדב טלר"></div></div>
+          <div class="floating-chip chip-a">שוק חופשי + רצפה אזרחית</div>
+          <div class="floating-chip chip-b">גוף → נשימה → עדות → חברה</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container app-grid">
+        <article class="app-card"><div class="icon">🏛️</div><h2>תורת המדינה הדואלית</h2><p>עמוד עומק ייעודי לקידום בגוגל: מודל מדינת שוק דואלי, דיור, עבודה, AI, תעשייה, בנק ציבורי ורצפה אזרחית.</p><a href="dual-state.html">פתח את העמוד המרכזי</a></article>
+        <article class="app-card"><div class="icon">📚</div><h2>ספרים</h2><p>קטלוג ספרים עם חיפוש, סינון, כפתורי אמזון ועברית, והפרדה בין ספרי ילדים, פילוסופיה, גוף ומדינה.</p><a href="books.html">לכל הספרים</a></article>
+        <article class="app-card"><div class="icon">🤖</div><h2>בוטים חכמים</h2><p>קישורים ישירים לטלגרם: בוט המדינה הדואלית ובוט העד — עם אפשרות להעתיק את שם המשתמש.</p><a href="bots.html">לבוטים</a></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container feature-grid feature">
+        <div>
+          <span class="eyebrow">הפרויקט המרכזי</span>
+          <h2>מודל מדינת שוק דואלי</h2>
+          <p class="lead">המודל מציע לא לבחור בין קצה קפיטליסטי לקצה ריכוזי, אלא לבנות מערכת דואלית: שוק חופשי ליזמות ותחרות לצד רצפה אזרחית שמעניקה ביטחון, דיור, חינוך ותעסוקה.</p>
+          <div class="pill-list"><span class="pill">שוק חופשי</span><span class="pill">רצפה אזרחית</span><span class="pill">AI ומדידה</span><span class="pill">בית המחוזות</span></div>
+          <a class="btn gold" href="dual-state.html">תורת המדינה הדואלית</a>
+        </div>
+        <img src="assets/img/dual-state-wheel.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="דיאגרמת מודל מדינת שוק דואלי">
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container cards-2">
+        <article class="image-panel"><img src="assets/img/daily-walking.webp" width="990" height="1400" loading="lazy" decoding="async" alt="הליכה יומית 30 דקות ביום מתוך ספר יסוד"><div class="caption"><strong>ספר יסוד:</strong> גוף, נשימה, הליכה יומית ותודעת העד.</div></article>
+        <article class="image-panel"><img src="assets/img/index-picture-1.webp" width="1081" height="1400" loading="lazy" decoding="async" alt="כריכת הספר במבוק מתוך אוצרות הטאו"><div class="caption"><strong>אוצרות הטאו:</strong> סיפורים לילדים על סבלנות, נשימה וצמיחה.</div></article>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container cta-band">
+        <span class="eyebrow">קהילה ותמיכה</span>
+        <h2>רוצה לעקוב, לתמוך או לקבל עדכונים?</h2>
+        <p class="lead">הצטרפות דרך טופס קצר. מתאים לקוראים, תומכים, אנשי חינוך, מתעניינים במודל ובמשתמשים בבוטים.</p>
+        <div class="hero-actions"><a class="btn light" href="https://forms.gle/Pm6Scd9xNanFKUUW9" target="_blank" rel="noopener" style="position: relative; z-index: 20;">הרשמה לתמיכה</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h2>נדב טלר</h2>
+        <p>ספרים, בוטים, מודלים ותכנים על תודעה, גוף, חינוך, חברה ובינה מלאכותית.</p>
+      </div>
+      <div><h3>עמודים</h3><div class="footer-links"><a href="books.html">ספרים</a><a href="dual-state.html">תורת המדינה הדואלית</a><a href="bots.html">בוטים</a></div></div>
+      <div><h3>רכישה וקריאה</h3><div class="footer-links"><a href="https://www.amazon.com/dp/B0H24NQLD6" target="_blank" rel="noopener">Amazon</a><a href="https://www.e-vrit.co.il/Author/19479/%D7%A0%D7%93%D7%91_%D7%98%D7%9C%D7%A8" target="_blank" rel="noopener">עברית</a><a href="support.html">הרשמה לתמיכה</a></div></div>
+      <div><h3>בוטים</h3><div class="footer-links"><a href="https://t.me/NadavTeller_bot" target="_blank" rel="noopener">@NadavTeller_bot</a></div></div>
+    </div>
+    <div class="container footer-bottom">© 2026 נדב טלר כל הזכויות שמורות </div>
+  </footer>
+  <div class="lightbox" aria-label="תצוגת תמונה מוגדלת"><button type="button">סגירה</button><img alt=""></div>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
