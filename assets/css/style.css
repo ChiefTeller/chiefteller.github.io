@@ -69,3 +69,20 @@ h1,h2,h3{line-height:1.15;margin:0 0 1rem}h1{font-size:clamp(2.4rem,7vw,5.4rem);
   object-fit: contain;
   display: block;
 }
+
+.lang-switch{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.55rem 1rem;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  transition:all .2s ease;
+}
+
+.lang-switch:hover{
+  transform:translateY(-1px);
+  background:rgba(255,255,255,.06);
+}
