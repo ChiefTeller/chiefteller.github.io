@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-# AI files
-Allow: /llms.txt
-Allow: /ai.txt
-
 Sitemap: https://chiefteller.github.io/sitemap.xml
