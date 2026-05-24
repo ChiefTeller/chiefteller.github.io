@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מרכבה ישראלית | Nadav Teller</title>
+  <meta name="description" content="מרכבה ישראלית — מרכיבים את כל החלקים, מרכיבים את כל העם. עמוד הצטרפות למסע של רעיונות, פעולה, עדות, בריאות, טכנולוגיה ומדינה דואלית." />
+  <style>
+    :root {
+      --bg: #fffaf0;
+      --bg-soft: #fff4d8;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: rgba(15, 23, 42, 0.12);
+      --blue: #2563eb;
+      --cyan: #06b6d4;
+      --gold: #f59e0b;
+      --orange: #f97316;
+      --green: #10b981;
+      --purple: #8b5cf6;
+      --white: #ffffff;
+      --shadow: 0 24px 70px rgba(30, 41, 59, 0.14);
+      --shadow-soft: 0 14px 40px rgba(30, 41, 59, 0.10);
+      --radius-xl: 28px;
+      --radius-md: 18px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 10%, rgba(6, 182, 212, 0.24), transparent 30%),
+        radial-gradient(circle at 88% 8%, rgba(245, 158, 11, 0.28), transparent 28%),
+        radial-gradient(circle at 50% 95%, rgba(139, 92, 246, 0.18), transparent 34%),
+        linear-gradient(180deg, #fffaf0 0%, #ffffff 48%, #fff7ed 100%);
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .page-glow {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(37, 99, 235, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.055) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 74%);
+      z-index: -2;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(255, 250, 240, 0.78);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 14px;
+      background:
+        conic-gradient(from 220deg, var(--blue), var(--cyan), var(--gold), var(--orange), var(--blue));
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
+      position: relative;
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      background: rgba(255, 255, 255, 0.86);
+      border-radius: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      padding: 8px 12px;
+      border-radius: 999px;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 84px 20px 40px;
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      border: 1px solid rgba(37, 99, 235, 0.20);
+      background: rgba(255, 255, 255, 0.68);
+      border-radius: 999px;
+      color: #1d4ed8;
+      font-weight: 800;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .pulse-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 8px rgba(16, 185, 129, 0.14);
+    }
+
+    h1 {
+      margin: 22px 0 14px;
+      font-size: clamp(3.05rem, 8vw, 6.6rem);
+      line-height: 0.92;
+      letter-spacing: -0.075em;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #1d4ed8, #0891b2 33%, #f59e0b 66%, #f97316);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.25rem, 2.2vw, 2rem);
+      line-height: 1.45;
+      margin: 0 0 18px;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-text {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.9;
+      margin: 0;
+      max-width: 720px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      box-shadow: 0 18px 34px rgba(37, 99, 235, 0.24);
+    }
+
+    .btn-gold {
+      color: #3b2500;
+      background: linear-gradient(135deg, #fde68a, var(--gold));
+      box-shadow: 0 18px 34px rgba(245, 158, 11, 0.24);
+    }
+
+    .btn-soft {
+      background: rgba(255, 255, 255, 0.75);
+      border-color: var(--line);
+      color: var(--text);
+    }
+
+    .merkava-visual {
+      position: relative;
+      min-height: 470px;
+      display: grid;
+      place-items: center;
+    }
+
+    .orbital-card {
+      width: min(100%, 460px);
+      aspect-ratio: 1;
+      border-radius: 40px;
+      background: rgba(255, 255, 255, 0.64);
+      border: 1px solid rgba(255, 255, 255, 0.86);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+    }
+
+    .orbital-card::before {
+      content: "";
+      position: absolute;
+      inset: 30px;
+      border-radius: 50%;
+      border: 2px dashed rgba(37, 99, 235, 0.22);
+    }
+
+    .orbital-card::after {
+      content: "";
+      position: absolute;
+      inset: 82px;
+      border-radius: 50%;
+      border: 2px solid rgba(245, 158, 11, 0.22);
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.15), transparent 70%);
+    }
+
+    .core {
+      position: absolute;
+      inset: 50%;
+      transform: translate(50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 36px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: white;
+      font-weight: 950;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, #1d4ed8, #06b6d4 52%, #f59e0b);
+      box-shadow: 0 26px 50px rgba(37, 99, 235, 0.30);
+      z-index: 3;
+    }
+
+    .node {
+      position: absolute;
+      width: 104px;
+      min-height: 72px;
+      padding: 12px 10px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: var(--shadow-soft);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-weight: 900;
+      color: #334155;
+      z-index: 4;
+    }
+
+    .node small {
+      display: block;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.72rem;
+      margin-top: 3px;
+    }
+
+    .node-1 { top: 28px; right: 50%; transform: translateX(50%); border-top: 4px solid var(--blue); }
+    .node-2 { top: 128px; right: 28px; border-top: 4px solid var(--cyan); }
+    .node-3 { bottom: 118px; right: 34px; border-top: 4px solid var(--green); }
+    .node-4 { bottom: 28px; right: 50%; transform: translateX(50%); border-top: 4px solid var(--gold); }
+    .node-5 { bottom: 118px; left: 34px; border-top: 4px solid var(--orange); }
+    .node-6 { top: 128px; left: 28px; border-top: 4px solid var(--purple); }
+
+    .section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 30px;
+    }
+
+    .kicker {
+      color: #1d4ed8;
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(2.05rem, 4.5vw, 3.8rem);
+      line-height: 1.05;
+      letter-spacing: -0.065em;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.9;
+      margin-top: 14px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+    .card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(15, 23, 42, 0.09);
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--blue), var(--cyan), var(--gold), var(--orange));
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 1.35rem;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.11), rgba(6, 182, 212, 0.16));
+      border: 1px solid rgba(37, 99, 235, 0.16);
+    }
+
+    .card h3 {
+      font-size: 1.28rem;
+      margin: 0 0 10px;
+      letter-spacing: -0.035em;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .journey {
+      position: relative;
+      display: grid;
+      gap: 14px;
+      counter-reset: step;
+    }
+
+    .step {
+      counter-increment: step;
+      display: grid;
+      grid-template-columns: 76px 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(15, 23, 42, 0.09);
+      border-radius: 26px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .step-number {
+      width: 62px;
+      height: 62px;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 950;
+      font-size: 1.35rem;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      box-shadow: 0 14px 28px rgba(37, 99, 235, 0.20);
+    }
+
+    .step-number::before { content: counter(step); }
+
+    .step h3 { margin: 0 0 5px; font-size: 1.22rem; letter-spacing: -0.035em; }
+    .step p { margin: 0; color: var(--muted); line-height: 1.7; }
+
+    .step-badge {
+      white-space: nowrap;
+      font-weight: 900;
+      color: #7c2d12;
+      background: #ffedd5;
+      border: 1px solid #fed7aa;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+    }
+
+    .missions {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(219, 234, 254, 0.55));
+      border: 1px solid rgba(37, 99, 235, 0.14);
+      border-radius: 34px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .mission-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mission-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 16px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      color: #334155;
+      line-height: 1.65;
+    }
+
+    .check {
+      flex: 0 0 auto;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--green), var(--cyan));
+      color: white;
+      font-size: 0.82rem;
+      margin-top: 2px;
+    }
+
+    .vision-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .vision-panel {
+      border-radius: 34px;
+      padding: 34px;
+      background: linear-gradient(135deg, #1d4ed8, #06b6d4 58%, #f59e0b);
+      color: white;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vision-panel::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 44px solid rgba(255,255,255,0.12);
+      left: -80px;
+      bottom: -100px;
+    }
+
+    .vision-panel h2,
+    .vision-panel p { position: relative; z-index: 1; }
+
+    .vision-panel p {
+      font-size: 1.13rem;
+      line-height: 1.85;
+      opacity: 0.94;
+      margin: 0;
+    }
+
+    .vision-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .vision-item {
+      padding: 18px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-weight: 850;
+    }
+
+    .mini-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--orange), var(--gold));
+      box-shadow: 0 0 0 7px rgba(245, 158, 11, 0.12);
+      flex: 0 0 auto;
+    }
+
+    .cta {
+      border-radius: 42px;
+      padding: 34px;
+      background:
+        radial-gradient(circle at 18% 22%, rgba(6, 182, 212, 0.22), transparent 30%),
+        radial-gradient(circle at 84% 18%, rgba(249, 115, 22, 0.20), transparent 34%),
+        rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(15, 23, 42, 0.10);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .cta h2 { margin-bottom: 12px; }
+
+    .cta p {
+      max-width: 760px;
+      margin: 0 auto 26px;
+      color: var(--muted);
+      line-height: 1.85;
+      font-size: 1.08rem;
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+      text-align: right;
+    }
+
+    .cta-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 210px;
+      padding: 24px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .cta-card h3 { margin: 0 0 8px; font-size: 1.25rem; }
+    .cta-card p { margin: 0 0 18px; font-size: 0.98rem; }
+
+    .social-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 34px 20px 54px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer strong { color: var(--text); }
+
+    @media (max-width: 920px) {
+      .hero { grid-template-columns: 1fr; padding-top: 56px; }
+      .merkava-visual { min-height: 420px; }
+      .grid-3, .grid-4, .vision-strip, .cta-grid { grid-template-columns: 1fr; }
+      .mission-list { grid-template-columns: 1fr; }
+      .step { grid-template-columns: 64px 1fr; }
+      .step-badge { grid-column: 2; width: fit-content; }
+    }
+
+    @media (max-width: 620px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; }
+      .hero { padding-top: 36px; }
+      .orbital-card { border-radius: 28px; }
+      .node { width: 88px; min-height: 64px; font-size: 0.82rem; }
+      .node-2, .node-3 { right: 12px; }
+      .node-5, .node-6 { left: 12px; }
+      .core { width: 124px; height: 124px; border-radius: 30px; font-size: 0.95rem; }
+      .section { padding: 48px 16px; }
+      .card, .missions, .vision-panel, .cta { border-radius: 26px; padding: 22px; }
+      .step { grid-template-columns: 1fr; }
+      .step-badge { grid-column: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- החלף כאן לקישורים האמיתיים שלך -->
+  <!-- Google Form: https://forms.gle/PASTE-YOUR-FORM-LINK -->
+  <!-- Email: mailto:YOUR_EMAIL@gmail.com -->
+  <!-- Facebook: https://www.facebook.com/YOUR_PAGE -->
+  <!-- Instagram: https://www.instagram.com/YOUR_PROFILE -->
+
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <nav class="nav" aria-label="ניווט ראשי">
+      <a class="brand" href="index.html" aria-label="חזרה לעמוד הראשי">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Nadav Teller</span>
+      </a>
+      <div class="nav-links">
+        <a href="#journey">מסע ההשתתפות</a>
+        <a href="#missions">משימות</a>
+        <a href="#building">מה בונים</a>
+        <a href="#join">הצטרפות</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow"><span class="pulse-dot"></span> מרכיבים את כל החלקים</div>
+        <h1><span class="gradient-text">מרכבה ישראלית</span></h1>
+        <p class="hero-subtitle">מרכיבים את כל החלקים, מרכיבים את כל העם.</p>
+        <p class="hero-text">
+          מרכבה ישראלית היא שער כניסה לאנשים שרוצים להיות חלק ממסע חדש: רעיונות, ספרים, בריאות, עדות, בינה מלאכותית, מדינה דואלית ופעולה אזרחית. לא כולם צריכים להתחיל מאותו מקום. כל אדם מגיע עם חלק אחר — מחשבה, ניסיון, שאלה, כישרון, ביקורת, אמונה או רצון לעזור. המטרה היא לחבר את החלקים לתנועה חיה, לומדת ובונה.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#join">אני רוצה להיות חלק</a>
+          <a class="btn btn-gold" href="#journey">ראה את מסע ההשתתפות</a>
+          <a class="btn btn-soft" href="#missions">משימות ראשונות</a>
+        </div>
+      </div>
+
+      <div class="merkava-visual" aria-label="איור טכנולוגי של מרכבה ישראלית">
+        <div class="orbital-card">
+          <div class="core">מרכבה<br>ישראלית</div>
+          <div class="node node-1">אדם<small>בריאות ועדות</small></div>
+          <div class="node node-2">רעיון<small>מאמרים וספרים</small></div>
+          <div class="node node-3">AI<small>בוטים וכלים</small></div>
+          <div class="node node-4">מדינה<small>מודל דואלי</small></div>
+          <div class="node node-5">יצירה<small>כתיבה והפצה</small></div>
+          <div class="node node-6">עם<small>חיבור ופעולה</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="parts">
+      <div class="section-head">
+        <div class="kicker">המרכיבים</div>
+        <h2>לא רעיון אחד. מערכת שלמה.</h2>
+        <p class="lead">
+          המרכבה מחברת בין תחומים שנראים רחוקים זה מזה — אבל בפועל בונים יחד אדם יציב, קהילה חושבת, וטכנולוגיה שמשרתת את החיים במקום לבלוע אותם.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="icon">🧭</div>
+          <h3>תודעת עד</h3>
+          <p>לראות לפני שמגיבים. לפעול מתוך שקט, הבחנה ובהירות — לא מתוך רעש, פחד או אידיאולוגיה עיוורת.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🌿</div>
+          <h3>בריאות ותרגול</h3>
+          <p>נשימה, תנועה, תזונה, שמש, יציבות עצבית והרגלים קטנים שמחזירים את האדם לגוף ולמציאות.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🏛️</div>
+          <h3>מדינה דואלית</h3>
+          <p>מודל שמנסה לחבר שוק חופשי עם מסלול אזרחי יציב, יצרני, טכנולוגי ולא כפוי.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🤖</div>
+          <h3>בינה מלאכותית</h3>
+          <p>בוטים, כלים, למידה, אוטומציה ותשתיות ידע שמאפשרות לאנשים להבין, ליצור ולהשתתף.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📚</div>
+          <h3>ספרים ומאמרים</h3>
+          <p>תוכן שמתרגם רעיונות גדולים לשפה נגישה: סיפורים, מודלים, הסברים, מדריכים ופרקים מעשיים.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔥</div>
+          <h3>פעולה ישראלית</h3>
+          <p>לא רק לדבר על עתיד — להתחיל להרכיב אותו: לשתף, לתרגם, לבנות, לדון, להפיץ וליצור.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="journey">
+      <div class="section-head">
+        <div class="kicker">מסע ההשתתפות</div>
+        <h2>לא כולם מתחילים מאותו שלב.</h2>
+        <p class="lead">
+          יש אנשים שרק קוראים. יש אנשים שכבר מתרגלים. ויש אנשים שאחרי תהליך פנימי מבינים שהם רוצים להיות שותפים לבנייה עצמה. המסע בנוי בהדרגה — כי מי שלא עבר דרך, לא תמיד מוכן להבין את שלבי השותפות ובניית העתיד.
+        </p>
+      </div>
+
+      <div class="journey">
+        <article class="step">
+          <div class="step-number" aria-hidden="true"></div>
+          <div>
+            <h3>קורא</h3>
+            <p>נחשף לרעיונות, קורא מאמרים וספרים, שואל שאלות ומתחיל להבין את התמונה הרחבה.</p>
+          </div>
+          <span class="step-badge">שער כניסה</span>
+        </article>
+
+        <article class="step">
+          <div class="step-number" aria-hidden="true"></div>
+          <div>
+            <h3>מתרגל</h3>
+            <p>מתחיל להחזיר סדר לחיים: נשימה, גוף, בריאות, כתיבה, התבוננות, פחות רעש ויותר פעולה נכונה.</p>
+          </div>
+          <span class="step-badge">יציבות אישית</span>
+        </article>
+
+        <article class="step">
+          <div class="step-number" aria-hidden="true"></div>
+          <div>
+            <h3>עד</h3>
+            <p>לומד לראות מערכות, אידיאולוגיות, פחדים וכוחות היסטוריים בלי להיבלע בתוכם. מכאן מתחילה פעולה צלולה יותר.</p>
+          </div>
+          <span class="step-badge">בהירות</span>
+        </article>
+
+        <article class="step">
+          <div class="step-number" aria-hidden="true"></div>
+          <div>
+            <h3>שותף</h3>
+            <p>עוזר לבנות: נותן ביקורת, מציע רעיונות, מתרגם, כותב, מפיץ, מחבר אנשים, מפתח כלים או לוקח חלק בדיונים.</p>
+          </div>
+          <span class="step-badge">אחרי תהליך</span>
+        </article>
+
+        <article class="step">
+          <div class="step-number" aria-hidden="true"></div>
+          <div>
+            <h3>בונה עתיד</h3>
+            <p>חלק ממעגל שמסוגל לחשוב לטווח ארוך: תוכן, טכנולוגיה, חינוך, בריאות, תשתיות אזרחיות ומודלים חדשים לחברה.</p>
+          </div>
+          <span class="step-badge">ליבה בונה</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="missions">
+      <div class="missions">
+        <div class="section-head">
+          <div class="kicker">משימות ראשונות</div>
+          <h2>להיות חלק מתחיל בפעולה קטנה.</h2>
+          <p class="lead">
+            לא צריך להצטרף מיד לדבר גדול. מספיק להתחיל בהרכבה קטנה: חלק אחד, פעולה אחת, שאלה אחת, שיתוף אחד.
+          </p>
+        </div>
+
+        <ul class="mission-list">
+          <li><span class="check">✓</span><span>לקרוא מאמר אחד ולשלוח הערה, ביקורת או שאלה.</span></li>
+          <li><span class="check">✓</span><span>לשתף רעיון אחד עם אדם אחד שיכול להבין או לעזור.</span></li>
+          <li><span class="check">✓</span><span>להציע שאלה חדשה לבוטים או למאגר הידע.</span></li>
+          <li><span class="check">✓</span><span>לתרגם פסקה אחת לאנגלית, או לשפר ניסוח קיים.</span></li>
+          <li><span class="check">✓</span><span>להציע נושא למאמר, סרטון, פוסט או פרק עתידי.</span></li>
+          <li><span class="check">✓</span><span>לתרגל נשימה או הליכה מודעת, ולחזור לפעולה מתוך שקט.</span></li>
+          <li><span class="check">✓</span><span>לחבר אדם נוסף שמתעניין במדינה, AI, בריאות, טאו או חשיבה אזרחית.</span></li>
+          <li><span class="check">✓</span><span>להצטרף לטופס, לשלוח מייל, או לעקוב ברשתות כדי להישאר מחובר.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="building">
+      <div class="vision-strip">
+        <div class="vision-panel">
+          <div>
+            <div class="kicker" style="color: rgba(255,255,255,0.9);">מה אנחנו בונים?</div>
+            <h2>מערכת רעיונית־מעשית לעולם משתנה.</h2>
+          </div>
+          <p>
+            מרכבה ישראלית לא נועדה להיות עוד קבוצת דיבורים. היא נועדה לחבר בין הבנה, בריאות, כלים, ספרים, בוטים, מודלים אזרחיים ופעולה. המטרה היא לבנות אדם יציב יותר בתוך עולם לא יציב — ואז לחבר אנשים יציבים לתנועה שיודעת ליצור.
+          </p>
+        </div>
+
+        <div class="vision-list" aria-label="רשימת הדברים שבונים">
+          <div class="vision-item"><span class="mini-dot"></span>ספרים, מאמרים ותוכן נגיש לציבור</div>
+          <div class="vision-item"><span class="mini-dot"></span>בוטים וכלי AI ללמידה, תרגול והסברה</div>
+          <div class="vision-item"><span class="mini-dot"></span>שפה חדשה למדינה דואלית, חברה יציבה ושוק חופשי</div>
+          <div class="vision-item"><span class="mini-dot"></span>מסלול בריאות: נשימה, גוף, תזונה ופעולה רגועה</div>
+          <div class="vision-item"><span class="mini-dot"></span>מרחב לדיון, ביקורת, תרגום, הפצה ושיתופי פעולה</div>
+          <div class="vision-item"><span class="mini-dot"></span>עתיד ישראלי שמחבר חלקים במקום לפרק אותם</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="join">
+      <div class="cta">
+        <div class="kicker">הצטרפות</div>
+        <h2>בחר את הדרך שלך להיכנס למרכבה.</h2>
+        <p>
+          אפשר להתחיל בטופס, לשלוח מייל אישי, או לעקוב ברשתות. כל דרך היא חלק אחר בהרכבה: קשר, שיחה, למידה, הפצה ופעולה.
+        </p>
+
+        <div class="cta-grid">
+          <article class="cta-card">
+            <div>
+              <div class="icon">📝</div>
+              <h3>טופס הצטרפות</h3>
+              <p>השאר פרטים, ספר במה תרצה להשתתף, וקבל עדכונים על המשך הדרך.</p>
+            </div>
+            <a class="btn btn-primary" href="https://forms.gle/PASTE-YOUR-FORM-LINK" target="_blank" rel="noopener">לטופס ההרשמה</a>
+          </article>
+
+          <article class="cta-card">
+            <div>
+              <div class="icon">✉️</div>
+              <h3>דוא״ל</h3>
+              <p>רוצה להציע שיתוף פעולה, ביקורת, רעיון, תרגום, כתיבה או עזרה באתר?</p>
+            </div>
+            <a class="btn btn-gold" href="mailto:YOUR_EMAIL@gmail.com">שלח מייל</a>
+          </article>
+
+          <article class="cta-card">
+            <div>
+              <div class="icon">📣</div>
+              <h3>רשתות חברתיות</h3>
+              <p>עקוב, שתף, שלח לאנשים מתאימים, ועזור לרעיונות להגיע למי שצריך.</p>
+            </div>
+            <div class="social-row">
+              <a class="btn btn-soft" href="https://www.facebook.com/YOUR_PAGE" target="_blank" rel="noopener">פייסבוק</a>
+              <a class="btn btn-soft" href="https://www.instagram.com/YOUR_PROFILE" target="_blank" rel="noopener">אינסטגרם</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>מרכבה ישראלית</strong> — מרכיבים את כל החלקים, מרכיבים את כל העם.</div>
+    <div>© Nadav Teller</div>
+  </footer>
+</body>
+</html>
