@@ -114,6 +114,395 @@
   </section>
 
   <main id="main">
+
+<!-- ===== Home Gateway: Main Idea Map ===== -->
+<style>
+  .home-gateway {
+    padding: 3.5rem 0 2.5rem;
+    background:
+      radial-gradient(circle at top right, rgba(212, 175, 55, 0.22), transparent 34%),
+      linear-gradient(135deg, #111827, #2b2110);
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .home-gateway .gateway-head {
+    max-width: 980px;
+    margin: 0 auto 1.8rem;
+    text-align: center;
+  }
+
+  .home-gateway .gateway-head h2 {
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.12;
+    margin: 0.6rem 0;
+    letter-spacing: -0.035em;
+  }
+
+  .home-gateway .gateway-head p {
+    color: rgba(255,255,255,0.82);
+    font-size: 1.12rem;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .home-gateway-tabs {
+    display: grid;
+    grid-template-columns: minmax(260px, 380px) 1fr;
+    gap: 1.2rem;
+    align-items: stretch;
+    margin-top: 2rem;
+  }
+
+  .home-gateway-buttons {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .home-gateway-btn {
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.88);
+    border-radius: 18px;
+    padding: 0.9rem 1rem;
+    font-weight: 800;
+    font-size: 0.98rem;
+    transition: 0.2s ease;
+  }
+
+  .home-gateway-btn:hover,
+  .home-gateway-btn.active {
+    background: rgba(212, 175, 55, 0.18);
+    border-color: rgba(212, 175, 55, 0.55);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  .home-gateway-panel-wrap {
+    background: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,255,255,0.17);
+    border-radius: 30px;
+    padding: clamp(1.2rem, 3vw, 2.2rem);
+    box-shadow: 0 22px 70px rgba(0,0,0,0.24);
+    backdrop-filter: blur(12px);
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+  }
+
+  .home-gateway-panel {
+    display: none;
+    animation: homeGatewayFade 0.25s ease;
+  }
+
+  .home-gateway-panel.active {
+    display: block;
+  }
+
+  .home-gateway-panel .home-gateway-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(212, 175, 55, 0.18);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    color: #f8df8a;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .home-gateway-panel h3 {
+    color: #fff;
+    font-size: clamp(1.65rem, 3vw, 2.55rem);
+    line-height: 1.18;
+    margin: 0.2rem 0 0.8rem;
+  }
+
+  .home-gateway-panel p {
+    color: rgba(255,255,255,0.86);
+    font-size: 1.12rem;
+    line-height: 1.95;
+    max-width: 820px;
+    margin: 0 0 1.3rem;
+  }
+
+  .home-gateway-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 1.2rem;
+  }
+
+  .home-gateway-shout {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.95rem 1.35rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f5d76e, #b89542);
+    color: #15110a;
+    text-decoration: none;
+    font-weight: 950;
+    font-size: 1.02rem;
+    letter-spacing: -0.015em;
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.26);
+    transition: 0.2s ease;
+  }
+
+  .home-gateway-shout:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.35);
+  }
+
+  .home-gateway-small-link {
+    color: rgba(255,255,255,0.78);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .home-gateway-small-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  @keyframes homeGatewayFade {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 900px) {
+    .home-gateway-tabs {
+      grid-template-columns: 1fr;
+    }
+
+    .home-gateway-panel-wrap {
+      min-height: auto;
+    }
+  }
+</style>
+
+<section class="home-gateway" id="home-gateway" aria-labelledby="home-gateway-title">
+  <div class="container">
+
+    <div class="gateway-head">
+      <span class="eyebrow">מפת הרעיונות של נדב טלר</span>
+      <h2 id="home-gateway-title">מאיפה להתחיל?</h2>
+      <p>
+        האתר בנוי כמערכת רעיונית אחת: מדינה, תודעה, בריאות, חינוך, בוטים,
+        ספרים וציוויליזציה. בחרו שער כניסה — והמשיכו לעמוד המתאים.
+      </p>
+    </div>
+
+    <div class="home-gateway-tabs" data-home-gateway>
+
+      <div class="home-gateway-buttons" role="tablist" aria-label="מפת האתר הראשית">
+
+        <button class="home-gateway-btn active" type="button" data-home-target="map-dual-state">
+          1. תורת המדינה הדואלית
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-bots">
+          2. בוטים
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-health">
+          3. בריאות וספר יסוד
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-witness">
+          4. עדות וסולם הציוויליזציות
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-tao">
+          5. ספרי טאו
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-support">
+          6. תמיכה ועדכונים
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-faq">
+          7. שאלות ותשובות
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-articles">
+          8. מאמרים ומחקר
+        </button>
+
+        <button class="home-gateway-btn" type="button" data-home-target="map-community">
+          9. קהילה והרצאות
+        </button>
+
+      </div>
+
+      <div class="home-gateway-panel-wrap">
+
+        <article class="home-gateway-panel active" data-home-panel="map-dual-state">
+          <span class="home-gateway-kicker">מודל הדגל</span>
+          <h3>תורת המדינה הדואלית</h3>
+          <p>
+            מודל מדינה חדש לעידן של AI, משבר דיור, קיטוב חברתי ואובדן אמון במוסדות:
+            שוק חופשי לצד מסלול אזרחי יציב, בנק דואלי, קונצרן לאומי ולולאת הון בלתי נזילה.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="dual-state.html">לעמוד תורת המדינה הדואלית !!</a>
+            <a class="home-gateway-small-link" href="articles/what-is-dual-market-state.html">למאמר הפתיחה</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-bots">
+          <span class="home-gateway-kicker">כלים חיים</span>
+          <h3>בוטים חכמים</h3>
+          <p>
+            הבוטים נועדו להפוך רעיונות לכלי שימושי: בוט למדינת שוק דואלי,
+            ובוט “העד” שמכוון לחשיבה בהירה, התבוננות, איזון והבנת מערכות.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="bots.html">לעמוד הבוטים !!</a>
+            <a class="home-gateway-small-link" href="https://t.me/Dual_State_bot" target="_blank" rel="noopener noreferrer">כניסה ל־Dual State Bot</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-health">
+          <span class="home-gateway-kicker">הבסיס האישי</span>
+          <h3>בריאות, גוף, נשימה וספר יסוד</h3>
+          <p>
+            לפני מדינה חדשה, צריך אדם יציב יותר. ספר יסוד מחבר בין יציבה,
+            תנועה, נשימה ותודעת העד — כבסיס אישי פשוט ובריא לחיים מודעים יותר.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="books.html#sefer-yesod">לספר יסוד !!</a>
+            <a class="home-gateway-small-link" href="books.html">לכל הספרים</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-witness">
+          <span class="home-gateway-kicker">העומק הפילוסופי</span>
+          <h3>עדות וסולם העדות הציוויליזציונית</h3>
+          <p>
+            סולם העדות מציע מבט חדש על ציוויליזציות: לא רק כמה כוח וטכנולוגיה יש להן,
+            אלא איזו תודעה מחזיקה את הכוח הזה — ריסון, אחריות, מודעות ומטא־קוגניציה.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="witness.html">לעמוד סולם העדות !!</a>
+            <a class="home-gateway-small-link" href="articles/civilizational-witness-scale.html">למאמר העתידי</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-tao">
+          <span class="home-gateway-kicker">חינוך ודור הבא</span>
+          <h3>ספרי טאו לילדים</h3>
+          <p>
+            אוצרות הטאו הם שער עדין לילדים ולעולם הפנימי: סיפורים על נשימה,
+            סבלנות, טבע, תנועה, קבלה ושקט — בשפה פשוטה שמלמדת דרך חיים.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="tao.html">לעמוד ספרי הטאו !!</a>
+            <a class="home-gateway-small-link" href="books.html">לספרים באמזון ובעברית</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-support">
+          <span class="home-gateway-kicker">הצטרפות למעגל</span>
+          <h3>תמיכה ועדכונים</h3>
+          <p>
+            מי שמרגיש שהרעיונות האלה צריכים להמשיך להתפתח יכול להצטרף לעדכונים:
+            מאמרים חדשים, ספרים, בוטים, פיתוחים, הרצאות וכלים לעתיד.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="support.html">להצטרפות ותמיכה !!</a>
+            <a class="home-gateway-small-link" href="https://forms.gle/Pm6Scd9xNanFKUUW9" target="_blank" rel="noopener noreferrer">לטופס הישיר</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-faq">
+          <span class="home-gateway-kicker">בקרוב</span>
+          <h3>שאלות ותשובות</h3>
+          <p>
+            עמוד עתידי שיאסוף תשובות פשוטות לשאלות המרכזיות:
+            האם המדינה הדואלית היא סוציאליזם? מה ההבדל מקפיטליזם? איך הבנק עובד?
+            ולמה AI משנה את כללי המשחק?
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="faq.html">לעמוד שאלות ותשובות !!</a>
+            <a class="home-gateway-small-link" href="dual-state.html">בינתיים: לעמוד המודל</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-articles">
+          <span class="home-gateway-kicker">בקרוב</span>
+          <h3>מאמרים ומחקר</h3>
+          <p>
+            עמוד מרכזי שיאגד את שמונת מאמרי הליבה:
+            המדינה הדואלית, המטוטלת ההיסטורית, לולאת ההון, הבנק, AI,
+            הקונצרן הלאומי, תודעת העד וסולם העדות הציוויליזציונית.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="articles.html">לעמוד המאמרים !!</a>
+            <a class="home-gateway-small-link" href="articles/what-is-dual-market-state.html">למאמר הראשון</a>
+          </div>
+        </article>
+
+        <article class="home-gateway-panel" data-home-panel="map-community">
+          <span class="home-gateway-kicker">בקרוב</span>
+          <h3>קהילה, שיתופי פעולה והרצאות</h3>
+          <p>
+            עמוד עתידי למי שרוצה להזמין שיחה, הרצאה, שיתוף פעולה, קבוצת לימוד,
+            פיתוח בוטים או דיון עומק סביב מודלים חדשים לאדם, חברה וציוויליזציה.
+          </p>
+          <div class="home-gateway-actions">
+            <a class="home-gateway-shout" href="community.html">לעמוד הקהילה !!</a>
+            <a class="home-gateway-small-link" href="support.html">בינתיים: הצטרפות לעדכונים</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const gateway = document.querySelector("[data-home-gateway]");
+    if (!gateway) return;
+
+    const buttons = gateway.querySelectorAll("[data-home-target]");
+    const panels = gateway.querySelectorAll("[data-home-panel]");
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const target = button.getAttribute("data-home-target");
+
+        buttons.forEach(function (btn) {
+          btn.classList.remove("active");
+        });
+
+        panels.forEach(function (panel) {
+          panel.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const activePanel = gateway.querySelector('[data-home-panel="' + target + '"]');
+        if (activePanel) {
+          activePanel.classList.add("active");
+        }
+      });
+    });
+  });
+</script>
+<!-- ===== End Home Gateway ===== -->
+
+    
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-card">
