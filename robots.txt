@@ -1,12 +1,11 @@
 User-agent: *
-Allow: / Sitemap: https://chiefteller.github.io/sitemap.xml
-Allow: / Sitemap: https://chiefteller.github.io/main-sitemap.xml
-Allow: / sitemap.txt
+Allow: /
+
+User-agent: GPTBot
+Allow: /
 
 # AI files
 Allow: /llms.txt
 Allow: /ai.txt
 
-User-agent: GPTBot
-Allow: /dual_state_m-research-v3.pdf
-Allow: /civz-research-v5.pdf
+Sitemap: https://chiefteller.github.io/sitemap.xml
