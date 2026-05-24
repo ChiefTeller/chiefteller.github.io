@@ -106,6 +106,404 @@ content="https://chiefteller.github.io/dual-state.html">
   </section>
 
   <main id="main">
+
+    <!-- ===== Articles Gateway: 8 Core Articles ===== -->
+<style>
+  .articles-gateway {
+    padding: 3.5rem 0 2.5rem;
+    background:
+      radial-gradient(circle at top right, rgba(212, 175, 55, 0.22), transparent 34%),
+      linear-gradient(135deg, #111827, #2b2110);
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .articles-gateway .gateway-head {
+    max-width: 980px;
+    margin: 0 auto 1.8rem;
+    text-align: center;
+  }
+
+  .articles-gateway .gateway-head h2 {
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.12;
+    margin: 0.6rem 0;
+    letter-spacing: -0.035em;
+  }
+
+  .articles-gateway .gateway-head p {
+    color: rgba(255,255,255,0.82);
+    font-size: 1.12rem;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .gateway-tabs {
+    display: grid;
+    grid-template-columns: minmax(260px, 380px) 1fr;
+    gap: 1.2rem;
+    align-items: stretch;
+    margin-top: 2rem;
+  }
+
+  .gateway-buttons {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .gateway-btn {
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.88);
+    border-radius: 18px;
+    padding: 0.9rem 1rem;
+    font-weight: 800;
+    font-size: 0.98rem;
+    transition: 0.2s ease;
+  }
+
+  .gateway-btn:hover,
+  .gateway-btn.active {
+    background: rgba(212, 175, 55, 0.18);
+    border-color: rgba(212, 175, 55, 0.55);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  .gateway-panel-wrap {
+    background: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,255,255,0.17);
+    border-radius: 30px;
+    padding: clamp(1.2rem, 3vw, 2.2rem);
+    box-shadow: 0 22px 70px rgba(0,0,0,0.24);
+    backdrop-filter: blur(12px);
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+  }
+
+  .gateway-panel {
+    display: none;
+    animation: gatewayFade 0.25s ease;
+  }
+
+  .gateway-panel.active {
+    display: block;
+  }
+
+  .gateway-panel .gateway-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(212, 175, 55, 0.18);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    color: #f8df8a;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .gateway-panel h3 {
+    color: #fff;
+    font-size: clamp(1.65rem, 3vw, 2.55rem);
+    line-height: 1.18;
+    margin: 0.2rem 0 0.8rem;
+  }
+
+  .gateway-panel p {
+    color: rgba(255,255,255,0.86);
+    font-size: 1.12rem;
+    line-height: 1.95;
+    max-width: 820px;
+    margin: 0 0 1.3rem;
+  }
+
+  .gateway-panel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 1.2rem;
+  }
+
+  .read-article-shout {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.95rem 1.35rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f5d76e, #b89542);
+    color: #15110a;
+    text-decoration: none;
+    font-weight: 950;
+    font-size: 1.02rem;
+    letter-spacing: -0.015em;
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.26);
+    transition: 0.2s ease;
+  }
+
+  .read-article-shout:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.35);
+  }
+
+  .gateway-small-link {
+    color: rgba(255,255,255,0.78);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .gateway-small-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  @keyframes gatewayFade {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 900px) {
+    .gateway-tabs {
+      grid-template-columns: 1fr;
+    }
+
+    .gateway-buttons {
+      grid-template-columns: 1fr;
+    }
+
+    .gateway-panel-wrap {
+      min-height: auto;
+    }
+  }
+</style>
+
+<section class="articles-gateway" id="articles-gateway" aria-labelledby="articles-gateway-title">
+  <div class="container">
+
+    <div class="gateway-head">
+      <span class="eyebrow">סדרת מאמרי הליבה</span>
+      <h2 id="articles-gateway-title">להבין את תורת המדינה הדואלית — צעד אחר צעד</h2>
+      <p>
+        שמונה מאמרים קצרים־עמוקים שמפרקים את המודל לרעיונות המרכזיים שלו:
+        המדינה, השוק, הבנק, הקונצרן, AI, תודעת העד והחזון הציוויליזציוני.
+      </p>
+    </div>
+
+    <div class="gateway-tabs" data-article-gateway>
+
+      <div class="gateway-buttons" role="tablist" aria-label="מאמרי הליבה של תורת המדינה הדואלית">
+
+        <button class="gateway-btn active" type="button" data-article-target="article-1">
+          1. מהי תורת המדינה הדואלית?
+        </button>
+
+        <button class="gateway-btn" type="button" data-article-target="article-2">
+          2. המטוטלת בין קפיטליזם לסוציאליזם
+        </button>
+
+        <button class="gateway-btn" type="button" data-article-target="article-3">
+          3. לולאת הון בלתי נזילה
+        </button>
+
+        <button class="gateway-btn" type="button" data-article-target="article-4">
+          4. הבנק הדואלי
+        </button>
+
+        <button class="gateway-btn" type="button" data-article-target="article-5">
+          5. למה AI מחייב מודל מדינה חדש?
+        </button>
+
+        <button class="gateway-btn" type="button" data-article-target="article-6">
+          6. קונצרן לאומי יצרני
+        </button>
+
+        <button class="gateway-btn" type="button" data-article-target="article-7">
+          7. תודעת העד
+        </button>
+
+        <button class="gateway-btn" type="button" data-article-target="article-8">
+          8. סולם העדות הציוויליזציונית
+        </button>
+
+      </div>
+
+      <div class="gateway-panel-wrap">
+
+        <article class="gateway-panel active" data-article-panel="article-1">
+          <span class="gateway-kicker">מאמר פתיחה</span>
+          <h3>מהי תורת המדינה הדואלית?</h3>
+          <p>
+            שער הכניסה למודל: איך אפשר לבנות מדינה שמחזיקה יחד שוק חופשי,
+            מסלול אזרחי יציב, AI, דיור, בנק דואלי וקונצרן לאומי — בלי ליפול
+            לקפיטליזם קיצוני או למדינה ריכוזית מדי.
+          </p>
+          <div class="gateway-panel-actions">
+            <a class="read-article-shout" href="articles/what-is-dual-market-state.html">
+              לקריאת המאמר עכשיו !!
+            </a>
+            <a class="gateway-small-link" href="#main">להמשך העמוד</a>
+          </div>
+        </article>
+
+        <article class="gateway-panel" data-article-panel="article-2">
+          <span class="gateway-kicker">הבעיה ההיסטורית</span>
+          <h3>למה קפיטליזם וסוציאליזם נעים במטוטלת היסטורית?</h3>
+          <p>
+            במשך דורות האנושות נעה בין שוק חופשי שמייצר צמיחה אך גם אי־יציבות,
+            לבין מדינה חזקה שמייצרת ביטחון אך גם קיפאון. המאמר מסביר למה המטוטלת
+            הזו חוזרת שוב ושוב — ולמה צריך מבנה חדש.
+          </p>
+          <div class="gateway-panel-actions">
+            <a class="read-article-shout" href="articles/historical-pendulum-capitalism-socialism.html">
+              לקריאת המאמר עכשיו !!
+            </a>
+            <a class="gateway-small-link" href="#main">להמשך העמוד</a>
+          </div>
+        </article>
+
+        <article class="gateway-panel" data-article-panel="article-3">
+          <span class="gateway-kicker">מנוע ההון</span>
+          <h3>מהי לולאת הון בלתי נזילה?</h3>
+          <p>
+            אחד הרעיונות החשובים במודל: איך כסף יכול להישאר בתוך מערכת יצרנית
+            לאומית, להזין דיור, תשתיות, תעסוקה, בנק וקונצרן — במקום לדלוף החוצה
+            דרך ריבית, ספקולציה וריכוזי הון.
+          </p>
+          <div class="gateway-panel-actions">
+            <a class="read-article-shout" href="articles/non-liquid-capital-loop.html">
+              לקריאת המאמר עכשיו !!
+            </a>
+            <a class="gateway-small-link" href="#main">להמשך העמוד</a>
+          </div>
+        </article>
+
+        <article class="gateway-panel" data-article-panel="article-4">
+          <span class="gateway-kicker">המערכת הפיננסית</span>
+          <h3>איך בנק דואלי יכול לשנות את מבנה המדינה?</h3>
+          <p>
+            אשראי הוא כוח. המאמר מסביר כיצד בנק דואלי יכול לממן דיור, תשתיות,
+            תעשייה, AI והכשרות מקצועיות — וליצור מערכת פיננסית שמשרתת יציבות
+            ציבורית ולא רק רווח קצר־טווח.
+          </p>
+          <div class="gateway-panel-actions">
+            <a class="read-article-shout" href="articles/dual-bank.html">
+              לקריאת המאמר עכשיו !!
+            </a>
+            <a class="gateway-small-link" href="#main">להמשך העמוד</a>
+          </div>
+        </article>
+
+        <article class="gateway-panel" data-article-panel="article-5">
+          <span class="gateway-kicker">עידן הבינה המלאכותית</span>
+          <h3>למה AI מחייב מודל מדינה חדש?</h3>
+          <p>
+            הבינה המלאכותית עומדת לשנות עבודה, תעשייה, חינוך, ממשל והון. השאלה
+            אינה האם AI ייכנס למדינה — אלא מי יחזיק אותו, מי ירוויח ממנו,
+            והאם הוא ישרת רק תאגידים או גם את האזרחים.
+          </p>
+          <div class="gateway-panel-actions">
+            <a class="read-article-shout" href="articles/ai-new-state-model.html">
+              לקריאת המאמר עכשיו !!
+            </a>
+            <a class="gateway-small-link" href="#main">להמשך העמוד</a>
+          </div>
+        </article>
+
+        <article class="gateway-panel" data-article-panel="article-6">
+          <span class="gateway-kicker">תעשייה לאומית</span>
+          <h3>מהו קונצרן לאומי יצרני?</h3>
+          <p>
+            במקום מדינה שתלויה רק במסים וחובות, המודל מציע קונצרן לאומי שמייצר
+            ערך אמיתי: אנרגיה, בנייה, AI, תשתיות, חקלאות ותעשייה — והרווחים
+            חוזרים לתוך הלולאה האזרחית.
+          </p>
+          <div class="gateway-panel-actions">
+            <a class="read-article-shout" href="articles/national-productive-corporation.html">
+              לקריאת המאמר עכשיו !!
+            </a>
+            <a class="gateway-small-link" href="#main">להמשך העמוד</a>
+          </div>
+        </article>
+
+        <article class="gateway-panel" data-article-panel="article-7">
+          <span class="gateway-kicker">הבסיס הפילוסופי</span>
+          <h3>מהי תודעת העד?</h3>
+          <p>
+            לפני מודל מדינה חדש יש צורך בתודעה שמסוגלת לראות מערכות בלי להילכד
+            באידיאולוגיה אחת. תודעת העד היא היכולת להתבונן בכוחות, בפחדים,
+            באינטרסים ובמטוטלות — ולפעול מתוך בהירות.
+          </p>
+          <div class="gateway-panel-actions">
+            <a class="read-article-shout" href="articles/witness-consciousness.html">
+              לקריאת המאמר עכשיו !!
+            </a>
+            <a class="gateway-small-link" href="#main">להמשך העמוד</a>
+          </div>
+        </article>
+
+        <article class="gateway-panel" data-article-panel="article-8">
+          <span class="gateway-kicker">החזון הרחב</span>
+          <h3>מהו סולם העדות הציוויליזציונית?</h3>
+          <p>
+            כוח טכנולוגי לבדו אינו מספיק. ציוויליזציה מתקדמת נמדדת גם ביכולת
+            שלה לשאת כוח באחריות, ריסון ומודעות. המאמר מחבר בין AI, עתיד האנושות,
+            תודעה ומבנים חברתיים.
+          </p>
+          <div class="gateway-panel-actions">
+            <a class="read-article-shout" href="articles/civilizational-witness-scale.html">
+              לקריאת המאמר עכשיו !!
+            </a>
+            <a class="gateway-small-link" href="#main">להמשך העמוד</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const gateway = document.querySelector("[data-article-gateway]");
+    if (!gateway) return;
+
+    const buttons = gateway.querySelectorAll("[data-article-target]");
+    const panels = gateway.querySelectorAll("[data-article-panel]");
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const target = button.getAttribute("data-article-target");
+
+        buttons.forEach(function (btn) {
+          btn.classList.remove("active");
+        });
+
+        panels.forEach(function (panel) {
+          panel.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const activePanel = gateway.querySelector('[data-article-panel="' + target + '"]');
+        if (activePanel) {
+          activePanel.classList.add("active");
+        }
+      });
+    });
+  });
+</script>
+<!-- ===== End Articles Gateway ===== -->
+    
+    
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-card">
