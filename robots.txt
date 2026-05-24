@@ -8,5 +8,4 @@ Allow: /ai.txt
 
 User-agent: GPTBot
 Allow: /dual_state_m-research-v3.pdf
-
 Allow: /civz-research-v5.pdf
