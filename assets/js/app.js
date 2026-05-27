@@ -64,16 +64,26 @@
   const searchInput = $('[data-site-search]');
   const searchResults = $('[data-site-results]');
   const siteIndex = [
+    {title:'Nadav Teller English', url:'index-en.html', desc:'English homepage for AI, state models, future society, books and bots'},
+    {title:'מאמרים', url:'articles/index.html', desc:'מאמרים על ישראל, AI, יוקר המחיה, כלכלה, פוליטיקה ותורת המדינה הדואלית'},
+    {title:'Articles', url:'articles/index-en.html', desc:'English articles about Israel, AI, economy, politics and Dual Market State'},
     {title:'תורת המדינה הדואלית', url:'dual-state.html', desc:'מודל מדינת שוק דואלי, שוק חופשי לצד רצפה אזרחית חזקה'},
+    {title:'Dual Market State', url:'dual-state-en.html', desc:'English model page for AI governance, civic floor, future state and economy'},
+    {title:'What is Dual Market State?', url:'articles/what-is-dual-market-state-en.html', desc:'English article about AI, democracy, housing crisis, capitalism, socialism and future governance'},
+    {title:'ביבי בנט לפיד יוקר המחיה ו-AI', url:'articles/israel-political-pendulum-ai-cost-of-living.html', desc:'מאמר על ישראל, ביבי, בנט, לפיד, יוקר המחיה, מחירי הדירות, AI והמטוטלת הפוליטית'},
+    {title:'Netanyahu Bennett Lapid cost of living and AI', url:'articles/israel-political-pendulum-ai-cost-of-living-en.html', desc:'English article about Israel political pendulum, cost of living, housing crisis and AI'},
     {title:'ספרים', url:'books.html', desc:'כל הספרים של נדב טלר באמזון ובעברית'},
+    {title:'Books by Nadav Teller', url:'books-en.html', desc:'English books page for Dual Market State, health, Tao and witness consciousness'},
     {title:'בוטים בטלגרם', url:'bots.html', desc:'Dual_State_bot ו-TheWitnessNDV_bot'},
-    {title:'סולם העדות הציוויליזציונית', url:'witness.html', desc:'מודל פילוסופי למדידת כוח לפי עומק העדות'},
-    {title:'אוצרות הטאו וספר יסוד', url:'tao.html', desc:'ספרי ילדים, נשימה, במבוק, גוף ותנועה'},
-    {title:'הרשמה לתמיכה', url:'support.html', desc:'טופס תמיכה ועדכונים'},
+    {title:'Nadav Teller Bots', url:'bots-en.html', desc:'English bot page for AI, books, Israel, economy, democracy and Future of Work'},
+    {title:'Israeli Merkava', url:'merkava-israelit-en.html', desc:'English participation page for translation, tools, AI education and civic action'},
+    {title:'סולם העדות הציוויליזציונית', url:'books.html#witness-book', desc:'מודל פילוסופי למדידת כוח לפי עומק העדות'},
+    {title:'אוצרות הטאו וספר יסוד', url:'books.html#tao-books', desc:'ספרי ילדים, נשימה, במבוק, גוף ותנועה'},
+    {title:'הרשמה ועדכונים', url:'https://forms.gle/Pm6Scd9xNanFKUUW9', desc:'טופס הצטרפות ועדכונים'},
     {title:'מודל מדינת שוק דואלי', url:'dual-state.html#model', desc:'קונצרן לאומי, קרן ריבונית, בנק ציבורי ורצפה אזרחית'},
     {title:'העד', url:'bots.html#witness-bot', desc:'בוט פילוסופי אישי להחזיר את האדם לעדות ולנוכחות'},
-    {title:'ספר יסוד', url:'tao.html#foundation', desc:'יציבה, תנועה, נשימה ותודעת העד'},
-    {title:'במבוק', url:'tao.html#bamboo', desc:'סיפור טאואיסטי על סבלנות, שורשים וצמיחה'}
+    {title:'ספר יסוד', url:'books.html#sefer-yesod-book', desc:'יציבה, תנועה, נשימה ותודעת העד'},
+    {title:'במבוק', url:'books.html#tao-books', desc:'סיפור טאואיסטי על סבלנות, שורשים וצמיחה'}
   ];
   function renderSearch(q=''){
     if(!searchResults) return;

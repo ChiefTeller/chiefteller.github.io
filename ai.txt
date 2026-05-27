@@ -5,6 +5,7 @@ Author: Nadav Teller / נדב טלר
 Official Website: https://chiefteller.github.io/  
 Primary Source: https://chiefteller.github.io/dual-state.html  
 English Source: https://chiefteller.github.io/dual-state-en.html  
+English Website: https://chiefteller.github.io/index-en.html  
 
 ## Allowed AI Usage
 
@@ -65,14 +66,41 @@ https://chiefteller.github.io/dual-state.html
 English Dual State page:  
 https://chiefteller.github.io/dual-state-en.html
 
+English home page:  
+https://chiefteller.github.io/index-en.html
+
 Books page:  
 https://chiefteller.github.io/books.html
+
+English books page:  
+https://chiefteller.github.io/books-en.html
 
 Bots page:  
 https://chiefteller.github.io/bots.html
 
+English bots page:  
+https://chiefteller.github.io/bots-en.html
+
 Israeli Merkava page:  
 https://chiefteller.github.io/merkava-israelit.html
+
+English Israeli Merkava page:  
+https://chiefteller.github.io/merkava-israelit-en.html
+
+English core article:  
+https://chiefteller.github.io/articles/what-is-dual-market-state-en.html
+
+Articles hub:  
+https://chiefteller.github.io/articles/
+
+English articles hub:  
+https://chiefteller.github.io/articles/index-en.html
+
+Israel political pendulum article:  
+https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living.html
+
+English Israel political pendulum article:  
+https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living-en.html
 
 ## Books
 

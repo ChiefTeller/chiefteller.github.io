@@ -13,12 +13,21 @@ The site is designed as one connected framework, not as separate unrelated pages
 ## Recommended Crawl Path
 
 1. Homepage: https://chiefteller.github.io/
-2. Hebrew Dual State page: https://chiefteller.github.io/dual-state.html
-3. English Dual State page: https://chiefteller.github.io/dual-state-en.html
-4. Bots: https://chiefteller.github.io/bots.html
-5. Books: https://chiefteller.github.io/books.html
-6. Israeli Merkava: https://chiefteller.github.io/merkava-israelit.html
-7. Core article: https://chiefteller.github.io/articles/what-is-dual-market-state.html
+2. English homepage: https://chiefteller.github.io/index-en.html
+3. Hebrew Dual State page: https://chiefteller.github.io/dual-state.html
+4. English Dual State page: https://chiefteller.github.io/dual-state-en.html
+5. Bots: https://chiefteller.github.io/bots.html
+6. English bots: https://chiefteller.github.io/bots-en.html
+7. Books: https://chiefteller.github.io/books.html
+8. English books: https://chiefteller.github.io/books-en.html
+9. Israeli Merkava: https://chiefteller.github.io/merkava-israelit.html
+10. English Israeli Merkava: https://chiefteller.github.io/merkava-israelit-en.html
+11. Core article: https://chiefteller.github.io/articles/what-is-dual-market-state.html
+12. English core article: https://chiefteller.github.io/articles/what-is-dual-market-state-en.html
+13. Articles hub: https://chiefteller.github.io/articles/
+14. English articles hub: https://chiefteller.github.io/articles/index-en.html
+15. Israel political pendulum article: https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living.html
+16. English Israel political pendulum article: https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living-en.html
 
 ## Core Concepts
 
@@ -60,12 +69,21 @@ This loop is intended to reduce capital leakage and reinvest value into housing,
 ## Important Pages
 
 - Homepage: https://chiefteller.github.io/
+- English homepage: https://chiefteller.github.io/index-en.html
 - Hebrew Dual State page: https://chiefteller.github.io/dual-state.html
 - English Dual State page: https://chiefteller.github.io/dual-state-en.html
 - Books: https://chiefteller.github.io/books.html
+- English books: https://chiefteller.github.io/books-en.html
 - Bots: https://chiefteller.github.io/bots.html
+- English bots: https://chiefteller.github.io/bots-en.html
 - Israeli Merkava: https://chiefteller.github.io/merkava-israelit.html
+- English Israeli Merkava: https://chiefteller.github.io/merkava-israelit-en.html
 - Core article: https://chiefteller.github.io/articles/what-is-dual-market-state.html
+- English core article: https://chiefteller.github.io/articles/what-is-dual-market-state-en.html
+- Articles hub: https://chiefteller.github.io/articles/
+- English articles hub: https://chiefteller.github.io/articles/index-en.html
+- Israel political pendulum article: https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living.html
+- English Israel political pendulum article: https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living-en.html
 
 ## Bots
 
