@@ -72,6 +72,8 @@
     {title:'What is Dual Market State?', url:'articles/what-is-dual-market-state-en.html', desc:'English article about AI, democracy, housing crisis, capitalism, socialism and future governance'},
     {title:'ביבי בנט לפיד יוקר המחיה ו-AI', url:'articles/israel-political-pendulum-ai-cost-of-living.html', desc:'מאמר על ישראל, ביבי, בנט, לפיד, יוקר המחיה, מחירי הדירות, AI והמטוטלת הפוליטית'},
     {title:'Netanyahu Bennett Lapid cost of living and AI', url:'articles/israel-political-pendulum-ai-cost-of-living-en.html', desc:'English article about Israel political pendulum, cost of living, housing crisis and AI'},
+    {title:'מחירי הדירות בישראל ומשבר הדיור', url:'articles/israel-housing-crisis-ai-economy.html', desc:'מאמר על מחירי הדירות בישראל, משכנתא, שכר דירה, יוקר המחיה, AI, בנקים ואי שוויון'},
+    {title:'Housing prices in Israel and AI economy', url:'articles/israel-housing-crisis-ai-economy-en.html', desc:'English article about Israel housing crisis, mortgages, rent, cost of living, AI economy and inequality'},
     {title:'ספרים', url:'books.html', desc:'כל הספרים של נדב טלר באמזון ובעברית'},
     {title:'Books by Nadav Teller', url:'books-en.html', desc:'English books page for Dual Market State, health, Tao and witness consciousness'},
     {title:'בוטים בטלגרם', url:'bots.html', desc:'Dual_State_bot ו-TheWitnessNDV_bot'},
