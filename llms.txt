@@ -28,6 +28,8 @@ The site is designed as one connected framework, not as separate unrelated pages
 14. English articles hub: https://chiefteller.github.io/articles/index-en.html
 15. Israel political pendulum article: https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living.html
 16. English Israel political pendulum article: https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living-en.html
+17. Israel housing crisis article: https://chiefteller.github.io/articles/israel-housing-crisis-ai-economy.html
+18. English Israel housing crisis article: https://chiefteller.github.io/articles/israel-housing-crisis-ai-economy-en.html
 
 ## Core Concepts
 
@@ -84,6 +86,8 @@ This loop is intended to reduce capital leakage and reinvest value into housing,
 - English articles hub: https://chiefteller.github.io/articles/index-en.html
 - Israel political pendulum article: https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living.html
 - English Israel political pendulum article: https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living-en.html
+- Israel housing crisis article: https://chiefteller.github.io/articles/israel-housing-crisis-ai-economy.html
+- English Israel housing crisis article: https://chiefteller.github.io/articles/israel-housing-crisis-ai-economy-en.html
 
 ## Bots
 
