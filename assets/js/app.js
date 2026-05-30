@@ -76,6 +76,8 @@
     {title:'Housing prices in Israel and AI economy', url:'articles/israel-housing-crisis-ai-economy-en.html', desc:'English article about Israel housing crisis, mortgages, rent, cost of living, AI economy and inequality'},
     {title:'ספרים', url:'books.html', desc:'כל הספרים של נדב טלר באמזון ובעברית'},
     {title:'Books by Nadav Teller', url:'books-en.html', desc:'English books page for Dual Market State, health, Tao and witness consciousness'},
+    {title:'הרצאות לארגונים, בתי ספר ועסקים', url:'lectures.html', desc:'הרצאות, הרצאות לבתי ספר והרצאות לעסקים על AI, תורת המדינה הדואלית, יוקר המחיה, מנהיגות ועתיד העבודה'},
+    {title:'Lectures for organizations and schools', url:'lectures-en.html', desc:'Lectures for schools, business lectures, AI, future of work, Dual Market State and future governance'},
     {title:'בוטים בטלגרם', url:'bots.html', desc:'Dual_State_bot ו-TheWitnessNDV_bot'},
     {title:'Nadav Teller Bots', url:'bots-en.html', desc:'English bot page for AI, books, Israel, economy, democracy and Future of Work'},
     {title:'Israeli Merkava', url:'merkava-israelit-en.html', desc:'English participation page for translation, tools, AI education and civic action'},
