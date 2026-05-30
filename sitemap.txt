@@ -4,6 +4,8 @@ https://chiefteller.github.io/dual-state.html
 https://chiefteller.github.io/dual-state-en.html
 https://chiefteller.github.io/books.html
 https://chiefteller.github.io/books-en.html
+https://chiefteller.github.io/lectures.html
+https://chiefteller.github.io/lectures-en.html
 https://chiefteller.github.io/bots.html
 https://chiefteller.github.io/bots-en.html
 https://chiefteller.github.io/merkava-israelit.html
