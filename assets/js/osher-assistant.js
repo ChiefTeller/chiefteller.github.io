@@ -57,6 +57,13 @@
     if (event.key === "Escape" && assistant.classList.contains("is-open")) setOpen(false);
   });
 
+  document.addEventListener("click", (event) => {
+    const opener = event.target.closest("[data-osher-open]");
+    if (!opener) return;
+    event.preventDefault();
+    setOpen(true);
+  });
+
   if (localStorage.getItem(storageKey) === "true") {
     setOpen(true);
   }
