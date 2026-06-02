@@ -64,7 +64,9 @@
   const searchInput = $('[data-site-search]');
   const searchResults = $('[data-site-results]');
   const siteIndex = [
-    {title:'Nadav Teller English', url:'index-en.html', desc:'English homepage for AI, state models, future society, books and bots'},
+    {title:'GEN1 | Nadav Teller English', url:'index-en.html', desc:'English homepage for AI, state models, future society, books and bots'},
+    {title:'אודות נדב טלר', url:'about.html', desc:'אודות המחבר והמרצה מאחורי GEN1, תורת המדינה הדואלית, שוק דואלי, הרצאות, מרצים, פוליטיקה, חדשות וישראל'},
+    {title:'About Nadav Teller', url:'about-en.html', desc:'About the author and lecturer behind GEN1, Dual Market State, lectures, politics, Israel news, Osher and Israeli Merkava'},
     {title:'מאמרים', url:'articles/index.html', desc:'מאמרים על ישראל, AI, יוקר המחיה, כלכלה, פוליטיקה ותורת המדינה הדואלית'},
     {title:'Articles', url:'articles/index-en.html', desc:'English articles about Israel, AI, economy, politics and Dual Market State'},
     {title:'תורת המדינה הדואלית', url:'dual-state.html', desc:'מודל מדינת שוק דואלי, שוק חופשי לצד רצפה אזרחית חזקה'},
@@ -76,8 +78,8 @@
     {title:'Housing prices in Israel and AI economy', url:'articles/israel-housing-crisis-ai-economy-en.html', desc:'English article about Israel housing crisis, mortgages, rent, cost of living, AI economy and inequality'},
     {title:'ספרים', url:'books.html', desc:'כל הספרים של נדב טלר באמזון ובעברית'},
     {title:'Books by Nadav Teller', url:'books-en.html', desc:'English books page for Dual Market State, health, Tao and witness consciousness'},
-    {title:'הרצאות לארגונים, בתי ספר ועסקים', url:'lectures.html', desc:'הרצאות, הרצאות לבתי ספר והרצאות לעסקים על AI, תורת המדינה הדואלית, יוקר המחיה, מנהיגות ועתיד העבודה'},
-    {title:'Lectures for organizations and schools', url:'lectures-en.html', desc:'Lectures for schools, business lectures, AI, future of work, Dual Market State and future governance'},
+    {title:'GEN1 הרצאות לארגונים, בתי ספר ועסקים', url:'lectures.html', desc:'הרצאות, מרצים, הרצאות לבתי ספר והרצאות לעסקים על AI, תורת המדינה הדואלית, יוקר המחיה, מנהיגות ועתיד העבודה'},
+    {title:'GEN1 Lectures for organizations and schools', url:'lectures-en.html', desc:'Lectures, lecturers, schools, business lectures, AI, future of work, Dual Market State and future governance'},
     {title:'בוטים בטלגרם', url:'bots.html', desc:'Dual_State_bot ו-TheWitnessNDV_bot'},
     {title:'Nadav Teller Bots', url:'bots-en.html', desc:'English bot page for AI, books, Israel, economy, democracy and Future of Work'},
     {title:'Israeli Merkava', url:'merkava-israelit-en.html', desc:'English participation page for translation, tools, AI education and civic action'},
