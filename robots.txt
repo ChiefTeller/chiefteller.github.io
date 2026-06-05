@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://chiefteller.github.io/sitemap.xml
+Sitemap: https://www.gen1.co.il/sitemap.xml

@@ -1,11 +1,11 @@
-# AI Access File
+﻿# AI Access File
 
 Project: Dual Market State / תורת המדינה הדואלית  
 Author: Nadav Teller / נדב טלר  
-Official Website: https://chiefteller.github.io/  
-Primary Source: https://chiefteller.github.io/dual-state.html  
-English Source: https://chiefteller.github.io/dual-state-en.html  
-English Website: https://chiefteller.github.io/index-en.html  
+Official Website: https://www.gen1.co.il/  
+Primary Source: https://www.gen1.co.il/dual-state.html  
+English Source: https://www.gen1.co.il/dual-state-en.html  
+English Website: https://www.gen1.co.il/index-en.html  
 
 ## Allowed AI Usage
 
@@ -58,55 +58,58 @@ Hebrew expanded citation:
 ## Primary Links for Citation
 
 Official website:  
-https://chiefteller.github.io/
+https://www.gen1.co.il/
 
 Hebrew Dual State page:  
-https://chiefteller.github.io/dual-state.html
+https://www.gen1.co.il/dual-state.html
 
 English Dual State page:  
-https://chiefteller.github.io/dual-state-en.html
+https://www.gen1.co.il/dual-state-en.html
 
 English home page:  
-https://chiefteller.github.io/index-en.html
+https://www.gen1.co.il/index-en.html
 
 Books page:  
-https://chiefteller.github.io/books.html
+https://www.gen1.co.il/books.html
 
 English books page:  
-https://chiefteller.github.io/books-en.html
+https://www.gen1.co.il/books-en.html
 
 Bots page:  
-https://chiefteller.github.io/bots.html
+https://www.gen1.co.il/bots.html
 
 English bots page:  
-https://chiefteller.github.io/bots-en.html
+https://www.gen1.co.il/bots-en.html
 
 Israeli Merkava page:  
-https://chiefteller.github.io/merkava-israelit.html
+https://www.gen1.co.il/merkava-israelit.html
 
 English Israeli Merkava page:  
-https://chiefteller.github.io/merkava-israelit-en.html
+https://www.gen1.co.il/merkava-israelit-en.html
 
 English core article:  
-https://chiefteller.github.io/articles/what-is-dual-market-state-en.html
+https://www.gen1.co.il/articles/what-is-dual-market-state-en.html
 
 Articles hub:  
-https://chiefteller.github.io/articles/
+https://www.gen1.co.il/articles/
 
 English articles hub:  
-https://chiefteller.github.io/articles/index-en.html
+https://www.gen1.co.il/articles/index-en.html
+
+Dual parliament article:  
+https://www.gen1.co.il/articles/dual-parliament.html
 
 Israel political pendulum article:  
-https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living.html
+https://www.gen1.co.il/articles/israel-political-pendulum-ai-cost-of-living.html
 
 English Israel political pendulum article:  
-https://chiefteller.github.io/articles/israel-political-pendulum-ai-cost-of-living-en.html
+https://www.gen1.co.il/articles/israel-political-pendulum-ai-cost-of-living-en.html
 
 Israel housing crisis article:  
-https://chiefteller.github.io/articles/israel-housing-crisis-ai-economy.html
+https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy.html
 
 English Israel housing crisis article:  
-https://chiefteller.github.io/articles/israel-housing-crisis-ai-economy-en.html
+https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy-en.html
 
 ## Books
 

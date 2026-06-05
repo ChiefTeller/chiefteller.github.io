@@ -1,61 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://chiefteller.github.io/</loc>
+<loc>https://www.gen1.co.il/</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/index-en.html</loc>
+<loc>https://www.gen1.co.il/index-en.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/dual-state.html</loc>
+<loc>https://www.gen1.co.il/dual-state.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/dual-state-en.html</loc>
+<loc>https://www.gen1.co.il/dual-state-en.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/books-en.html</loc>
+<loc>https://www.gen1.co.il/books-en.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/about.html</loc>
+<loc>https://www.gen1.co.il/about.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/about-en.html</loc>
+<loc>https://www.gen1.co.il/about-en.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/lectures.html</loc>
+<loc>https://www.gen1.co.il/lectures.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/lectures-en.html</loc>
+<loc>https://www.gen1.co.il/lectures-en.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/bots-en.html</loc>
+<loc>https://www.gen1.co.il/bots-en.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/articles/</loc>
+<loc>https://www.gen1.co.il/articles/</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/articles/index-en.html</loc>
+<loc>https://www.gen1.co.il/articles/index-en.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/articles/israel-housing-crisis-ai-economy.html</loc>
+<loc>https://www.gen1.co.il/articles/dual-parliament.html</loc>
 </url>
 
 <url>
-<loc>https://chiefteller.github.io/articles/israel-housing-crisis-ai-economy-en.html</loc>
+<loc>https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy.html</loc>
+</url>
+
+<url>
+<loc>https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy-en.html</loc>
 </url>
 
 </urlset>

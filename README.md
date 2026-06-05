@@ -1,4 +1,4 @@
-# Nadav Teller Official — אתר GitHub Pages
+﻿# Nadav Teller Official — אתר GitHub Pages
 
 אתר סטטי מהיר בעברית, בסגנון אפליקציה, מוכן להעלאה ל־GitHub Pages.
 
@@ -10,7 +10,7 @@
 5. שמור והמתן עד שגיט־האב ייצור את האתר.
 
 ## כתובת האתר
-https://chiefteller.github.io/nadav-teller-official/
+https://www.gen1.co.il/nadav-teller-official/
 
 ## דברים שכדאי לעדכן
 - בקובץ `books.html` יש ספר אחד שסומן: "ספר נוסף באמזון — לעדכון שם וכריכה" עבור ASIN `B0H2HPW4HS`. עדכן אותו כשהשם הסופי ברור.
