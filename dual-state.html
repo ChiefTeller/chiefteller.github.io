@@ -55,8 +55,8 @@
         "jobTitle": "Author",
         "sameAs": [
           "https://www.amazon.com/dp/B0H24NQLD6",
-          "https://www.e-vrit.co.il/Author/19479/%D7%A0%D7%93%D7%91_%D7%98%D7%9C%D7%A8",
-          "https://t.me/NadavTeller_bot"
+          "https://www.e-vrit.co.il/Product/39871/%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94_%D7%94%D7%93%D7%95%D7%90%D7%9C%D7%99%D7%AA",
+          "https://www.gen1.co.il/lectures.html"
         ],
         "knowsAbout": [
           "תורת המדינה הדואלית",
@@ -88,8 +88,8 @@
         "isbn": "B0H24NQLD6",
         "author": { "@id": "https://www.gen1.co.il/#nadav-teller" },
         "inLanguage": "he-IL",
-        "url": "https://www.amazon.com/dp/B0H24NQLD6",
-        "sameAs": ["https://www.gen1.co.il/dual-state.html"],
+        "url": "https://www.e-vrit.co.il/Product/39871/%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94_%D7%94%D7%93%D7%95%D7%90%D7%9C%D7%99%D7%AA",
+        "sameAs": ["https://www.amazon.com/dp/B0H24NQLD6", "https://www.gen1.co.il/dual-state.html"],
         "description": "מודל מדינה חדש המשלב שוק חופשי, רצפה אזרחית, בנק דואלי, קונצרן לאומי, AI ולולאת הון בלתי נזילה."
       },
       {
@@ -116,7 +116,7 @@
           { "@type": "Question", "name": "מהי תורת המדינה הדואלית?", "acceptedAnswer": { "@type": "Answer", "text": "תורת המדינה הדואלית היא מודל מדינה שמציע שני מסלולים מקבילים: שוק חופשי ליזמות ותחרות לצד מסלול אזרחי יציב שמספק דיור, תעסוקה, חינוך ותשתיות בסיסיות." } },
           { "@type": "Question", "name": "למה צריך מודל מדינה חדש?", "acceptedAnswer": { "@type": "Answer", "text": "משבר דיור, ריכוז הון, שחיקת אמון, קיטוב חברתי ובינה מלאכותית משנים את תנאי המשחק. המודל הדואלי מציע מבנה שמחזיר יציבות בלי לבטל את החופש." } },
           { "@type": "Question", "name": "איך המודל הדואלי פועל כלכלית?", "acceptedAnswer": { "@type": "Answer", "text": "המודל מבוסס על בנק דואלי, קרן, קונצרן יצרני ולולאת הון בלתי נזילה שבה הון חוזר לדיור, תשתיות, תעסוקה, אנרגיה וייצור במקום לדלוף החוצה בלבד." } },
-          { "@type": "Question", "name": "האם הספר זמין לרכישה?", "acceptedAnswer": { "@type": "Answer", "text": "כן. הספר תורת המדינה הדואלית זמין באמזון בכריכה קשה ובגרסה דיגיטלית, כולל אפשרות הזמנה לישראל. בהמשך צפויה גם זמינות באתר עברית." } }
+          { "@type": "Question", "name": "האם הספר זמין לרכישה?", "acceptedAnswer": { "@type": "Answer", "text": "כן. הספר תורת המדינה הדואלית זמין כספר דיגיטלי באתר עברית, וגם באמזון בכריכה קשה ובגרסה דיגיטלית, כולל אפשרות הזמנה לישראל." } }
         ]
       }
     ]
@@ -647,6 +647,7 @@
         <a href="dual-state.html" aria-current="page">מדינה דואלית</a>
         <a href="books.html">ספרים</a><a href="about.html">אודות</a>
         <a href="lectures.html">הרצאות</a>
+        <a href="witness-game.html">משחק העד</a>
         <a href="merkava-israelit.html">מרכבה ישראלית</a>
         <a href="index-en.html" lang="en">English</a>
       </nav>
@@ -672,7 +673,7 @@
       <button class="icon-btn" type="button" data-search-close aria-label="סגירת חיפוש">×</button>
       <h2 id="search-title">חיפוש מהיר באתר</h2>
       <label class="visually-hidden" for="site-search">הקלד מילת חיפוש</label>
-      <input id="site-search" data-site-search type="search" placeholder="חפש: מדינה דואלית, בנק דואלי, ספר יסוד, בוטים...">
+      <input id="site-search" data-site-search type="search" placeholder="חפש: מדינה דואלית, בנק דואלי, ספר יסוד, הרצאות...">
       <div class="site-search-results" data-site-results aria-live="polite"></div>
     </div>
   </section>
@@ -688,14 +689,15 @@
           </p>
 
           <div class="ds-actions">
+            <a class="ds-btn ds-btn-primary" href="https://www.e-vrit.co.il/Product/39871/%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94_%D7%94%D7%93%D7%95%D7%90%D7%9C%D7%99%D7%AA" target="_blank" rel="noopener noreferrer">קנה בעברית — ספר דיגיטלי</a>
             <a class="ds-btn ds-btn-gold" href="https://www.amazon.com/dp/B0H24NQLD6" target="_blank" rel="noopener noreferrer">קנה באמזון — כריכה קשה ודיגיטלי</a>
-            <a class="ds-btn ds-btn-primary" href="#journey">התחל את המסע</a>
+            <a class="ds-btn ds-btn-soft" href="#journey">התחל את המסע</a>
             <a class="ds-btn ds-btn-soft" href="dual-state-en.html" lang="en">English version</a>
           </div>
 
           <div class="ds-buy-note" aria-label="אפשרויות רכישה וקריאה">
+            <div class="ds-mini-stat"><strong>זמין בעברית</strong>ספר דיגיטלי באתר עברית.</div>
             <div class="ds-mini-stat"><strong>זמין באמזון</strong>כריכה קשה ודיגיטלי, כולל הזמנה לישראל.</div>
-            <div class="ds-mini-stat"><strong>יעלה לעברית</strong>בהמשך צפויה זמינות גם באתר עברית.</div>
             <div class="ds-mini-stat"><strong>ASIN</strong>B0H24NQLD6</div>
           </div>
         </div>
@@ -819,8 +821,9 @@
           <h2 id="why-title">כי הוא לא מנסה לנצח צד. הוא בונה איזון שפועל.</h2>
           <p>במקום ליפול שוב למלחמה בין קפיטליזם לסוציאליזם, תורת המדינה הדואלית יוצרת סינתזה מבנית: החופש נשמר, הרצפה מתחזקת, והמדינה מפסיקה להיות רק מערכת שמתקנת משברים בדיעבד.</p>
           <div class="ds-inline-actions">
-            <a class="ds-btn ds-btn-gold" href="https://www.amazon.com/dp/B0H24NQLD6" target="_blank" rel="noopener noreferrer">לרכישת הספר</a>
-            <a class="ds-btn ds-btn-soft" href="bots.html">שאל את הבוט</a>
+            <a class="ds-btn ds-btn-primary" href="https://www.e-vrit.co.il/Product/39871/%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94_%D7%94%D7%93%D7%95%D7%90%D7%9C%D7%99%D7%AA" target="_blank" rel="noopener noreferrer">לרכישה בעברית</a>
+            <a class="ds-btn ds-btn-gold" href="https://www.amazon.com/dp/B0H24NQLD6" target="_blank" rel="noopener noreferrer">Amazon</a>
+            <a class="ds-btn ds-btn-soft" href="lectures.html">הרצאות</a>
           </div>
         </div>
 
@@ -886,7 +889,7 @@
           <details><summary>האם זה קפיטליזם?</summary><p>לא במובן הרגיל. המודל שומר על יזמות ושוק חופשי, אך מוסיף בנק דואלי, קרן, קונצרן לאומי ורצפה אזרחית כדי למנוע ריכוז כוח ודליפת הון.</p></details>
           <details><summary>למה AI כל כך מרכזי?</summary><p>AI יכול להחליף עבודה, לרכז הון ולהאיץ פערים. במודל הדואלי AI משולב בתשתיות אזרחיות, תעשייה, חינוך, בריאות ותכנון כדי לשרת יציבות ציבורית.</p></details>
           <details><summary>איך זה קשור לספר יסוד, נשימה ועדות?</summary><p>המודל אינו רק כלכלה. הוא מניח שאדם יציב יותר בונה חברה יציבה יותר. לכן הגוף, הנשימה, התודעה והיכולת להתבונן במערכות הם חלק מתפיסת העולם הרחבה.</p></details>
-          <details><summary>איפה קונים את הספר?</summary><p>הספר זמין באמזון בכריכה קשה ובגרסה דיגיטלית, כולל אפשרות הזמנה לישראל. בהמשך צפויה זמינות גם באתר עברית.</p></details>
+          <details><summary>איפה קונים את הספר?</summary><p>הספר זמין כספר דיגיטלי באתר עברית, וגם באמזון בכריכה קשה ובגרסה דיגיטלית, כולל אפשרות הזמנה לישראל.</p></details>
         </div>
       </div>
     </section>
@@ -895,11 +898,12 @@
       <div class="container">
         <div class="final-cta">
           <span class="ds-kicker">השלב הבא</span>
-          <h2 id="final-title">רוצה להבין את המודל באמת? קרא את הספר או שאל את הבוט.</h2>
-          <p>העמוד הזה נותן את המסע הראשוני. הספר מעמיק את המודל, הבוט עוזר לשאול שאלות, ועמוד מרכבה ישראלית פתוח למי שכבר עבר תהליך ורוצה לעזור להרכיב את החלקים.</p>
+          <h2 id="final-title">רוצה להבין את המודל באמת? קרא את הספר או הרצאות.</h2>
+          <p>העמוד הזה נותן את המסע הראשוני. הספר מעמיק את המודל, ההרצאות עוזר לשאול שאלות, ועמוד מרכבה ישראלית פתוח למי שכבר עבר תהליך ורוצה לעזור להרכיב את החלקים.</p>
           <div class="ds-inline-actions" style="justify-content:center;">
+            <a class="ds-btn ds-btn-primary" href="https://www.e-vrit.co.il/Product/39871/%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94_%D7%94%D7%93%D7%95%D7%90%D7%9C%D7%99%D7%AA" target="_blank" rel="noopener noreferrer">קנה בעברית</a>
             <a class="ds-btn ds-btn-gold" href="https://www.amazon.com/dp/B0H24NQLD6" target="_blank" rel="noopener noreferrer">קנה באמזון — B0H24NQLD6</a>
-            <a class="ds-btn ds-btn-primary" href="bots.html">שאל את @NadavTeller_bot</a>
+            <a class="ds-btn ds-btn-primary" href="lectures.html">הרצאות</a>
             <a class="ds-btn ds-btn-soft" href="books.html">לעמוד הספרים</a>
             <a class="ds-btn ds-btn-dark" href="merkava-israelit.html">מרכבה ישראלית</a>
           </div>
@@ -913,11 +917,11 @@
     <div class="container footer-grid">
       <div>
         <h2>GEN1 | נדב טלר</h2>
-        <p>ספרים, בוטים, מודלים ותכנים על תודעה, גוף, חינוך, חברה, מדינה דואלית ובינה מלאכותית.</p>
+        <p>ספרים, הרצאות, מודלים ותכנים על תודעה, גוף, חינוך, חברה, מדינה דואלית ובינה מלאכותית.</p>
       </div>
-      <div><h3>מסלול האתר</h3><div class="footer-links"><a href="dual-state.html">תורת המדינה הדואלית</a><a href="dual-state-en.html" lang="en">Dual Market State</a><a href="bots.html">בוטים</a><a href="books.html">ספרים</a><a href="merkava-israelit.html">מרכבה ישראלית</a></div></div>
-      <div><h3>רכישה וקריאה</h3><div class="footer-links"><a href="https://www.amazon.com/dp/B0H24NQLD6" target="_blank" rel="noopener noreferrer">Amazon — תורת המדינה הדואלית</a><a href="https://www.e-vrit.co.il/Author/19479/%D7%A0%D7%93%D7%91_%D7%98%D7%9C%D7%A8" target="_blank" rel="noopener noreferrer">עברית</a><a href="https://forms.gle/Pm6Scd9xNanFKUUW9" target="_blank" rel="noopener noreferrer">הרשמה ועדכונים</a></div></div>
-      <div><h3>בוטים</h3><div class="footer-links"><a href="https://t.me/NadavTeller_bot" target="_blank" rel="noopener noreferrer">@NadavTeller_bot</a></div></div>
+      <div><h3>מסלול האתר</h3><div class="footer-links"><a href="dual-state.html">תורת המדינה הדואלית</a><a href="dual-state-en.html" lang="en">Dual Market State</a><a href="lectures.html">הרצאות</a><a href="books.html">ספרים</a><a href="merkava-israelit.html">מרכבה ישראלית</a></div></div>
+      <div><h3>רכישה וקריאה</h3><div class="footer-links"><a href="https://www.e-vrit.co.il/Product/39871/%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94_%D7%94%D7%93%D7%95%D7%90%D7%9C%D7%99%D7%AA" target="_blank" rel="noopener noreferrer">עברית — תורת המדינה הדואלית</a><a href="https://www.amazon.com/dp/B0H24NQLD6" target="_blank" rel="noopener noreferrer">Amazon — תורת המדינה הדואלית</a><a href="https://forms.gle/Pm6Scd9xNanFKUUW9" target="_blank" rel="noopener noreferrer">הרשמה ועדכונים</a></div></div>
+      <div><h3>הרצאות</h3><div class="footer-links"><a href="lectures.html">הרצאות</a></div></div>
     </div>
     <div class="container footer-bottom">© 2026 נדב טלר.</div>
   </footer>

@@ -6,7 +6,7 @@ Official website of Nadav Teller, author of Dual State Market Theory / תורת 
 
 This website presents a structured intellectual and practical path:
 
-Dual State Market Theory → Bots → Books and Health → Advanced Witness Consciousness → Israeli Merkava.
+Dual State Market Theory → Lectures → Books and Health → Advanced Witness Consciousness → Israeli Merkava.
 
 The site is designed as one connected framework, not as separate unrelated pages. The central idea is a journey from understanding a new state model, through personal health and witness consciousness, into practical civic participation.
 
@@ -16,21 +16,22 @@ The site is designed as one connected framework, not as separate unrelated pages
 2. English homepage: https://www.gen1.co.il/index-en.html
 3. Hebrew Dual State page: https://www.gen1.co.il/dual-state.html
 4. English Dual State page: https://www.gen1.co.il/dual-state-en.html
-5. Bots: https://www.gen1.co.il/bots.html
-6. English bots: https://www.gen1.co.il/bots-en.html
+5. Lectures: https://www.gen1.co.il/lectures.html
+6. English lectures: https://www.gen1.co.il/lectures-en.html
 7. Books: https://www.gen1.co.il/books.html
 8. English books: https://www.gen1.co.il/books-en.html
 9. Israeli Merkava: https://www.gen1.co.il/merkava-israelit.html
 10. English Israeli Merkava: https://www.gen1.co.il/merkava-israelit-en.html
-11. Core article: https://www.gen1.co.il/articles/what-is-dual-market-state.html
-12. English core article: https://www.gen1.co.il/articles/what-is-dual-market-state-en.html
-13. Articles hub: https://www.gen1.co.il/articles/
-14. English articles hub: https://www.gen1.co.il/articles/index-en.html
-15. Dual parliament article: https://www.gen1.co.il/articles/dual-parliament.html
-16. Israel political pendulum article: https://www.gen1.co.il/articles/israel-political-pendulum-ai-cost-of-living.html
-17. English Israel political pendulum article: https://www.gen1.co.il/articles/israel-political-pendulum-ai-cost-of-living-en.html
-18. Israel housing crisis article: https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy.html
-19. English Israel housing crisis article: https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy-en.html
+11. Interactive witness consciousness game: https://www.gen1.co.il/witness-game.html
+12. Core article: https://www.gen1.co.il/articles/what-is-dual-market-state.html
+13. English core article: https://www.gen1.co.il/articles/what-is-dual-market-state-en.html
+14. Articles hub: https://www.gen1.co.il/articles/
+15. English articles hub: https://www.gen1.co.il/articles/index-en.html
+16. Dual parliament article: https://www.gen1.co.il/articles/dual-parliament.html
+17. Israel political pendulum article: https://www.gen1.co.il/articles/israel-political-pendulum-ai-cost-of-living.html
+18. English Israel political pendulum article: https://www.gen1.co.il/articles/israel-political-pendulum-ai-cost-of-living-en.html
+19. Israel housing crisis article: https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy.html
+20. English Israel housing crisis article: https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy-en.html
 
 ## Core Concepts
 
@@ -77,8 +78,9 @@ This loop is intended to reduce capital leakage and reinvest value into housing,
 - English Dual State page: https://www.gen1.co.il/dual-state-en.html
 - Books: https://www.gen1.co.il/books.html
 - English books: https://www.gen1.co.il/books-en.html
-- Bots: https://www.gen1.co.il/bots.html
-- English bots: https://www.gen1.co.il/bots-en.html
+- Interactive witness consciousness game: https://www.gen1.co.il/witness-game.html
+- Lectures: https://www.gen1.co.il/lectures.html
+- English lectures: https://www.gen1.co.il/lectures-en.html
 - Israeli Merkava: https://www.gen1.co.il/merkava-israelit.html
 - English Israeli Merkava: https://www.gen1.co.il/merkava-israelit-en.html
 - Core article: https://www.gen1.co.il/articles/what-is-dual-market-state.html
@@ -91,14 +93,14 @@ This loop is intended to reduce capital leakage and reinvest value into housing,
 - Israel housing crisis article: https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy.html
 - English Israel housing crisis article: https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy-en.html
 
-## Bots
+## Lectures
 
-The central bot is:
+The central lectures page is:
 
-- @NadavTeller_bot
-  https://t.me/NadavTeller_bot
+- GEN1 lectures by Nadav Teller
+  https://www.gen1.co.il/lectures.html
 
-The bot is intended as a personal guidance center for understanding:
+The lectures page is intended as a guidance center for understanding:
 Dual State Market Theory, Foundation Book / ספר יסוד, Breath / נשימה, Witness Consciousness, Treasures of Tao, the Civilizational Witness Scale and the reading path across Nadav Teller’s books.
 
 ## Books
