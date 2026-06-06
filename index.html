@@ -436,11 +436,18 @@
     }
 
     .gen-step a,
-    .gen-topic a {
+    .gen-step button,
+    .gen-topic a,
+    .gen-topic button {
       width: fit-content;
       margin-top: 1rem;
       color: #075fc4;
       font-weight: 950;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      font: inherit;
+      cursor: pointer;
     }
 
     .gen-book-ribbon {
@@ -676,7 +683,7 @@
           <span class="gen-badge">GEN1 | צעד אחד לפני כולם</span>
           <h1 id="gen-title">ברוכים הבאים ל־GEN1</h1>
           <p>
-            מסלול רעיוני־מעשי לאדם, למדינה ולעידן הבינה המלאכותית. כאן מתחילים להבין את תורת המדינה הדואלית, לשאול את ההרצאות, לקרוא מאמרים וספרים, ולהצטרף לבניית מרכבה ישראלית חדשה.
+            מסלול רעיוני־מעשי לאדם, למדינה ולעידן הבינה המלאכותית. כאן מתחילים להבין את תורת המדינה הדואלית, לשאול את אושר, לקרוא מאמרים וספרים, ולהצטרף לבניית מרכבה ישראלית חדשה.
           </p>
           <div class="gen-actions">
             <a class="gen-btn gen-btn-primary" href="#funnel">התחל את המסלול</a>
@@ -793,11 +800,11 @@
           </article>
           <article class="gen-topic">
             <div>
-              <div class="gen-topic-icon">BOT</div>
-              <h3>הרצאות</h3>
+              <div class="gen-topic-icon">AI</div>
+              <h3>אושר העוזר האישי</h3>
               <p>מרכז הכוונה אישי שעוזר למבקר להבין מאיפה להתחיל ומה מתאים לו לקרוא או לשאול.</p>
             </div>
-            <a href="lectures.html">שאל עכשיו</a>
+            <button type="button" data-osher-open>שאל את אושר</button>
           </article>
           <article class="gen-topic">
             <div>
@@ -851,7 +858,7 @@
         <span class="gen-badge">הצעד הבא</span>
         <h2 id="final-title">אחרי שהמשתמש הבין, הוא צריך לדעת מה לעשות.</h2>
         <p>
-          אפשר להתחיל מהמודל, לעבור למאמרים, לשאול את ההרצאות, לקרוא ספרים או להצטרף למרכבה ישראלית. כל דרך מחזירה לאותו מסלול: אדם חופשי יותר, מדינה חכמה יותר, וחברה שמוכנה לעידן הבינה המלאכותית.
+          אפשר להתחיל מהמודל, לעבור למאמרים, לשאול את אושר, לקרוא ספרים או להצטרף למרכבה ישראלית. כל דרך מחזירה לאותו מסלול: אדם חופשי יותר, מדינה חכמה יותר, וחברה שמוכנה לעידן הבינה המלאכותית.
         </p>
         <div class="gen-actions" style="justify-content:center">
           <a class="gen-btn gen-btn-dark" href="merkava-israelit.html">אני רוצה להצטרף</a>
