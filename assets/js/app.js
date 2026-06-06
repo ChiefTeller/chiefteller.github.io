@@ -1,4 +1,4 @@
-(function(){
+﻿(function(){
   const $ = (sel, root=document) => root.querySelector(sel);
   const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
   const body = document.body;
@@ -79,15 +79,16 @@
     {title:'ספרים', url:'books.html', desc:'כל הספרים של נדב טלר באמזון ובעברית'},
     {title:'Books by Nadav Teller', url:'books-en.html', desc:'English books page for Dual Market State, health, Tao and witness consciousness'},
     {title:'GEN1 הרצאות לארגונים, בתי ספר ועסקים', url:'lectures.html', desc:'הרצאות, מרצים, הרצאות לבתי ספר והרצאות לעסקים על AI, תורת המדינה הדואלית, יוקר המחיה, מנהיגות ועתיד העבודה'},
+    {title:'משחק העד הקוסמי', url:'witness-game.html', desc:'משחק קצר וחווייתי של GEN1 על עדות, תודעת העד, נשימה, גוף, רגש ומחשבה'},
     {title:'GEN1 Lectures for organizations and schools', url:'lectures-en.html', desc:'Lectures, lecturers, schools, business lectures, AI, future of work, Dual Market State and future governance'},
-    {title:'בוטים בטלגרם', url:'bots.html', desc:'Dual_State_bot ו-TheWitnessNDV_bot'},
-    {title:'Nadav Teller Bots', url:'bots-en.html', desc:'English bot page for AI, books, Israel, economy, democracy and Future of Work'},
+    {title:'הרצאות', url:'lectures.html', desc:'Dual_State_bot ו-TheWitnessNDV_bot'},
+    {title:'GEN1 Lectures', url:'lectures-en.html', desc:'English bot page for AI, books, Israel, economy, democracy and Future of Work'},
     {title:'Israeli Merkava', url:'merkava-israelit-en.html', desc:'English participation page for translation, tools, AI education and civic action'},
     {title:'סולם העדות הציוויליזציונית', url:'books.html#witness-book', desc:'מודל פילוסופי למדידת כוח לפי עומק העדות'},
     {title:'אוצרות הטאו וספר יסוד', url:'books.html#tao-books', desc:'ספרי ילדים, נשימה, במבוק, גוף ותנועה'},
     {title:'הרשמה ועדכונים', url:'https://forms.gle/Pm6Scd9xNanFKUUW9', desc:'טופס הצטרפות ועדכונים'},
     {title:'מודל מדינת שוק דואלי', url:'dual-state.html#model', desc:'קונצרן לאומי, קרן ריבונית, בנק ציבורי ורצפה אזרחית'},
-    {title:'העד', url:'bots.html#witness-bot', desc:'בוט פילוסופי אישי להחזיר את האדם לעדות ולנוכחות'},
+    {title:'העד', url:'lectures.html', desc:'הרצאות פילוסופי אישי להחזיר את האדם לעדות ולנוכחות'},
     {title:'ספר יסוד', url:'books.html#sefer-yesod-book', desc:'יציבה, תנועה, נשימה ותודעת העד'},
     {title:'במבוק', url:'books.html#tao-books', desc:'סיפור טאואיסטי על סבלנות, שורשים וצמיחה'}
   ];
