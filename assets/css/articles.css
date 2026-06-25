@@ -1,7 +1,7 @@
 .articles-page {
   background:
     radial-gradient(circle at 12% 8%, rgba(212, 175, 55, 0.18), transparent 28%),
-    radial-gradient(circle at 88% 6%, rgba(37, 99, 235, 0.14), transparent 30%),
+    radial-gradient(circle at 88% 6%, rgba(199, 154, 53, 0.14), transparent 30%),
     linear-gradient(180deg, #faf8f2, #ffffff 48%, #fffaf0);
 }
 
