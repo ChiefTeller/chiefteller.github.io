@@ -174,6 +174,10 @@
       font-weight: 950;
     }
 
+    .brand-mobile-en {
+      display: none;
+    }
+
     .main-nav {
       gap: 0.34rem;
       padding: 0.34rem;
@@ -706,6 +710,14 @@
         padding-top: 0.8rem;
       }
 
+      .site-header .brand:not(.brand-mobile-en) {
+        display: none;
+      }
+
+      .brand-mobile-en {
+        display: flex;
+      }
+
       .gen-hero-image,
       .gen-visual-band,
       .gen-logo-cta,
@@ -746,6 +758,10 @@
       <a class="brand" href="index.html" aria-label="דף הבית של GEN1">
         <span class="brand-mark logo-mark"><img src="assets/img/gen1-logo.webp" alt="GEN1 - עוצרים את המטוטלת"></span>
         <span class="brand-name">GEN1<small>דור ראשון</small></span>
+      </a>
+      <a class="brand brand-mobile-en" href="index-en.html" lang="en" dir="ltr" aria-label="GEN1 English homepage">
+        <span class="brand-mark logo-mark"><img src="assets/img/gen1-logo.webp" alt="GEN1 English"></span>
+        <span class="brand-name">GEN1 EN 🇺🇸</span>
       </a>
       <nav class="main-nav" data-main-nav aria-label="ניווט ראשי">
         <a href="index.html" aria-current="page">בית</a>
