@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8">
@@ -11,7 +11,7 @@
   <meta name="application-name" content="GEN1">
   <meta name="apple-mobile-web-app-title" content="GEN1">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0a7cff">
+  <meta name="theme-color" content="#121a2a">
   <meta name="google-site-verification" content="BOpUPe-pyDQYOpijfGgAyJegfofPszbroZPNrhVaZOs">
 
   <link rel="canonical" href="https://www.gen1.co.il/">
@@ -110,24 +110,29 @@
 
   <style>
     :root {
-      --gen-blue: #087cff;
-      --gen-blue-2: #00b7ff;
-      --gen-navy: #061a3a;
-      --gen-ink: #0b1f3f;
-      --gen-muted: #5d6d83;
-      --gen-sky: #eaf7ff;
-      --gen-line: rgba(8, 124, 255, 0.18);
-      --gen-card: rgba(255, 255, 255, 0.84);
-      --gen-shadow: 0 28px 80px rgba(0, 91, 199, 0.18);
-      --gen-soft-shadow: 0 16px 48px rgba(0, 91, 199, 0.12);
+      --gen-blue: #c79a35;
+      --gen-blue-2: #d8ad55;
+      --gen-gold: #c79a35;
+      --gen-gold-soft: #f4e3bd;
+      --gen-navy: #121a2a;
+      --gen-night: #0a1020;
+      --gen-ink: #171923;
+      --gen-muted: #5f6470;
+      --gen-rust: #a95032;
+      --gen-cream: #fbf7ef;
+      --gen-sky: #f6efe2;
+      --gen-line: rgba(31, 27, 20, 0.14);
+      --gen-card: rgba(255, 252, 246, 0.90);
+      --gen-shadow: 0 28px 80px rgba(26, 21, 12, 0.14);
+      --gen-soft-shadow: 0 16px 48px rgba(26, 21, 12, 0.10);
     }
 
     body {
       color: var(--gen-ink);
       background:
-        radial-gradient(circle at 12% 8%, rgba(0, 183, 255, 0.22), transparent 30rem),
-        radial-gradient(circle at 90% 18%, rgba(8, 124, 255, 0.18), transparent 28rem),
-        linear-gradient(180deg, #f8fcff 0%, #ffffff 42%, #eef8ff 100%);
+        radial-gradient(circle at 12% 8%, rgba(199, 154, 53, 0.18), transparent 30rem),
+        radial-gradient(circle at 88% 18%, rgba(18, 26, 42, 0.10), transparent 28rem),
+        linear-gradient(180deg, #fbf7ef 0%, #fffdf8 44%, #f4ead9 100%);
     }
 
     body::before {
@@ -137,17 +142,17 @@
       z-index: -1;
       pointer-events: none;
       background-image:
-        linear-gradient(rgba(8, 124, 255, 0.055) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(8, 124, 255, 0.055) 1px, transparent 1px);
+        linear-gradient(rgba(31, 27, 20, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31, 27, 20, 0.045) 1px, transparent 1px);
       background-size: 34px 34px;
       mask-image: linear-gradient(to bottom, black, transparent 72%);
     }
 
     .site-header {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.88), rgba(238, 248, 255, 0.82));
+      background: linear-gradient(90deg, rgba(255, 252, 246, 0.92), rgba(246, 239, 226, 0.88));
       border-bottom: 1px solid var(--gen-line);
       backdrop-filter: blur(18px);
-      box-shadow: 0 10px 34px rgba(8, 124, 255, 0.08);
+      box-shadow: 0 10px 34px rgba(26, 21, 12, 0.08);
     }
 
     .brand {
@@ -157,14 +162,14 @@
     }
 
     .brand:hover {
-      background: rgba(8, 124, 255, 0.06);
+      background: rgba(199, 154, 53, 0.10);
       transform: translateY(-1px);
       text-decoration: none;
     }
 
     .brand-mark {
       background: #fff;
-      box-shadow: 0 10px 28px rgba(8, 124, 255, 0.18);
+      box-shadow: 0 10px 28px rgba(26, 21, 12, 0.16);
     }
 
     .brand-name {
@@ -172,7 +177,7 @@
     }
 
     .brand-name small {
-      color: #087cff;
+      color: var(--gen-gold);
       font-weight: 950;
     }
 
@@ -184,14 +189,14 @@
       gap: 0.34rem;
       padding: 0.34rem;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.58);
-      border: 1px solid rgba(8, 124, 255, 0.12);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 12px 32px rgba(8, 124, 255, 0.08);
+      background: rgba(255, 252, 246, 0.72);
+      border: 1px solid rgba(31, 27, 20, 0.10);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88), 0 12px 32px rgba(26, 21, 12, 0.08);
     }
 
     .main-nav a {
       position: relative;
-      color: #0b2f68;
+      color: var(--gen-navy);
       border: 1px solid transparent;
       background: transparent;
       padding: 0.56rem 0.82rem;
@@ -205,7 +210,7 @@
       position: absolute;
       inset: 0;
       border-radius: inherit;
-      background: linear-gradient(135deg, rgba(8, 124, 255, 0.12), rgba(0, 183, 255, 0.16));
+      background: linear-gradient(135deg, rgba(199, 154, 53, 0.16), rgba(18, 26, 42, 0.08));
       opacity: 0;
       transition: opacity 0.2s ease;
     }
@@ -217,7 +222,7 @@
       bottom: 0.32rem;
       height: 3px;
       border-radius: 999px;
-      background: linear-gradient(90deg, var(--gen-blue), var(--gen-blue-2));
+      background: linear-gradient(90deg, var(--gen-gold), var(--gen-rust));
       opacity: 0;
       transform: scaleX(0.45);
       transition: opacity 0.2s ease, transform 0.2s ease;
@@ -226,11 +231,11 @@
 
     .main-nav a:hover,
     .main-nav a[aria-current="page"] {
-      color: #075fc4;
-      border-color: rgba(8, 124, 255, 0.18);
-      background: #fff;
+      color: var(--gen-night);
+      border-color: rgba(199, 154, 53, 0.32);
+      background: #fffdf8;
       transform: translateY(-1px);
-      box-shadow: 0 10px 24px rgba(8, 124, 255, 0.10);
+      box-shadow: 0 10px 24px rgba(26, 21, 12, 0.10);
       text-decoration: none;
     }
 
@@ -243,10 +248,10 @@
     }
 
     .icon-btn.nav-toggle {
-      border-color: rgba(8, 124, 255, 0.18);
-      background: linear-gradient(135deg, #ffffff, #eef8ff);
-      color: #075fc4;
-      box-shadow: 0 10px 24px rgba(8, 124, 255, 0.10);
+      border-color: rgba(199, 154, 53, 0.30);
+      background: linear-gradient(135deg, #fffdf8, #f4ead9);
+      color: var(--gen-navy);
+      box-shadow: 0 10px 24px rgba(26, 21, 12, 0.10);
     }
 
     .gen-page {
@@ -284,9 +289,9 @@
     .gen-visual-band figure {
       border-radius: 38px;
       overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 252, 246, 0.9);
       box-shadow: var(--gen-shadow);
-      background: #fff;
+      background: #fffdf8;
     }
 
     .gen-hero-image img,
@@ -302,7 +307,7 @@
       padding: clamp(1.25rem, 3.2vw, 2.4rem);
       border-radius: 34px;
       background: var(--gen-card);
-      border: 1px solid rgba(8, 124, 255, 0.14);
+      border: 1px solid rgba(31, 27, 20, 0.12);
       box-shadow: var(--gen-soft-shadow);
       backdrop-filter: blur(16px);
     }
@@ -329,11 +334,11 @@
       padding: 0.55rem 0.85rem;
       border-radius: 999px;
       color: var(--gen-ink);
-      background: #fff;
+      background: #fffdf8;
       border: 1px solid var(--gen-line);
       font-weight: 950;
       text-decoration: none;
-      box-shadow: 0 10px 28px rgba(8, 124, 255, 0.10);
+      box-shadow: 0 10px 28px rgba(26, 21, 12, 0.10);
     }
 
     .gen-badge {
@@ -342,11 +347,11 @@
       gap: 0.55rem;
       padding: 0.55rem 0.85rem;
       border-radius: 999px;
-      background: #fff;
+      background: #fffdf8;
       border: 1px solid var(--gen-line);
-      color: #0763cb;
+      color: var(--gen-navy);
       font-weight: 900;
-      box-shadow: 0 10px 28px rgba(8, 124, 255, 0.10);
+      box-shadow: 0 10px 28px rgba(26, 21, 12, 0.10);
     }
 
     .gen-badge::before {
@@ -354,8 +359,8 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--gen-blue), var(--gen-blue-2));
-      box-shadow: 0 0 0 7px rgba(8, 124, 255, 0.12);
+      background: linear-gradient(135deg, var(--gen-rust), var(--gen-gold));
+      box-shadow: 0 0 0 7px rgba(169, 80, 50, 0.12);
     }
 
     .gen-hero-card h1 {
@@ -380,7 +385,7 @@
 
     .gen-hero-subtitle {
       margin: 0 0 1rem;
-      color: #075fc4;
+      color: var(--gen-gold);
       font-weight: 950;
     }
 
@@ -423,18 +428,19 @@
     }
 
     .gen-btn-primary {
-      color: #fff;
+      color: #17130a;
       background: linear-gradient(135deg, var(--gen-blue), var(--gen-blue-2));
+      border-color: rgba(139, 95, 28, 0.22);
     }
 
     .gen-btn-dark {
       color: #fff;
-      background: linear-gradient(135deg, var(--gen-navy), #123d78);
+      background: linear-gradient(135deg, var(--gen-navy), var(--gen-night));
     }
 
     .gen-btn-soft {
       color: var(--gen-ink);
-      background: #fff;
+      background: #fffdf8;
       border-color: var(--gen-line);
     }
 
@@ -488,7 +494,7 @@
       color: #fff;
       font-weight: 950;
       background: linear-gradient(135deg, var(--gen-blue), var(--gen-blue-2));
-      box-shadow: 0 12px 28px rgba(8, 124, 255, 0.22);
+      box-shadow: 0 12px 28px rgba(199, 154, 53, 0.20);
     }
 
     .gen-step h3 {
@@ -508,7 +514,7 @@
     .gen-topic button {
       width: fit-content;
       margin-top: 1rem;
-      color: #075fc4;
+      color: var(--gen-navy);
       font-weight: 950;
       border: 0;
       padding: 0;
@@ -527,9 +533,9 @@
       max-width: none;
       border-radius: 30px;
       background:
-        radial-gradient(circle at 18% 20%, rgba(255, 198, 61, 0.24), transparent 16rem),
-        linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(235, 249, 255, 0.86));
-      border: 1px solid rgba(8, 124, 255, 0.14);
+        radial-gradient(circle at 18% 20%, rgba(199, 154, 53, 0.22), transparent 16rem),
+        linear-gradient(135deg, rgba(255, 252, 246, 0.96), rgba(246, 239, 226, 0.90));
+      border: 1px solid rgba(199, 154, 53, 0.18);
       box-shadow: var(--gen-soft-shadow);
     }
 
@@ -553,7 +559,7 @@
     .gen-en-copy {
       margin-top: 0.55rem;
       padding-top: 0.55rem;
-      border-top: 1px solid rgba(8, 124, 255, 0.12);
+      border-top: 1px solid rgba(199, 154, 53, 0.18);
     }
 
     .gen-visual-band {
@@ -564,8 +570,8 @@
       padding: clamp(1rem, 3vw, 1.5rem);
       border-radius: 42px;
       background:
-        radial-gradient(circle at 18% 18%, rgba(0, 183, 255, 0.18), transparent 24rem),
-        rgba(255, 255, 255, 0.72);
+        radial-gradient(circle at 18% 18%, rgba(199, 154, 53, 0.15), transparent 24rem),
+        rgba(255, 252, 246, 0.78);
       border: 1px solid var(--gen-line);
       box-shadow: var(--gen-shadow);
     }
@@ -588,7 +594,7 @@
       min-height: 255px;
       padding: 1.3rem;
       border-radius: 30px;
-      background: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 252, 246, 0.90);
       border: 1px solid var(--gen-line);
       box-shadow: var(--gen-soft-shadow);
       display: flex;
@@ -603,8 +609,8 @@
       border-radius: 20px;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg, rgba(8, 124, 255, 0.12), rgba(0, 183, 255, 0.16));
-      color: #075fc4;
+      background: linear-gradient(135deg, rgba(199, 154, 53, 0.18), rgba(18, 26, 42, 0.08));
+      color: var(--gen-navy);
       font-weight: 950;
       border: 1px solid var(--gen-line);
     }
@@ -634,8 +640,8 @@
       padding: clamp(1.3rem, 4vw, 2.5rem);
       border-radius: 42px;
       background:
-        radial-gradient(circle at 12% 12%, rgba(8, 124, 255, 0.14), transparent 22rem),
-        linear-gradient(135deg, #ffffff, #eef8ff);
+        radial-gradient(circle at 12% 12%, rgba(199, 154, 53, 0.14), transparent 22rem),
+        linear-gradient(135deg, #fffdf8, #f4ead9);
       border: 1px solid var(--gen-line);
       box-shadow: var(--gen-shadow);
       overflow: hidden;
@@ -654,14 +660,14 @@
       aspect-ratio: 1;
       object-fit: contain;
       border-radius: 28px;
-      box-shadow: 0 22px 60px rgba(8, 124, 255, 0.14);
+      box-shadow: 0 22px 60px rgba(26, 21, 12, 0.14);
     }
 
     .gen-final {
       text-align: center;
       padding: clamp(1.5rem, 4vw, 3rem);
       border-radius: 40px;
-      background: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 252, 246, 0.90);
       border: 1px solid var(--gen-line);
       box-shadow: var(--gen-shadow);
     }
@@ -696,14 +702,14 @@
         border-radius: 24px;
         padding: 0.75rem;
         gap: 0.4rem;
-        background: rgba(255, 255, 255, 0.96);
-        border-color: rgba(8, 124, 255, 0.18);
+        background: rgba(255, 252, 246, 0.96);
+        border-color: rgba(199, 154, 53, 0.22);
       }
 
       .main-nav a {
         border-radius: 18px;
         padding: 0.78rem 0.9rem;
-        background: rgba(238, 248, 255, 0.72);
+        background: rgba(246, 239, 226, 0.76);
       }
     }
 
