@@ -1,12 +1,12 @@
 ﻿# Nadav Teller Official Website
 
-Last updated: 2026-05-24
+Last updated: 2026-07-08
 
-Official website of Nadav Teller, author of Dual State Market Theory / תורת המדינה הדואלית.
+Official website of Nadav Teller, author of Dual State Market Theory / תורת המדינה הדואלית and The Secular God / האלוהים החילוני.
 
 This website presents a structured intellectual and practical path:
 
-Dual State Market Theory → Lectures → Books and Health → Advanced Witness Consciousness → Israeli Merkava.
+Dual State Market Theory → The Secular God → Lectures → Books and Health → Advanced Witness Consciousness → Israeli Merkava.
 
 The site is designed as one connected framework, not as separate unrelated pages. The central idea is a journey from understanding a new state model, through personal health and witness consciousness, into practical civic participation.
 
@@ -33,9 +33,32 @@ The site is designed as one connected framework, not as separate unrelated pages
 19. Israel housing crisis article: https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy.html
 20. English Israel housing crisis article: https://www.gen1.co.il/articles/israel-housing-crisis-ai-economy-en.html
 
+## New Featured Book
+
+The Secular God / האלוהים החילוני is a spiritual and philosophical book by Nadav Teller.
+
+Core Hebrew title: האלוהים החילוני
+English title: The Secular God
+Author: Nadav Teller / נדב טלר
+Homepage section: https://www.gen1.co.il/#the-secular-god
+
+The book is for curious seekers and secular readers who feel that reality contains something deeper than noise, fear, ego and daily struggle. It does not ask the reader to become religious, prove God or adopt a religious language. Instead, it offers a human and accessible gate to the divine through silence, witness consciousness, humility, compassion, breath, acceptance and releasing resistance to life.
+
+Central themes: secular spirituality, God beyond religious coercion, silence, witness consciousness, humility, compassion, breath, acceptance, pain, suffering, evil, death, ego, inner and social pendulum, secular prayer, flow, meaning, correction and inner quiet.
+
+Amazon editions:
+- English edition — ASIN: B0H1NG3J7F — https://www.amazon.com/dp/B0H1NG3J7F
+- Italian edition — ASIN: B0H7RC7D97 — https://www.amazon.it/dp/B0H7RC7D97
+- Portuguese edition — ASIN: B0H7H97F6Q — https://www.amazon.com.br/dp/B0H7H97F6Q
+- German edition — ASIN: B0H7CVKF8W — https://www.amazon.de/dp/B0H7CVKF8W
+- Hebrew edition — ASIN: B0H7BZST9R — https://www.amazon.com/dp/B0H7BZST9R
+
 ## Core Concepts
 
 - תורת המדינה הדואלית / Dual State Market Theory
+- האלוהים החילוני / The Secular God
+- Secular spirituality
+- God beyond religious coercion
 - Dual Market State
 - Dual Bank
 - Civic Floor
@@ -104,6 +127,13 @@ The lectures page is intended as a guidance center for understanding:
 Dual State Market Theory, Foundation Book / ספר יסוד, Breath / נשימה, Witness Consciousness, Treasures of Tao, the Civilizational Witness Scale and the reading path across Nadav Teller’s books.
 
 ## Books
+
+- האלוהים החילוני / The Secular God — spiritual and philosophical book by Nadav Teller
+  English: https://www.amazon.com/dp/B0H1NG3J7F
+  Italian: https://www.amazon.it/dp/B0H7RC7D97
+  Portuguese: https://www.amazon.com.br/dp/B0H7H97F6Q
+  German: https://www.amazon.de/dp/B0H7CVKF8W
+  Hebrew: https://www.amazon.com/dp/B0H7BZST9R
 
 - תורת המדינה הדואלית — Hebrew edition — ASIN: B0H24NQLD6
   https://www.amazon.com/dp/B0H24NQLD6
