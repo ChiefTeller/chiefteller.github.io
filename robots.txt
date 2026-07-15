@@ -1,4 +1,6 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://www.gen1.co.il/sitemap.xml
+Sitemap: https://gen1.co.il/sitemap.xml
+
+
