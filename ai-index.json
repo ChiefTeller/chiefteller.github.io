@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "GEN1",
-    "hebrew_name": "דור ראשון",
+    "hebrew_name": "דור1",
     "canonical_origin": "https://www.gen1.co.il/",
     "languages": ["he", "en"],
     "purpose": "A minimal bilingual website for Nadav Teller's lecture work, beginning with Stopping the Pendulum.",
@@ -11,7 +11,7 @@
       {
         "language": "he",
         "url": "https://www.gen1.co.il/",
-        "title": "דור ראשון GEN1 | עוצרים את המטוטלת - הרצאות, ספרים ותודעה",
+        "title": "דור1 GEN1| מאת נדב טלר | עוצרים את המטוטלת - הרצאה על ספרים ותודעה",
         "description": "עוצרים את המטוטלת: אתר הרצאות של נדב טלר עם דגש על הרצאות מעניינות, הרצאות ספרים, הרצאות רוחניות, מדעי המדינה, חברה, תודעה, דממה, טאואיזם, סטואיזם, קפיטליזם, סוציאליזם וגאולה."
       },
       {
@@ -122,7 +122,7 @@
     "גאולה",
     "נדב טלר",
     "עוצרים את המטוטלת",
-    "דור ראשון"
+    "דור1"
   ],
   "seo_keywords_en": [
     "lectures",

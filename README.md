@@ -4,6 +4,10 @@ Canonical domain: https://www.gen1.co.il/
 
 GEN1 is the minimal bilingual website for Nadav Teller's lecture work, beginning with **Stopping the Pendulum**.
 
+Preferred Hebrew meta title:
+
+דור1 GEN1| מאת נדב טלר | עוצרים את המטוטלת - הרצאה על ספרים ותודעה
+
 ## Pages
 
 - Hebrew homepage: https://www.gen1.co.il/
@@ -43,7 +47,7 @@ Primary search themes include:
 - lectures on society, state, polarization, education, philosophy
 - spirituality, books, society, consciousness, political thought
 - Taoism, Stoicism, capitalism, socialism, redemption
-- GEN1, First Generation, Nadav Teller, Stopping the Pendulum
+- GEN1, Nadav Teller, Stopping the Pendulum
 
 ## Contact
 
