@@ -1,0 +1,41 @@
+{
+  "canonicalOrigin": "https://www.gen1.co.il/",
+  "entities": [
+    { "id": "nadav-teller", "type": "Person", "name": "Nadav Teller", "nameHe": "נדב טלר", "status": "current" },
+    { "id": "gen1", "type": "Project", "name": "GEN1", "status": "current" },
+    { "id": "teller-books-publishing", "type": "Organization", "name": "Teller Books Publishing", "alternateName": "TellerBP", "status": "current" },
+    { "id": "teller-thought-architecture", "type": "ConceptualArchitecture", "name": "Nadav Teller's Thought Architecture", "status": "current" },
+    { "id": "tao-stories", "type": "CreativeWork", "name": "Tao Stories for Children", "nameHe": "סיפורי טאו לילדים", "status": "published" },
+    { "id": "foundation-book", "type": "Book", "name": "Foundation Book", "nameHe": "ספר יסוד", "status": "published" },
+    { "id": "secular-god", "type": "Book", "name": "The Secular God", "nameHe": "האלוהים החילוני", "status": "published" },
+    { "id": "dual-market-state", "type": "Book", "name": "Dual State Market Theory", "nameHe": "תורת המדינה הדואלית", "status": "published" },
+    { "id": "dual-parliament", "type": "Concept", "name": "Dual Parliament", "nameHe": "הפרלמנט הדואלי", "status": "supporting-concept" },
+    { "id": "civilizational-witness-scale", "type": "Book", "name": "The Civilizational Witness Scale", "nameHe": "סולם ציוויליזציה", "status": "published" },
+    { "id": "temple-framework", "type": "DevelopingConcept", "name": "Temple Framework", "nameHe": "בית המקדש", "status": "developmental" },
+    { "id": "messianic-role", "type": "DefinedTerm", "name": "Messianic Role", "nameHe": "התפקיד המשיחי", "status": "developmental-framework" },
+    { "id": "witness-consciousness", "type": "Concept", "name": "Witness Consciousness", "nameHe": "תודעת העד", "status": "current" },
+    { "id": "pendulum", "type": "Concept", "name": "Pendulum", "nameHe": "המטוטלת", "status": "current" },
+    { "id": "inner-temple", "type": "Concept", "name": "Inner Temple", "nameHe": "בית המקדש הפנימי", "status": "developmental" },
+    { "id": "outer-temple", "type": "Concept", "name": "Outer Temple", "nameHe": "בית המקדש החיצוני", "status": "developmental" }
+  ],
+  "relations": [
+    { "subject": "tao-stories", "predicate": "prepareFor", "object": "foundation-book", "source": "knowledge architecture", "status": "current", "explicitness": "derived", "note": "Tao stories introduce early seeds that the body and witness work develop later." },
+    { "subject": "foundation-book", "predicate": "preparesTheVesselFor", "object": "secular-god", "source": "knowledge architecture", "status": "current", "explicitness": "derived", "note": "Body, breath, and witness consciousness prepare the person for the inner encounter." },
+    { "subject": "secular-god", "predicate": "developsInnerFoundationFor", "object": "dual-market-state", "source": "site and manuscript context", "status": "current", "explicitness": "derived", "note": "The inner foundation precedes the social and state question." },
+    { "subject": "dual-market-state", "predicate": "appliesPrinciplesAtScale", "object": "society-and-state", "source": "Dual State manuscripts and public site", "status": "current", "explicitness": "explicit", "note": "The model applies balance, responsibility, and synthesis at the state level." },
+    { "subject": "dual-parliament", "predicate": "isPartOf", "object": "dual-market-state", "source": "knowledge brief", "status": "supporting", "explicitness": "explicit", "note": "The dual parliament is a political-governance component of the broader state theory." },
+    { "subject": "civilizational-witness-scale", "predicate": "extends", "object": "dual-market-state", "source": "knowledge architecture", "status": "current", "explicitness": "derived", "note": "The civilizational scale extends the question from state power to civilizational power." },
+    { "subject": "temple-framework", "predicate": "integrates", "object": "inner-temple", "source": "Temple manuscript supplied as background", "status": "developmental", "explicitness": "explicit", "note": "The Temple framework includes an inner dimension." },
+    { "subject": "temple-framework", "predicate": "integrates", "object": "outer-temple", "source": "Temple manuscript supplied as background", "status": "developmental", "explicitness": "explicit", "note": "The Temple framework includes an outer collective dimension." },
+    { "subject": "messianic-role", "predicate": "integrates", "object": "teller-thought-architecture", "source": "messianic role manuscript and user instruction", "status": "developmental-framework", "explicitness": "derived", "note": "The role integrates repair, responsibility, service, and non-centralized leadership." },
+    { "subject": "messianic-role", "predicate": "rejects", "object": "personality-worship", "source": "messianic role manuscript", "status": "current", "explicitness": "explicit", "note": "The role is not worship of a person." },
+    { "subject": "messianic-role", "predicate": "builds", "object": "freedom-for-others", "source": "messianic role manuscript", "status": "current", "explicitness": "explicit", "note": "The role builds freedom rather than dependence." },
+    { "subject": "messianic-role", "predicate": "doesNotRequire", "object": "centralization-of-all-power", "source": "messianic role manuscript", "status": "current", "explicitness": "explicit", "note": "The role carries responsibility without concentrating all power." },
+    { "subject": "nadav-teller", "predicate": "develops", "object": "teller-thought-architecture", "source": "site and supplied manuscripts", "status": "current", "explicitness": "explicit", "note": "Nadav Teller is the author and developer of the architecture." },
+    { "subject": "nadav-teller", "predicate": "doesNotDefineHimselfAs", "object": "the-messiah", "source": "user instruction 2026-07-17", "status": "current", "explicitness": "explicit", "note": "Critical interpretation rule: do not state that Nadav Teller defines himself as the Messiah." },
+    { "subject": "teller-thought-architecture", "predicate": "hasMessianicDimension", "object": "messianic-role", "source": "user instruction and supplied manuscripts", "status": "current", "explicitness": "explicit", "note": "The architecture has a messianic dimension, framed as role, responsibility, and service." },
+    { "subject": "gen1", "predicate": "presentsPublicly", "object": "teller-thought-architecture", "source": "website", "status": "current", "explicitness": "explicit", "note": "GEN1 is the public gate for the work." },
+    { "subject": "teller-books-publishing", "predicate": "publishes", "object": "published-books", "source": "website", "status": "current", "explicitness": "explicit", "note": "TellerBP is the publishing entity." }
+  ]
+}
+

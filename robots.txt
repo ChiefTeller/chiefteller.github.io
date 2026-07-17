@@ -1,6 +1,10 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
+Allow: /knowledge/
+Allow: /ai/
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai.txt
 
-Sitemap: https://gen1.co.il/sitemap.xml
-
+Sitemap: https://www.gen1.co.il/sitemap.xml
 
