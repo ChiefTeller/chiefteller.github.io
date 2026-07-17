@@ -11,7 +11,7 @@ GEN1 הוא אתר מינימליסטי דו־לשוני לעולם ההרצאו
 ## עמודים
 
 - עמוד בית בעברית: https://www.gen1.co.il/
-- עמוד בית באנגלית: https://www.gen1.co.il/en.html
+- עמוד בית באנגלית: https://www.gen1.co.il/index-en.html
 - עמוד 404: https://www.gen1.co.il/404.html
 
 ## המסר המרכזי
@@ -30,7 +30,7 @@ GEN1 הוא אתר מינימליסטי דו־לשוני לעולם ההרצאו
 
 האתר כולל:
 
-- `index.html` ו־`en.html` עם מטא־דטה מלא, כתובות קנוניות, קישורי שפה, Open Graph, Twitter Card ו־JSON-LD.
+- `index.html` ו־`index-en.html` עם מטא־דטה מלא, כתובות קנוניות, קישורי שפה, Open Graph, Twitter Card ו־JSON-LD.
 - `robots.txt` לגישה של סורקים ולזיהוי מפת האתר.
 - `sitemap.xml` לעמודים הציבוריים בעברית ובאנגלית.
 - `llms.txt` כשכבת ידע פשוטה לסוכני בינה מלאכותית.

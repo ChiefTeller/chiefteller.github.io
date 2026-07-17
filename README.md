@@ -11,7 +11,7 @@ Preferred Hebrew meta title:
 ## Pages
 
 - Hebrew homepage: https://www.gen1.co.il/
-- English homepage: https://www.gen1.co.il/en.html
+- English homepage: https://www.gen1.co.il/index-en.html
 - 404 page: https://www.gen1.co.il/404.html
 
 ## Core Message
@@ -30,7 +30,7 @@ The lecture world connects books, spirit, spirituality, silence, Taoism, Stoicis
 
 The site includes:
 
-- `index.html` and `en.html` with full metadata, canonical URLs, hreflang links, Open Graph metadata, Twitter Card metadata, and JSON-LD structured data.
+- `index.html` and `index-en.html` with full metadata, canonical URLs, hreflang links, Open Graph metadata, Twitter Card metadata, and JSON-LD structured data.
 - `robots.txt` for crawler access and sitemap discovery.
 - `sitemap.xml` for the Hebrew and English public pages.
 - `llms.txt` as a plain-language knowledge file for AI agents.

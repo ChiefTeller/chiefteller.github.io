@@ -43,7 +43,7 @@ Books site:
 ## Public Pages
 
 - Hebrew homepage: https://www.gen1.co.il/
-- English homepage: https://www.gen1.co.il/en.html
+- English homepage: https://www.gen1.co.il/index-en.html
 - Error page: https://www.gen1.co.il/404.html
 
 The sitemap is available at:
