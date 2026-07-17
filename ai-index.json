@@ -1,0 +1,158 @@
+{
+  "site": {
+    "name": "GEN1",
+    "hebrew_name": "דור ראשון",
+    "canonical_origin": "https://www.gen1.co.il/",
+    "languages": ["he", "en"],
+    "purpose": "A minimal bilingual website for Nadav Teller's lecture work, beginning with Stopping the Pendulum.",
+    "primary_frame": ["lectures", "all lecture types", "interesting lectures", "book lectures", "spiritual lectures", "political science lectures", "books", "spirituality", "silence", "Taoism", "Stoicism", "political science", "capitalism", "socialism", "society", "consciousness", "redemption"],
+    "logo": "https://www.gen1.co.il/assets/gen1-logo.png",
+    "pages": [
+      {
+        "language": "he",
+        "url": "https://www.gen1.co.il/",
+        "title": "דור ראשון GEN1 | עוצרים את המטוטלת - הרצאות, ספרים ותודעה",
+        "description": "עוצרים את המטוטלת: אתר הרצאות של נדב טלר עם דגש על הרצאות מעניינות, הרצאות ספרים, הרצאות רוחניות, מדעי המדינה, חברה, תודעה, דממה, טאואיזם, סטואיזם, קפיטליזם, סוציאליזם וגאולה."
+      },
+      {
+        "language": "en",
+        "url": "https://www.gen1.co.il/en.html",
+        "title": "GEN1 | Stopping the Pendulum - Lectures, Books, Consciousness",
+        "description": "Stopping the Pendulum: a lecture website by Nadav Teller with emphasis on interesting lectures, book lectures, spiritual lectures, political science, society, consciousness, silence, Taoism, Stoicism, capitalism, socialism, and redemption."
+      }
+    ]
+  },
+  "speaker": {
+    "name_he": "נדב טלר",
+    "name_en": "Nadav Teller",
+    "roles_he": ["סופר", "איש חינוך", "פילוסוף", "משפטן", "חוקר מדינה ישראלי"],
+    "roles_en": ["author", "educator", "philosopher", "jurist", "Israeli researcher of the state"],
+    "summary_en": "Nadav Teller is an Israeli author, educator, philosopher, jurist, and researcher of the state. His work connects law, political thought, yoga, tai chi, qi gong, meditation, spiritual inquiry, consciousness, institutions, technology, and power."
+  },
+  "lecture": {
+    "title_he": "עוצרים את המטוטלת",
+    "title_en": "Stopping the Pendulum",
+    "category_he": ["הרצאות", "כל סוגי ההרצאות", "הרצאות מעניינות", "הרצאות ספרים", "הרצאות רוחניות", "הרצאות מדעי המדינה", "הרצאות חברה ותודעה", "הרצאות לארגונים", "הרצאות לחברות", "הרצאות לחוגי בית"],
+    "category_en": ["lectures", "all lecture types", "interesting lectures", "book lectures", "spiritual lectures", "political science lectures", "society and consciousness lectures", "lectures for organizations", "lectures for companies", "home salon lectures"],
+    "summary_he": "אתר הרצאות סביב המטוטלת האישית, החברתית והמדינית, המחבר בין הרצאות, ספרים, רוחניות, דממה, טאואיזם, סטואיזם, מדעי המדינה, קפיטליזם, סוציאליזם, חברה, תודעה וגאולה.",
+    "summary_en": "A lecture website around the personal, social, and state pendulum, connecting lectures, books, spirituality, silence, Taoism, Stoicism, political science, capitalism, socialism, society, consciousness, and redemption.",
+    "contact": {
+      "whatsapp": "https://wa.me/972546287677",
+      "email": "mailto:nadavtlr@gmail.com"
+    }
+  },
+  "flow": [
+    {
+      "id": "opening",
+      "he": "עוצרים את המטוטלת, הגיע הזמן להתחיל מחדש",
+      "en": "Stopping the Pendulum. It is time to begin again."
+    },
+    {
+      "id": "personal",
+      "title_he": "המטוטלת האישית",
+      "title_en": "The Personal Pendulum",
+      "movement_he": "מתגובה לעדות",
+      "movement_en": "From Reaction to Witnessing",
+      "poles_he": ["מחשבות", "רגשות"],
+      "poles_en": ["Thoughts", "Emotions"],
+      "concepts": ["The Secular God", "lectures", "spiritual lectures", "witness consciousness", "metacognition", "silence", "inner balance", "consciousness"]
+    },
+    {
+      "id": "social",
+      "title_he": "המטוטלת החברתית",
+      "title_en": "The Social Pendulum",
+      "movement_he": "מקיטוב לאחדות",
+      "movement_en": "From Polarization to Unity",
+      "poles_he": ["שמאל", "ימין"],
+      "poles_en": ["Left", "Right"],
+      "concepts": ["Dual State Theory", "lectures on society", "social polarization", "society", "human nature", "technology"]
+    },
+    {
+      "id": "state",
+      "title_he": "המטוטלת המדינית",
+      "title_en": "The State Pendulum",
+      "movement_he": "מכאוס לסדר",
+      "movement_en": "From Chaos to Order",
+      "poles_he": ["חברתנות", "הונתנות"],
+      "poles_en": ["Socialization", "Capitalization"],
+      "concepts": ["political science lectures", "political science", "state theory", "capitalism", "socialism", "chaos", "order", "redemption"]
+    },
+    {
+      "id": "lecture",
+      "title_he": "על ההרצאה",
+      "title_en": "About the Lecture",
+      "source_books": ["האלוהים החילוני", "תורת המדינה הדואלית", "סולם העדות הציוויליזציוני", "ספר יסוד", "ספרי טאו לילדים"],
+      "source_books_en": ["The Secular God", "Dual State Theory", "The Civilizational Witness Scale", "Book of Foundation", "Tao Stories for Children"],
+      "concepts": ["lectures", "book lectures", "spiritual lectures", "Taoism", "Stoicism", "Buddhism", "Jewish Kabbalah", "Zen", "effortless action", "true purpose", "witnessing", "redemption"]
+    },
+    {
+      "id": "contact",
+      "title_he": "על נדב טלר",
+      "title_en": "About Nadav Teller",
+      "whatsapp": "https://wa.me/972546287677",
+      "email": "mailto:nadavtlr@gmail.com"
+    }
+  ],
+  "seo_keywords_he": [
+    "הרצאות",
+    "כל סוגי ההרצאות",
+    "הרצאות מעניינות",
+    "הרצאות מעוררות השראה",
+    "הרצאות ספרים",
+    "הרצאות רוחניות",
+    "הרצאות מדעי המדינה",
+    "הרצאות לארגונים",
+    "הרצאות לחברות",
+    "הרצאות לחוגי בית",
+    "הרצאות על תודעה",
+    "הרצאות על חברה ומדינה",
+    "ספרים",
+    "רוח",
+    "רוחניות",
+    "דממה",
+    "טאואיזם",
+    "סטואיזם",
+    "מדעי המדינה",
+    "קפיטליזם",
+    "סוציאליזם",
+    "רוח",
+    "ספרים",
+    "חברה",
+    "תודעה",
+    "גאולה",
+    "נדב טלר",
+    "עוצרים את המטוטלת",
+    "דור ראשון"
+  ],
+  "seo_keywords_en": [
+    "lectures",
+    "all types of lectures",
+    "interesting lectures",
+    "inspirational lectures",
+    "book lectures",
+    "spiritual lectures",
+    "political science lectures",
+    "lectures for organizations",
+    "lectures for companies",
+    "home salon lectures",
+    "lectures on consciousness",
+    "society and state lectures",
+    "books",
+    "spirit",
+    "spirituality",
+    "silence",
+    "Taoism",
+    "Stoicism",
+    "political science",
+    "capitalism",
+    "socialism",
+    "spirituality",
+    "books",
+    "society",
+    "consciousness",
+    "redemption",
+    "Nadav Teller",
+    "Stopping the Pendulum",
+    "GEN1"
+  ]
+}

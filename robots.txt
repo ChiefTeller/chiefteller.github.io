@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /ai-index.json
+Disallow: /README.md
+Disallow: /README.he.md
+
+Sitemap: https://www.gen1.co.il/sitemap.xml
