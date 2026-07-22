@@ -35,6 +35,7 @@ The site includes:
 - `sitemap.xml` for the Hebrew and English public pages.
 - `llms.txt` as a plain-language knowledge file for AI agents.
 - `ai-index.json` as structured knowledge for AI agents and search systems.
+- `ai-model-he.txt` as the hidden text copied by the minimal Copy the Model button.
 
 ## Lecture SEO Focus
 

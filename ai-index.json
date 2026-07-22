@@ -86,6 +86,16 @@
       "concepts": ["lectures", "book lectures", "spiritual lectures", "Taoism", "Stoicism", "Buddhism", "Jewish Kabbalah", "Zen", "effortless action", "true purpose", "witnessing", "redemption"]
     },
     {
+      "id": "ai-model",
+      "title_he": "מודל בינה מלאכותית מבוססת תורתו של נדב טלר",
+      "title_en": "An Artificial Intelligence Model Based on Nadav Teller's Work",
+      "placement_he": "לפני הקטע על נדב טלר",
+      "placement_en": "Before the About Nadav Teller section",
+      "visible_behavior_he": "כותרת, שורת הסבר אחת וכפתור העתקה מינימליסטי",
+      "visible_behavior_en": "One title, one explanatory line, and a minimal copy button",
+      "copy_source": "https://www.gen1.co.il/ai-model-he.txt"
+    },
+    {
       "id": "contact",
       "title_he": "על נדב טלר",
       "title_en": "About Nadav Teller",

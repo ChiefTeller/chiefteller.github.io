@@ -50,6 +50,16 @@ The sitemap is available at:
 
 - https://www.gen1.co.il/sitemap.xml
 
+## AI Model Copy
+
+The Hebrew and English pages include a minimal "העתק את המודל" / "Copy the Model" button before the About Nadav Teller section.
+
+This button copies the hidden model text from:
+
+- https://www.gen1.co.il/ai-model-he.txt
+
+The visible page stays minimal: one title, one explanatory line, and one copy button.
+
 ## Lecture Summary
 
 "Stopping the Pendulum" is a lecture about the movement of the human being, society, and the state between opposing poles. It is part of a wider lecture world that can be described as lectures, book lectures, spiritual lectures, political science lectures, lectures about society, lectures about consciousness, and lectures about redemption.
