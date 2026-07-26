@@ -1,9 +1,11 @@
 User-agent: *
 Allow: /
-Allow: /llms.txt
+Allow: /knowledge/
+Allow: /ai/
 Allow: /ai-index.json
-Allow: /ai-model-he.txt
-Disallow: /README.md
-Disallow: /README.he.md
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai.txt
 
 Sitemap: https://www.gen1.co.il/sitemap.xml
+
