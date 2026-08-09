@@ -125,12 +125,8 @@ a {
   white-space: nowrap;
 }
 
+.header-nav .nav-home-link,
 .header-nav .nav-book-link {
-  color: var(--ink);
-  font-weight: 650;
-}
-
-.header-nav .nav-gen1-link {
   color: var(--ink);
   font-weight: 650;
 }
