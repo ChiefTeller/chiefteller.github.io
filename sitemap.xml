@@ -3,12 +3,20 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.gen1.co.il/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="he" href="https://www.gen1.co.il/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gen1.co.il/index-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gen1.co.il/" />
+  </url>
+  <url>
+    <loc>https://www.gen1.co.il/books.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://www.gen1.co.il/books.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gen1.co.il/books.html" />
   </url>
   <url>
     <loc>https://www.gen1.co.il/index-en.html</loc>

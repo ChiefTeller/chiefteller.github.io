@@ -43,6 +43,7 @@ Books site:
 ## Public Pages
 
 - Hebrew homepage: https://www.gen1.co.il/
+- Books overview page: https://www.gen1.co.il/books.html
 - English homepage: https://www.gen1.co.il/index-en.html
 - Error page: https://www.gen1.co.il/404.html
 
@@ -74,11 +75,12 @@ It connects spiritual inquiry, political science, books, education, society, con
 
 The lecture is connected to Nadav Teller's body of work, including:
 
-- The Secular God
-- Dual State Theory
-- The Civilizational Witness Scale
-- Book of Foundation
-- Tao Stories for Children
+- תורת זוגא / Zuga Theory
+- תורת זוגא המדינה האחודה / Zuga Unified State Theory
+- תורת זוגא האנושות כולה / Zuga Humanity
+- האלוהים החילוני / The Secular God
+- זיכוך כתבים פילוסופים / Refined Philosophical Writings
+- משלי זוגא and כה אמר אלוה / poetry, parables and spiritual writing
 
 ## Core Concepts
 

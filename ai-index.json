@@ -15,6 +15,12 @@
         "description": "עוצרים את המטוטלת: אתר הרצאות של נדב טלר עם דגש על הרצאות מעניינות, הרצאות ספרים, הרצאות רוחניות, מדעי המדינה, חברה, תודעה, דממה, טאואיזם, סטואיזם, קפיטליזם, סוציאליזם וגאולה."
       },
       {
+        "language": "he",
+        "url": "https://www.gen1.co.il/books.html",
+        "title": "ספרים | GEN1 דור1 | נדב טלר",
+        "description": "עמוד ספרים קצר על תורת זוגא, תורת זוגא המדינה האחודה, תורת זוגא האנושות כולה, האלוהים החילוני, זיכוך כתבים פילוסופים, משלי זוגא וכה אמר אלוה."
+      },
+      {
         "language": "en",
         "url": "https://www.gen1.co.il/index-en.html",
         "title": "GEN1 | Stopping the Pendulum - Lectures, Books, Consciousness",
@@ -81,8 +87,8 @@
       "id": "lecture",
       "title_he": "על ההרצאה",
       "title_en": "About the Lecture",
-      "source_books": ["האלוהים החילוני", "תורת המדינה הדואלית", "סולם העדות הציוויליזציוני", "ספר יסוד", "ספרי טאו לילדים"],
-      "source_books_en": ["The Secular God", "Dual State Theory", "The Civilizational Witness Scale", "Book of Foundation", "Tao Stories for Children"],
+      "source_books": ["תורת זוגא", "תורת זוגא המדינה האחודה", "תורת זוגא האנושות כולה", "האלוהים החילוני", "זיכוך כתבים פילוסופים", "משלי זוגא", "כה אמר אלוה"],
+      "source_books_en": ["Zuga Theory", "Zuga Unified State Theory", "Zuga Humanity", "The Secular God", "Refined Philosophical Writings", "Mishlei Zuga", "Thus Spoke Eloah"],
       "concepts": ["lectures", "book lectures", "spiritual lectures", "Taoism", "Stoicism", "Buddhism", "Jewish Kabbalah", "Zen", "effortless action", "true purpose", "witnessing", "redemption"]
     },
     {
