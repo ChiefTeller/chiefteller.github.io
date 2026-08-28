@@ -125,8 +125,12 @@ a {
   white-space: nowrap;
 }
 
-.header-nav .nav-home-link,
 .header-nav .nav-book-link {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.header-nav .nav-gen1-link {
   color: var(--ink);
   font-weight: 650;
 }
@@ -611,11 +615,6 @@ blockquote {
   scroll-margin-top: 0;
 }
 
-.book-content .book-title-heading,
-.book-content .book-title-heading,
-.book-content .book-title-heading,
-.book-content .book-title-heading,
-.book-content .book-title-heading,
 .book-content h1,
 .book-content h2,
 .book-content h3 {
@@ -624,11 +623,6 @@ blockquote {
   letter-spacing: 0;
 }
 
-.book-content .book-title-heading,
-.book-content .book-title-heading,
-.book-content .book-title-heading,
-.book-content .book-title-heading,
-.book-content .book-title-heading,
 .book-content h1 {
   display: block;
   margin: 0 0 28px;
@@ -931,11 +925,6 @@ html[data-depth="reading"] .signal-strip {
     font-size: 0.88rem;
   }
 
-  .book-content .book-title-heading,
-  .book-content .book-title-heading,
-  .book-content .book-title-heading,
-  .book-content .book-title-heading,
-  .book-content .book-title-heading,
   .book-content h1 {
     font-size: 2.48rem;
   }
