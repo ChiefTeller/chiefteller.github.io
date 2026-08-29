@@ -21,11 +21,36 @@
         "description": "עמוד ספרים קצר על תורת זוגא, תורת זוגא המדינה האחודה, תורת זוגא האנושות כולה, האלוהים החילוני, זיכוך כתבים פילוסופים, משלי זוגא וכה אמר אלוה."
       },
       {
+        "language": "he",
+        "url": "https://www.gen1.co.il/zuga-theory.html",
+        "title": "∞ = Zuga | זוגא",
+        "description": "[Zuga Structure = מבנה זוגא]. Zuga = Z= (Z1, Z2, R, τ, I, P). Z(0, ∞)."
+      },
+      {
+        "language": "he",
+        "url": "https://www.gen1.co.il/zuga-full.html",
+        "title": "תורת זוגא | הספר המלא",
+        "description": "עמוד קריאה מלא לתורת זוגא, כולל מבנה זוגא: Zuga = Z= (Z1, Z2, R, τ, I, P), Ω, ∀Zx ו-Z(0, ∞)."
+      },
+      {
         "language": "en",
         "url": "https://www.gen1.co.il/index-en.html",
         "title": "GEN1 | Stopping the Pendulum - Lectures, Books, Consciousness",
         "description": "Stopping the Pendulum: a lecture website by Nadav Teller with emphasis on interesting lectures, book lectures, spiritual lectures, political science, society, consciousness, silence, Taoism, Stoicism, capitalism, socialism, and redemption."
       }
+    ],
+    "zuga_structure_formula": [
+      "[Zuga Structure = מבנה זוגא]",
+      "Zuga = Z= (Z1, Z2, R, τ, I, P)",
+      "Z1= Z Phenomenon | Z2= Z Phenomenon;",
+      "R= Relations | τ= Tension | I= Information;",
+      "P = Infinite Possibilities and States, |P| = ∞ ;",
+      "α= Alpha State, β= Beta State…;",
+      "Δ= Change;",
+      "⇄ = Transition and mutual influence;",
+      "Ω={Z1,Z2,Z3,…},∣Ω∣=∞ ;",
+      "∀Zx∈Ω:Zx=(Zx1,Zx2,Rx,τx,Ix,Px);",
+      "Z(0, ∞)"
     ]
   },
   "speaker": {

@@ -44,6 +44,9 @@ Books site:
 
 - Hebrew homepage: https://www.gen1.co.il/
 - Books overview page: https://www.gen1.co.il/books.html
+- Zuga Theory page: https://www.gen1.co.il/zuga-theory.html
+- Zuga full reader: https://www.gen1.co.il/zuga-full.html
+- Zuga full Markdown: https://www.gen1.co.il/zuga-full.md
 - English homepage: https://www.gen1.co.il/index-en.html
 - Error page: https://www.gen1.co.il/404.html
 
@@ -83,6 +86,20 @@ The lecture is connected to Nadav Teller's body of work, including:
 - משלי זוגא and כה אמר אלוה / poetry, parables and spiritual writing
 
 ## Core Concepts
+
+## Zuga Structure Formula
+
+[Zuga Structure = מבנה זוגא]
+Zuga = Z= (Z1, Z2, R, τ, I, P)
+Z1= Z Phenomenon | Z2= Z Phenomenon;
+R= Relations | τ= Tension | I= Information;
+P = Infinite Possibilities and States, |P| = ∞ ;
+α= Alpha State, β= Beta State…;
+Δ= Change;
+⇄ = Transition and mutual influence;
+Ω={Z1,Z2,Z3,…},∣Ω∣=∞ ;
+∀Zx∈Ω:Zx=(Zx1,Zx2,Rx,τx,Ix,Px);
+Z(0, ∞)
 
 - Stopping the Pendulum
 - personal pendulum
