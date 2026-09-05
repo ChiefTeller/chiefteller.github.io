@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.gen1.co.il/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="he" href="https://www.gen1.co.il/" />
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://www.gen1.co.il/books.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="he" href="https://www.gen1.co.il/books.html" />
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://www.gen1.co.il/zuga-theory.html</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="he" href="https://www.gen1.co.il/zuga-theory.html" />
@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://www.gen1.co.il/zuga-full.html</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="he" href="https://www.gen1.co.il/zuga-full.html" />
@@ -36,7 +36,7 @@
   </url>
   <url>
     <loc>https://www.gen1.co.il/index-en.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="he" href="https://www.gen1.co.il/" />
