@@ -1,461 +1,180 @@
 <!doctype html>
 <html lang="he" dir="rtl">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gen1=0</title><style>:root{color-scheme:dark;--bg:#030d16;--ink:#e5f5f4;--muted:#9eb9c3;--cyan:#7be7dd;--gold:#efcf94;--line:#759ca530;--strength:.35}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,sans-serif}button,a,input,summary{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:5px}button{touch-action:manipulation}button:disabled{opacity:.45;cursor:default}[hidden]{display:none!important}canvas{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}header{height:90px;display:flex;align-items:center;justify-content:space-between;padding:0 4vw;gap:18px}.brand{font:22px Georgia;letter-spacing:4px;text-decoration:none;color:var(--ink)}.brand span{color:var(--cyan)}.header-title{font-size:14px;color:var(--muted);letter-spacing:2px}.header-actions{display:flex;gap:8px}.quiet{border:1px solid var(--line);border-radius:30px;background:#0a1b2370;padding:9px 14px;font-size:14px}.quiet:hover{border-color:#7be7dd80}.intro{min-height:calc(100svh - 90px);text-align:center;display:flex;align-items:center;flex-direction:column;justify-content:center;padding:20px 20px 80px}.eyebrow{font-size:14px;letter-spacing:2px;color:var(--cyan);margin:0 0 16px}h1{font-weight:400;font-size:clamp(30px,4vw,49px);margin:0}h2{font-size:27px;font-weight:400;margin:16px 0}.equation{font:clamp(90px,15vw,190px) Georgia;letter-spacing:-6px;margin:24px 0 10px;text-shadow:0 0 70px #6ce0d450}.intro-formula{font:28px Georgia;color:var(--cyan);letter-spacing:4px}.intro-copy{font-size:18px;line-height:1.8;color:var(--muted);margin:24px 0}.begin{width:156px;height:156px;border-radius:50%;background:radial-gradient(circle,#153b4690,transparent);border:1px solid #7be7dd66;position:relative;font-size:15px;transition:transform .6s,box-shadow .6s;box-shadow:0 0 65px #7be7dd15}.begin:before{content:'';position:absolute;inset:12px;border:1px solid #7be7dd25;border-radius:50%;transition:inset .6s}.begin:hover{transform:scale(1.06);box-shadow:0 0 90px #7be7dd40}.begin:hover:before{inset:-14px}.begin span{display:block;font-size:32px;margin-bottom:10px}.footnote{font-size:13px;color:#809da9;margin-top:25px}.intro.depart{animation:depart .7s ease both}.trail{display:flex;gap:7px;align-items:center;flex-wrap:wrap;padding:10px 4vw 22px;min-height:50px;font-size:14px}.trail button{background:none;border:0;color:var(--muted);padding:6px}.trail button:last-of-type{color:var(--cyan)}.trail span{color:#4f7786}.experience{display:grid;grid-template-columns:minmax(0,1fr) 385px;direction:ltr;max-width:1700px;margin:auto;padding:0 4vw;gap:3vw}.universe{min-width:0;direction:rtl}.scene-heading{text-align:center;padding:8px 10px}.scene-heading h1{font-size:clamp(28px,3vw,42px)}.scene-heading>p:last-child{color:var(--muted);font-size:16px;line-height:1.6;margin:14px auto 0;max-width:550px}.stage{height:clamp(390px,51vh,580px);position:relative;isolation:isolate;margin-top:4px;direction:ltr}.links{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}.links path{fill:none;stroke:#75dcd747;stroke-width:1;vector-effect:non-scaling-stroke;stroke-dasharray:5 9;animation:flow 18s linear infinite}.links .halo{stroke:#7ce8db20;stroke-dasharray:0;stroke-width:1}.node{--size:90px;position:absolute;left:var(--x);top:var(--y);width:var(--size);height:var(--size);transform:translate(-50%,-50%);border-radius:50%;border:0;background:none;padding:0;isolation:isolate;animation:emerge .85s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--delay,0s);color:var(--cyan)}.node .orb{position:absolute;inset:0;border:1px solid #7be7dd65;background:radial-gradient(circle at 30% 25%,#9fffe925,#14475730 60%,#0b1b24aa);border-radius:50%;box-shadow:inset 0 0 25px #7be7dd0c,0 0 35px #7be7dd13;transition:transform .5s,border-color .5s,box-shadow .5s;animation:drift 6s ease-in-out infinite;animation-delay:var(--delay)}.node .orb:after{content:'';position:absolute;inset:-8px;border:1px solid #7be7dd13;border-radius:50%;transition:inset .5s}.node:hover .orb,.node:focus-visible .orb{transform:scale(1.17);box-shadow:0 0 60px #7be7dd45;border-color:#c9fff5}.node:hover .orb:after{inset:-16px}.node .node-symbol{font:clamp(17px,1.9vw,24px) Georgia;position:relative;z-index:1;display:block;direction:ltr}.node .node-name{position:absolute;top:calc(100% + 13px);left:50%;transform:translateX(-50%);width:140px;font-size:15px;line-height:1.4;color:var(--ink);direction:rtl}.node .node-name small{display:block;color:#829fab;font-size:12px;margin-top:4px}.node.center{--size:116px;color:var(--gold)}.node.center .orb{border-color:#efcf9480;background:radial-gradient(circle at 30% 25%,#f2d3a033,#16384750 60%,#0d1d27);box-shadow:0 0 70px #efcf9415}.node.center .node-name{font-size:16px;color:var(--gold)}.stage.zooming .node:not(.chosen){opacity:0;transition:opacity .3s}.stage.zooming .chosen{z-index:8;animation:zoom .5s forwards}.boundaries{display:flex;direction:ltr;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding:17px 0;margin-top:5px;gap:10px}.boundaries button{background:none;border:0}.boundaries button>span{font:32px Georgia;display:block;color:var(--cyan)}.boundaries small{display:block;font-size:13px;color:var(--muted);margin-top:5px}.boundaries .water{font-size:14px;color:var(--muted);direction:rtl;line-height:1.7;max-width:230px}.boundaries .water span{display:inline;font:20px Georgia;color:var(--cyan)}.inspector{direction:rtl;background:linear-gradient(135deg,#10303b80,#08151fd9);border:1px solid var(--line);border-radius:6px;padding:24px;align-self:start;box-shadow:0 20px 80px #0002}.panel-top{display:flex;justify-content:space-between;align-items:center;min-height:31px;color:var(--muted);font-size:13px}.symbol{font:22px Georgia;color:var(--gold);margin:20px 0 0;overflow-wrap:anywhere}.description{font-size:16px;line-height:1.85;color:#bdd0d7;margin:0 0 20px}.formula{font:17px/1.8 Georgia;background:#010c1555;border-right:2px solid #7be7dd70;padding:12px 14px;white-space:pre-line;overflow-wrap:anywhere;text-align:left;color:#c6f7f0}.related{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0}.related button{font-size:13px;border:1px solid #6d9fa340;background:#0a232db0;border-radius:18px;padding:8px 11px}.related button:hover{border-color:var(--gold);color:var(--gold)}.small-heading{font-size:13px;color:var(--muted);margin:25px 0 13px}.component-buttons{display:flex;gap:8px}.component-buttons button{flex:1;background:none;border:0;border-bottom:1px solid var(--line);padding:8px 2px;font:23px Georgia;color:var(--muted)}.component-buttons small{font:13px Arial;display:block;margin:6px 0}.component-buttons button[aria-pressed=true]{border-color:var(--cyan);color:var(--cyan)}#fieldText{font-size:15px;line-height:1.75;color:#b7cdd4;min-height:75px}.lab{border-top:1px solid var(--line);padding-top:20px;margin-top:20px}.lab label{font-size:15px;display:flex;justify-content:space-between;gap:10px}.lab output{font:15px Georgia;color:var(--gold);direction:ltr}input[type=range]{width:100%;accent-color:var(--cyan);margin:20px 0 7px;cursor:ew-resize}.range-labels{display:flex;justify-content:space-between;font:14px Georgia;color:#aac2ca}.range-labels button{font:14px Georgia;color:var(--gold);background:none;border:0}#labNote{font-size:13px;line-height:1.65;color:#8ba9b7}.witness{display:flex;justify-content:space-between;align-items:center;width:100%;border:1px solid #efcf9466;border-radius:3px;background:#cfb16e0c;color:var(--gold);padding:13px;font-size:14px}.witness:hover{background:#cfb16e22}.witness span{font:17px Georgia;direction:ltr}.witness-result{font-size:14px;line-height:1.75;color:#d7c59e;margin-bottom:0}.source{border-top:1px solid var(--line);margin-top:25px;padding-top:18px;font-size:14px;color:var(--muted)}summary{cursor:pointer}.source pre{font:14px/1.85 Arial;white-space:pre-wrap;overflow-wrap:anywhere;max-height:430px;overflow:auto;text-align:start}.bottom-note{font-size:13px;color:#7898a6;text-align:center;padding:20px 20px 30px;line-height:1.8}.bottom-note span{display:inline-block;margin:0 12px;color:#97b6be}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}body.paused .orb,body.paused .links path{animation-play-state:paused}#pulse{position:absolute;border:1px solid #efcf9466;border-radius:50%;width:110px;height:110px;left:50%;top:44%;transform:translate(-50%,-50%);pointer-events:none;opacity:0}#pulse.flash{animation:ripple 1s ease-out}body.still .links{opacity:.2}@keyframes flow{to{stroke-dashoffset:-300}}@keyframes drift{50%{translate:0 -7px}}@keyframes emerge{from{opacity:0;translate:calc((50 - var(--nx))*1%) calc((44 - var(--ny))*1%);scale:.3}to{opacity:1;translate:0 0;scale:1}}@keyframes zoom{to{scale:1.8;opacity:0;filter:blur(4px)}}@keyframes ripple{from{opacity:1;scale:.7}to{opacity:0;scale:5}}@keyframes depart{to{opacity:0;scale:1.2;filter:blur(8px)}}@media(min-width:1600px){.experience{grid-template-columns:minmax(0,1fr) 420px}}@media(max-width:1000px){.experience{gap:20px;padding:0 24px;grid-template-columns:minmax(0,1fr) 330px}.inspector{padding:20px}.node{--size:72px}.node.center{--size:96px}.node .node-name{width:110px;font-size:14px}.node .node-symbol{font-size:19px}.stage{height:420px}.boundaries .water{max-width:150px;font-size:13px}}@media(max-width:760px){header{height:80px;padding:0 20px}.header-title{display:none}.quiet{font-size:13px;padding:9px 11px}.experience{display:flex;flex-direction:column;padding:0 16px;gap:18px}.universe{width:100%}.trail{padding:4px 16px 15px}.stage{height:405px}.node{--size:70px}.node.center{--size:94px}.scene-heading h1{font-size:29px}.scene-heading>p:last-child{font-size:15px;max-width:320px}.inspector{width:100%;padding:23px}.node .node-name{width:105px;font-size:14px}.node .node-name small{font-size:12px}.node .node-symbol{font-size:18px}.boundaries{padding:15px 5px}.boundaries .water{max-width:165px}.intro{min-height:calc(100svh - 80px)}.intro-copy{font-size:17px}.begin{width:135px;height:135px;font-size:14px}.symbol{font-size:23px}#fieldText{min-height:55px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-
-.takeaway{border-right:2px solid #efcf9470;padding:0 14px;margin:22px 0}.takeaway .small-heading{color:var(--gold);margin:0 0 9px}.takeaway>p:last-child{font-size:16px;line-height:1.8;color:#dbded0;margin:0}.lab-title{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:16px}.tension-chain{font:13px/1.8 Georgia;text-align:center;color:var(--gold);margin:15px -8px 0;white-space:nowrap}.pendulum{touch-action:none;cursor:grab;user-select:none;margin:5px 0 17px}.pendulum:active{cursor:grabbing}.pendulum svg{display:block;width:100%;height:auto;overflow:visible}.swing-arc{fill:none;stroke:#7be7dd30;stroke-dasharray:3 5}.axis{stroke:#7be7dd25;stroke-dasharray:2 5}.pivot{fill:#efcf94}#pendulumRod{stroke:#bce3dc;stroke-width:1.5}#pendulumBob{fill:#8ae5d6;stroke:#ecfff8;stroke-width:1;filter:drop-shadow(0 0 9px #7be7dd60)}.pendulum-labels{display:flex;justify-content:space-between;color:#9eb9c3;font:13px Georgia;margin-top:-8px}.pendulum-actions{display:flex;gap:8px;margin:0 0 23px}.pendulum-actions button{flex:1;background:#153e4555;border:1px solid #7be7dd44;border-radius:20px;padding:9px 8px;font-size:14px}.pendulum-actions button:hover{border-color:var(--cyan)}.lab-boundary{font-size:13px;color:#8ba9b7;line-height:1.65;margin-bottom:0}.lab-boundary[dir=ltr]{color:var(--gold);text-align:center}.node .node-symbol{font-size:clamp(15px,1.7vw,22px)}.node.center .node-symbol{font-size:22px}body.still .orb,body.still .links path{animation-play-state:paused}@media(max-width:1000px){.node .node-symbol{font-size:15px}.node.center .node-symbol{font-size:18px}}
-
-.reading{max-width:900px;margin:80px auto;padding:35px 25px;border-top:1px solid #759ca530;line-height:1.9}.reading h2{font-size:30px}.reading h3{font-size:24px;color:var(--cyan)}.reading article{padding:32px 0;border-bottom:1px solid #759ca530;scroll-margin-top:30px}.reading p{font-size:17px;color:#bfd4db}.reading a{color:#a2eae1;text-underline-offset:4px}.reading nav{font-size:15px;line-height:2.2}.reading-formula{overflow-wrap:anywhere;font-family:Georgia;text-align:left}.reading dt{color:var(--gold);margin-top:15px}.reading dd{margin:4px 0 15px}.reading summary{color:var(--cyan)}.reading-link{text-decoration:none;color:var(--cyan)}@media(max-width:600px){.reading-link{font-size:12px}.header-actions{gap:5px}header{padding:0 12px}.brand{font-size:18px;letter-spacing:2px}.quiet{padding:8px}.reading{margin-top:35px}}</style><meta name="description" content="אוקיינוס זוגא אינטראקטיבי: זוגא בראשית, קיום ואי־קיום, דממה, אינסוף, תנועה, עדות והמדינה האחודה."><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large"><link rel="canonical" href="https://www.gen1.co.il/"><meta property="og:type" content="website"><meta property="og:locale" content="he_IL"><meta property="og:site_name" content="Gen1=0"><meta property="og:title" content="Gen1=0"><meta property="og:description" content="אוקיינוס זוגא אינטראקטיבי: זוגא בראשית, קיום ואי־קיום, דממה, אינסוף, תנועה, עדות והמדינה האחודה."><meta property="og:url" content="https://www.gen1.co.il/"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Gen1=0"><meta name="twitter:description" content="אוקיינוס זוגא אינטראקטיבי: זוגא בראשית, קיום ואי־קיום, דממה, אינסוף, תנועה, עדות והמדינה האחודה."><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://www.gen1.co.il/#website", "name": "Gen1=0", "alternateName": "Zuga Genesis", "url": "https://www.gen1.co.il/", "inLanguage": "he"}, {"@type": "WebPage", "@id": "https://www.gen1.co.il/#page", "url": "https://www.gen1.co.il/", "name": "Gen1=0", "description": "אוקיינוס זוגא אינטראקטיבי: זוגא בראשית, קיום ואי־קיום, דממה, אינסוף, תנועה, עדות והמדינה האחודה.", "inLanguage": "he", "isPartOf": {"@id": "https://www.gen1.co.il/#website"}, "about": [{"@type": "Thing", "name": "זוגא בראשית"}, {"@type": "Thing", "name": "תורת המדינה האחודה"}]}]}</script></head>
-<body><canvas id="sea" aria-hidden="true"></canvas>
-<header><a class="brand" href="#" id="brand" aria-label="חזרה לראשית" dir="ltr">GEN1<span>.</span></a><span class="header-title">זוגא / בראשית</span><div class="header-actions"><a class="quiet reading-link" href="zuga-genesis.html">זוגא בראשית · הטקסט</a><button class="quiet" id="motion">השהיית תנועה</button><button class="quiet" id="home" hidden>אל האוקיינוס ↗</button></div></header>
-<main>
-<section id="intro" class="intro"><p class="eyebrow">לפני ההבדלה</p><h1>זוגא בראשית</h1><div class="equation" dir="ltr">1 = 0</div><div class="intro-formula" dir="ltr">Z₀ = Z∞</div><p class="intro-copy">כל שם אשר אתן לו<br>יהיה רחוק משמו האמיתי.</p><button id="begin" class="begin"><span aria-hidden="true">↔</span>לפתוח את המרחב</button><p class="footnote">נגיעה בראשית. אינסוף דרכים פנימה.</p></section>
-<section id="world" hidden>
-<nav id="trail" class="trail" aria-label="מסלול החקירה"></nav>
-<div class="experience"><section class="universe" aria-label="מרחב זוגאות אינטראקטיבי"><div class="scene-heading"><p class="eyebrow" id="scope">Ω / אוקיינוס הזוגאות</p><h1 id="sceneTitle" tabindex="-1">אוקיינוס בתוך כל טיפה.</h1><p id="sceneHint">בחרו זוגא. היכנסו אל היחסים שבתוכה.</p></div>
-<div id="stage" class="stage"><svg id="links" class="links" viewBox="0 0 1000 650" preserveAspectRatio="none" aria-hidden="true"></svg><div id="nodes"></div><span id="pulse" aria-hidden="true"></span></div>
-<div class="boundaries"><button data-open="zero"><span dir="ltr">Z₀</span><small>דממה · חקירה</small></button><button class="water" id="water" data-open="water">גם המים שבין הטיפות הם זוגא <span>⇄</span></button><button data-open="infinity"><span dir="ltr">Z∞</span><small>אי־מוגבלות · חקירה</small></button></div>
-</section>
-<aside id="inspector" class="inspector"><div class="panel-top"><span id="panelType">המבנה</span><button id="back" class="quiet" hidden>חזרה ↗</button></div><div class="symbol" id="symbol" dir="ltr">Z = (Z₁, Z₂, R, τ, I, P)</div><h2 id="detailTitle">הטיפה. המים. האוקיינוס.</h2><p class="description" id="description"></p><div id="formula" class="formula" dir="ltr"></div><div class="takeaway"><p class="small-heading">מה זה אומר בפשטות?</p><p id="conclusion"></p></div><div id="related" class="related"></div>
-<div class="components"><p class="small-heading">נכנסים אל המבנה</p><div class="component-buttons" aria-label="מרכיבי זוגא"><button data-field="R" aria-pressed="true">R <small>יחסים</small></button><button data-field="T" aria-pressed="false">τ <small>מתח</small></button><button data-field="I" aria-pressed="false">I <small>מידע</small></button><button data-field="P" aria-pressed="false">P <small>אפשרויות</small></button></div><p id="fieldText" aria-live="polite"></p></div>
-<div id="lab" class="lab"><div class="lab-title">נוגעים במתח <output id="tensionValue" dir="ltr">τ = 0</output></div>
-<div class="tension-chain" dir="ltr">τ∞ ⇄ −τmax ⇆ τ(Z₀) ⇆ +τmax ⇄ τ∞</div>
-<div id="pendulum" class="pendulum" aria-label="מטוטלת מתח — אפשר לגרור ולשחרר"><svg viewBox="0 0 320 175" aria-hidden="true"><path class="swing-arc" d="M 40 87 A 140 140 0 0 0 280 87"/><path class="axis" d="M 160 13 L 160 155"/><circle class="pivot" cx="160" cy="13" r="3"/><line id="pendulumRod" x1="160" y1="13" x2="160" y2="145"/><circle id="pendulumBob" cx="160" cy="145" r="13"/></svg><div class="pendulum-labels" dir="ltr"><span>−τmax</span><span>τ(Z₀)</span><span>+τmax</span></div></div>
-<div class="pendulum-actions"><button id="boost">לחזק ↔</button><button id="damp">לרסן</button><button id="still">דממה</button></div>
-<label for="drive">עוצמת התנודה <output id="driveValue">35%</output></label><input type="range" id="drive" min="0" max="100" value="35" dir="ltr">
-<p id="labNote">גררו את המטוטלת ושחררו, או חזקו את התנודה. חיזוק מרחיב ומאיץ את התנועה בהמחשה.</p><p class="lab-boundary" dir="ltr">|−τmax| = |+τmax|</p><p class="lab-boundary">שני הקצוות סימטריים. τ∞ הוא מרחב מצבי מתח בלתי מוגבל; ההמחשה מציגה חלון סופי בתוכו.</p></div>
-</aside></div>
-<p class="bottom-note">כל טיפה היא מרחב. כל מרחב הוא גם טיפה. <span dir="ltr">Zₙ ≺ ZGenesis ≺ Zₙ</span></p>
-</section><section id="reading" class="reading"><h2>זוגא בראשית — קיום, מרחב ותנועה</h2><p>משוואת זוגא מציעה לתאר תופעות דרך יחסים, מתח, מידע ואפשרויות. כאן אפשר לקרוא ברצף את ההסברים המופיעים באוקיינוס.</p><p><a href="zuga-genesis.html">זוגא בראשית (Zuga Genesis) — המשוואה והמדינה האחודה בטקסט מלא</a></p><nav aria-label="נושאי הקריאה"><a href="#zug-ocean">אוקיינוס הזוגאות</a> · <a href="#zug-god">אלוהים</a> · <a href="#zug-genesis">בראשית</a> · <a href="#zug-zero">דממה</a> · <a href="#zug-infinity">אי־מוגבלות</a> · <a href="#zug-water">המים שבין הטיפות</a> · <a href="#zug-witness">העד</a> · <a href="#zug-self">העצמי</a> · <a href="#zug-human">האדם בצלם</a> · <a href="#zug-humanWitness">העד האנושי</a> · <a href="#zug-information">גבולות הידיעה</a> · <a href="#zug-reality">יחסות ⇄ קוונטים</a> · <a href="#zug-relativity">יחסות</a> · <a href="#zug-sr">יחסות פרטית</a> · <a href="#zug-gr">יחסות כללית</a> · <a href="#zug-quantum">מכניקת קוונטים</a> · <a href="#zug-qft">שדות קוונטיים</a> · <a href="#zug-qg">כבידה קוונטית</a> · <a href="#zug-state">מדינה</a> · <a href="#zug-economy">כלכלה רב־מסלולית</a> · <a href="#zug-floor">רצפה אזרחית</a> · <a href="#zug-consortium">קונצרן לאומי אחוד</a> · <a href="#zug-flywheel">גלגלי התנופה</a> · <a href="#zug-institutions">מבנה הרשויות</a> · <a href="#zug-parliament">בית העם</a> · <a href="#zug-districts">בית המחוזות</a> · <a href="#zug-government">ממשלה מקצועית</a> · <a href="#zug-elections">תחלופה מדורגת</a> · <a href="#zug-oversight">בקרה על התכלית</a> · <a href="#zug-development">התפתחות האדם</a> · <a href="#zug-education">חינוך אחוד</a> · <a href="#zug-health">בריאות מניעתית</a> · <a href="#zug-service">שירות לאומי אחוד</a> · <a href="#zug-reflection">מדינה שלומדת</a> · <a href="#zug-territory">מרחב והתיישבות</a> · <a href="#zug-implementation">יישום מדורג</a> · <a href="#zug-existence">קיום ואי־קיום</a> · <a href="#zug-space">המרחב שביניהם</a> · <a href="#zug-movement">תנועה ומציאות</a></nav><article id="zug-ocean"><h3>אוקיינוס הזוגאות</h3><p>כל תופעה היא זוגא, וכל זוגא נפתחת לתופעות, יחסים, מתח, מידע ואפשרויות. גם המרחב המקשר בין הטיפות הוא זוגא. היכנסו לטיפה וגלו את האוקיינוס שבתוכה.</p><p class="reading-formula" dir="ltr">Z = (Z₁, Z₂, R, τ, I, P)<br>∀Zₙ ∈ Ω: Zₙ ≺ ZGenesis ≺ Zₙ</p><p><strong>בפשטות:</strong> כדי להבין תופעה, אפשר להסתכל גם במה שקורה בתוכה וגם בקשרים שלה עם סביבתה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>זיקות של ניגוד, השלמה, תלות, עצמאות והשפעה הדדית. המים שבין הטיפות הם חלק מהמבנה.</dd><dt>τ · מתח</dt><dd>המתח משתנה בין התופעות. מרחב מצבי המתח אינו מוגבל, ואינו מצטמצם לשני קצוות בלבד.</dd><dt>I · מידע</dt><dd>המידע משנה את היחסים ואת מרחב האפשרויות; גם מידע על השינוי משתתף במבנה.</dd><dt>P · אפשרויות</dt><dd>מצבים, אפשרויות ומעברים: P : Z₀ ⇄ Z∞. כל טיפה פותחת מרחב אפשרויות פנימי.</dd></dl></details><p class="reading-related"><a href="#zug-god">אלוהים</a> · <a href="#zug-reality">יחסות ⇄ קוונטים</a> · <a href="#zug-human">האדם בצלם</a> · <a href="#zug-state">מדינה</a> · <a href="#zug-water">המים שבין הטיפות</a> · <a href="#zug-genesis">בראשית</a></p></article><article id="zug-god"><h3>אלוהים</h3><p>בתורת זוגא, אלוהים נפתח דרך בראשית, העד והעצמי. אלה מופעים בעלי הכלה הדדית: העד קיים בתוך בראשית, ובראשית בתוך העד; העצמי בתוך העד, והעד בתוך העצמי.</p><p class="reading-formula" dir="ltr">ZWitness ≺ ZGenesis ≺ ZWitness<br>Zself ≺ ZWitness ≺ Zself</p><p><strong>בפשטות:</strong> אפשר לפגוש את אותו שלם דרך הבריאה, דרך העצמי ודרך העדות לשינוי.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הכלה הדדית רקורסיבית: A ≺ B וגם B ≺ A. אפשר להיכנס לכל מופע ולחזור אל המופע המכיל אותו.</dd><dt>τ · מתח</dt><dd>מתוך ההבדלה יכולים להתקיים מתח ותנועה. הדממה ואי־המוגבלות נוכחות בתוך המבנה.</dd><dt>I · מידע</dt><dd>מידע העצמי הוא חלק מן המידע. היחס המדויק בין Iself, Ω ו־ZGenesis נותר לא ידוע בנוסחה.</dd><dt>P · אפשרויות</dt><dd>ZGenesis מכיל את הזוגאות, וכל זוגא מקיימת בתוכה יחס לבראשית.</dd></dl></details><p class="reading-related"><a href="#zug-genesis">בראשית</a> · <a href="#zug-witness">העד</a> · <a href="#zug-self">העצמי</a> · <a href="#zug-human">האדם בצלם</a></p></article><article id="zug-genesis"><h3>בראשית</h3><p>בראשית מתארת את המעבר מאחדות בלתי מובחנת אל הבדלה: Z₀=Z∞ → Z₀≠Z∞. מתוך ההבדלה נפתח מקום ליחס, למתח ולתנועה. זו קריאה מבנית של הראשית; הנוסחה אינה קובעת כאן תאריך או משך פיזיקלי לבריאה. ההכלה ההדדית מוסיפה שהראשית אינה רק אירוע רחוק: כל זוגא בתוך בראשית, ובראשית בתוך כל זוגא. בכל מעבר נוכל לחקור שוב מה מובחן, מה היחס ומה נעשה אפשרי.</p><p class="reading-formula" dir="ltr">(ZGenesis : 1=0) → (ZGenesis′ : 1≠0)<br>(Z₀ = Z∞) → (Z₀ ≠ Z∞)</p><p><strong>בפשטות:</strong> בכל טיפה אפשר לפגוש שוב את שאלת הראשית: כיצד הבדל פותח יחס, וכיצד יחס פותח אפשרות לתנועה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הבדלה מאפשרת יחס. ZGenesis מכיל את (Z₀,Z∞) ומתקיים בתוכם.</dd><dt>τ · מתח</dt><dd>שינוי ביחסים, במתח ובמידע קשור הדדית לשינוי במרחב האפשרויות.</dd><dt>I · מידע</dt><dd>הנוסחה משאירה את היחס המדויק בין הידע של העצמי לבראשית כגבול ידיעה.</dd><dt>P · אפשרויות</dt><dd>Z₀ ⇄ Zₙ ⇄ Z∞ — כל זוגא מתקיימת בתוך בראשית, ובראשית בתוכה.</dd></dl></details><p class="reading-related"><a href="#zug-zero">דממה</a> · <a href="#zug-infinity">אי־מוגבלות</a> · <a href="#zug-existence">קיום ואי־קיום</a> · <a href="#zug-space">המרחב שביניהם</a> · <a href="#zug-movement">תנועה ומציאות</a> · <a href="#zug-witness">העד</a></p></article><article id="zug-zero"><h3>דממה</h3><p>Z₀ הוא דממה. בקירוב המופיע בנוסחה: שינוי ביחס אינו מוגדר, שינוי המתח הוא אפס, ושינוי מרחב האפשרויות מתקרב לאחדות בלתי מובחנת. זהו גם אופק של התקרבות בדרך העצמי.</p><p class="reading-formula" dir="ltr">Z₀ ∼ (ΔR ¬∃, Δτ = 0, ΔP ∼ 1)<br>1 = Undifferentiated Unity</p><p><strong>בפשטות:</strong> הדממה מסמנת מצב שבו השינוי היחסי הרגיל אינו מוגדר. התקרבות אליה מאפשרת לחשוב גם מעבר למאבק בין קצוות.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>ΔR ¬∃: אין שינוי יחסי מוגדר. זו ההגדרה המפורשת של הסימון בנוסחה.</dd><dt>τ · מתח</dt><dd>Δτ = 0 מתייחס להיעדר שינוי במתח. הוא אינו קובע שכל ערך מתח בכל הקשר שווה לאפס.</dd><dt>I · מידע</dt><dd>גבול שבו אין הבדלה רגילה בין מצבים. הנוסחה אינה קובעת I=0.</dd><dt>P · אפשרויות</dt><dd>ΔP ∼ 1 — התקרבות לאחדות בלתי מובחנת. הסימון ∼ הוא קירוב.</dd></dl></details><p class="reading-related"><a href="#zug-genesis">בראשית</a> · <a href="#zug-infinity">אי־מוגבלות</a> · <a href="#zug-self">העצמי</a> · <a href="#zug-humanWitness">העד האנושי</a></p></article><article id="zug-infinity"><h3>אי־מוגבלות</h3><p>Z∞ הוא אי־מוגבלות. הוא מקיף שינוי ותנועה בתוך מרחב האפשרויות. גם הטיפה המובחנת משתתפת בתנועה שבין דממה לאי־מוגבלות.</p><p class="reading-formula" dir="ltr">Z∞ ⊃ ΔZ<br>ΔZ ≡ (Z∞ ⇄ Zα ⇄ Δ(R,τ,I,P) ⇄ Zβ ⇄ Z∞) ∈ P</p><p><strong>בפשטות:</strong> כל מצב שאנחנו רואים הוא חלק ממרחב שאינו נסגר במצב הזה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>אי־מוגבלות מקיפה את התנועה בין מצבים ואת היחסים המשתנים ביניהם.</dd><dt>τ · מתח</dt><dd>τ∞ הוא מרחב בלתי מוגבל של מצבי מתח. אינו מספר שמייצג מתח יחיד.</dd><dt>I · מידע</dt><dd>היות המרחב בלתי מוגבל אינה מבטלת את גבולות המידע של העצמי.</dd><dt>P · אפשרויות</dt><dd>P כולל אינסוף אפשרויות, מצבים ומעברים. המסך מציג רק חלון סופי לתוכם.</dd></dl></details><p class="reading-related"><a href="#zug-zero">דממה</a> · <a href="#zug-genesis">בראשית</a> · <a href="#zug-water">המים שבין הטיפות</a> · <a href="#zug-information">גבולות הידיעה</a></p></article><article id="zug-water"><h3>המים שבין הטיפות</h3><p>הטיפות אינן אוסף מנותק. כל זוגא היא גם המים שבין הטיפות: מרחב האפשרויות הפנימי מתקיים בתוך שדה התופעות, ומשתנה יחד עם היחסים, המתח והמידע.</p><p class="reading-formula" dir="ltr">Pₓ ≺ (Zₓ₁, Zₓ₂)<br>Δ(Rₓ, τₓ, Iₓ) ⇄ ΔPₓ</p><p><strong>בפשטות:</strong> קשר שמשתנה יכול לשנות גם את האפשרויות של הדברים הקשורים בו.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>השדה (Z₁,Z₂) מקיף את R,τ,I,P. הקשר עצמו ניתן לחקירה כמבנה.</dd><dt>τ · מתח</dt><dd>המתח אינו שייך בהכרח לטיפה אחת; הוא שייך גם ליחס שבין התופעות.</dd><dt>I · מידע</dt><dd>ΔIself ⇄ ΔIΩ — שינוי במידע של העצמי ושינוי במידע של האוקיינוס קשורים הדדית.</dd><dt>P · אפשרויות</dt><dd>בכל מרחב פנימי: Pₓ : Z₀ ⇄ Z∞. מעבר פנימה פותח שוב את אותו מבנה.</dd></dl></details><p class="reading-related"><a href="#zug-reality">יחסות ⇄ קוונטים</a> · <a href="#zug-human">האדם בצלם</a> · <a href="#zug-information">גבולות הידיעה</a> · <a href="#zug-genesis">בראשית</a></p></article><article id="zug-witness"><h3>העד</h3><p>העד פוגש את המעבר בין מצב אלפא למצב בטא. העדות לשינוי פועלת על העצמי, וממנה נפתחת אפשרות לתנועה אל מצב גמא. העד ובראשית מקיימים הכלה הדדית.</p><p class="reading-formula" dir="ltr">ZWitness(Zα,Zβ) = ZWitness(ΔZ)<br>ZWitness(ΔZ) → ΔZself<br>Zβ → ΔZself → Zγ</p><p><strong>בפשטות:</strong> כשמבחינים במה שהשתנה, גם נקודת המבט שממנה נמשיך יכולה להשתנות.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>העד מתייחס למעבר בין מצבים. ZWitness ≺ ZGenesis ≺ ZWitness.</dd><dt>τ · מתח</dt><dd>העדות לשינוי יכולה להיות מידע חדש בתוך מערכת היחסים והמתח של העצמי.</dd><dt>I · מידע</dt><dd>פגישה עם ΔZ נעשית שינוי בעצמי. העדות מחברת בין המצב שקדם לשינוי לבין המצב שנוצר אחריו.</dd><dt>P · אפשרויות</dt><dd>המעבר α→β אינו סוף הדרך: שינוי בעצמי פותח את γ.</dd></dl></details><p class="reading-related"><a href="#zug-self">העצמי</a> · <a href="#zug-genesis">בראשית</a> · <a href="#zug-humanWitness">העד האנושי</a> · <a href="#zug-god">אלוהים</a></p></article><article id="zug-self"><h3>העצמי</h3><p>העצמי מתקיים בתוך העד והעד בתוכו. בנוסחה העצמי משתנה שוב ושוב, ויכול להתקרב לדממה. זו רשת חיה של יחסים; הידע שלה נותר חלקי.</p><p class="reading-formula" dir="ltr">Zself ≺ ZWitness ≺ Zself<br>Zself → Δ → Zself′ → Δ → Zself′′ ∼ Z₀</p><p><strong>בפשטות:</strong> העצמי אינו חייב להישאר כפי שהיה. חוויה, יחס ומידע חדשים יכולים לפתוח דרך נוספת.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>העצמי והעד אינם שני איים. כל אחד מתקיים בתוך האחר.</dd><dt>τ · מתח</dt><dd>בדרך מופיעה התקרבות מתח העצמי ל־Z₀, לצד יחסים הנפתחים אל Z∞.</dd><dt>I · מידע</dt><dd>Iself ≺ I — המידע של העצמי הוא חלק מן המידע, ותיאורו את המבנה הוא קירוב.</dd><dt>P · אפשרויות</dt><dd>כל שינוי בעצמי פותח מצבים נוספים; אין צורך להציג מצב יחיד כעצמי קבוע.</dd></dl></details><p class="reading-related"><a href="#zug-witness">העד</a> · <a href="#zug-human">האדם בצלם</a> · <a href="#zug-zero">דממה</a> · <a href="#zug-information">גבולות הידיעה</a></p></article><article id="zug-human"><h3>האדם בצלם</h3><p>האדם הוא רשת של זוגאות. בנוסחה התופעות הן העד האנושי והעצמי, וביניהן יחסים, מתח, מידע ואפשרויות. האדם בתוך בראשית, ובראשית באדם.</p><p class="reading-formula" dir="ltr">Zhuman = (ZHumanWitness, Zself, R, τ, I, P)<br>Zhuman ≺ ZGenesis ≺ Zhuman</p><p><strong>בפשטות:</strong> אתה חי בתוך העולם, והמפגש שלך עם העולם משנה גם את האופן שבו הוא מתקיים בחוויה שלך.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הקשר בין העד האנושי לעצמי מתקיים בתוך רשת זוגאות: Zhuman ≺ ZWitness ≺ Zhuman.</dd><dt>τ · מתח</dt><dd>העד האנושי יכול לפנות אל מתח העצמי ולדרך הדממה: ZhumanWitness → Zselfτ ∼ Z₀.</dd><dt>I · מידע</dt><dd>העדות מאפשרת לעצמי לזהות שינוי. הידע שנוצר בה נותר חלק מן המידע הכולל.</dd><dt>P · אפשרויות</dt><dd>האדם אינו מצב יחיד. שינוי, עדות ושינוי בעצמי פותחים אפשרות למצב הבא.</dd></dl></details><p class="reading-related"><a href="#zug-humanWitness">העד האנושי</a> · <a href="#zug-self">העצמי</a> · <a href="#zug-genesis">בראשית</a> · <a href="#zug-information">גבולות הידיעה</a></p></article><article id="zug-humanWitness"><h3>העד האנושי</h3><p>העד האנושי מופיע בנוסחה ביחס לדממה, לעצמי ולאי־מוגבלות. אפשר להפנות את העדות לשינוי במתח העצמי, ולבחון מה השתנה בין לפני ואחרי.</p><p class="reading-formula" dir="ltr">ZhumanWitness ∼ (Z₀, Zself, Z∞)<br>ZhumanWitness → Zselfτ ∼ Z₀</p><p><strong>בפשטות:</strong> אפשר להבחין בתנועה הפנימית בלי להצטמצם לרגע אחד שלה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>העד האנושי מתקיים במבנה האדם, עם העצמי ועם היחסים ביניהם.</dd><dt>τ · מתח</dt><dd>הדרך בנוסחה היא התקרבות מתח העצמי לדממה. זו התקרבות ∼, לא זהות מתמטית.</dd><dt>I · מידע</dt><dd>העדות למעבר היא מידע על השינוי. הידע הזה אינו נעשה ידיעה כוללת של האוקיינוס.</dd><dt>P · אפשרויות</dt><dd>כל עדות יכולה להשתתף במעבר נוסף: Zβ → ΔZself → Zγ.</dd></dl></details><p class="reading-related"><a href="#zug-human">האדם בצלם</a> · <a href="#zug-self">העצמי</a> · <a href="#zug-zero">דממה</a> · <a href="#zug-witness">העד</a></p></article><article id="zug-information"><h3>גבולות הידיעה</h3><p>המידע של העצמי הוא חלק מן המידע. הוא מתאר בקירוב יחסים, מתח, מידע ואפשרויות. הנוסחה משאירה במפורש את היחס המדויק בין Iself, Ω ו־ZGenesis לא ידוע.</p><p class="reading-formula" dir="ltr">Iself ≺ I<br>Iself(R,τ,I,P) ∼ (R,τ,I,P)<br>ΔIself ⇄ ΔIΩ</p><p><strong>בפשטות:</strong> אפשר לדעת משהו משמעותי על השלם, גם כשהמידע שבידינו נשאר חלקי.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>מידע העצמי והמידע הכולל קשורים; אין כאן הצהרת זהות ביניהם.</dd><dt>τ · מתח</dt><dd>עדכון מידע יכול לשנות מתח ויחסים, ולכן גם את האפשרויות.</dd><dt>I · מידע</dt><dd>היחס המדויק Iself ∼ Ω ∼ ZGenesis נשאר לא ידוע. הסימונים אינם הופכים את הקירוב לידיעה מלאה.</dd><dt>P · אפשרויות</dt><dd>גבול ידיעה משאיר אפשרויות פתוחות. אפשר לחקור בלי לסגור מראש את המרחב.</dd></dl></details><p class="reading-related"><a href="#zug-self">העצמי</a> · <a href="#zug-water">המים שבין הטיפות</a> · <a href="#zug-genesis">בראשית</a> · <a href="#zug-infinity">אי־מוגבלות</a></p></article><article id="zug-reality"><h3>יחסות ⇄ קוונטים</h3><p>הנוסחה מציבה את היחסות ואת מכניקת הקוונטים כתופעות בזוגא אחת. היחסים, המתח והמידע ביניהן פותחים מרחב חקירה; בתוכו נמצאת גם שאלת הכבידה הקוונטית.</p><p class="reading-formula" dir="ltr">ZReality = Z(ZRel,ZQM,RᴿQ,τᴿQ,IᴿQ,PᴿQ)<br>ZQG ≺ ZReality ≺ ZGenesis</p><p><strong>בפשטות:</strong> אפשר לחקור גם את הקשר בין שתי תורות, ולא רק כל תורה בפני עצמה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>יחסים בין ZRel ל־ZQM; כל אחת מהתורות נפתחת גם למבנה משלה.</dd><dt>τ · מתח</dt><dd>המתח היחסי כולל את המתח הבלתי פתור של הכבידה הקוונטית: τQG ≺ τRQ.</dd><dt>I · מידע</dt><dd>מידע משותף, חסר או משתנה בין התורות.</dd><dt>P · אפשרויות</dt><dd>מצבים, יחסים ומעברים אפשריים בין התורות. זהו מיפוי מוצע בנוסחה.</dd></dl></details><p class="reading-related"><a href="#zug-relativity">יחסות</a> · <a href="#zug-quantum">מכניקת קוונטים</a> · <a href="#zug-qft">שדות קוונטיים</a> · <a href="#zug-qg">כבידה קוונטית</a> · <a href="#zug-genesis">בראשית</a></p></article><article id="zug-relativity"><h3>יחסות</h3><p>היחסות הפרטית והיחסות הכללית קיימות בתוך ZRel. הנוסחה ממפה יחסים לגאומטריית המרחב־זמן, מידע לגדלים פיזיקליים, ואפשרויות למצבים ולתנועות המותרים במסגרת היחסות.</p><p class="reading-formula" dir="ltr">ZSR ≺ ZRel ; ZGR ≺ ZRel<br>fREL : ZGenesis ⇝ ZRel</p><p><strong>בפשטות:</strong> פרטית וכללית שייכות למרחב היחסות; חקירת הקשרים ביניהן פותחת עוד שכבת הבנה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>יחסי מרחב־זמן וגאומטריה gμν.</dd><dt>τ · מתח</dt><dd>צימוד דינמי יחסותי; ביחסות כללית, צימוד בין גאומטריית המרחב־זמן לחומר־אנרגיה.</dd><dt>I · מידע</dt><dd>מידע על המצב באמצעות m, E, p ו־Tμν.</dd><dt>P · אפשרויות</dt><dd>מצבים, תנועות ומעברים מותרים במסגרת היחסות.</dd></dl></details><p class="reading-related"><a href="#zug-sr">יחסות פרטית</a> · <a href="#zug-gr">יחסות כללית</a> · <a href="#zug-quantum">מכניקת קוונטים</a> · <a href="#zug-reality">יחסות ⇄ קוונטים</a></p></article><article id="zug-sr"><h3>יחסות פרטית</h3><p>היחסות הפרטית מופיעה כתופעה בתוך זוגא של היחסות, וגם כאחת משתי התופעות במיפוי המוצע של תורת השדות הקוונטית. הנוסחה מביאה את קשר האנרגיה, התנע והמסה.</p><p class="reading-formula" dir="ltr">E² = p²c² + m²c⁴<br>ZQFT = Z(ZSR,ZQM,RQFT,τQFT,IQFT,PQFT)</p><p><strong>בפשטות:</strong> אותה תורה יכולה להיות חלק ממרחב אחד, וגם צד בקשר שמרכיב מרחב נוסף.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>היחס בין גדלי המצב: אנרגיה E, תנע p ומסה m.</dd><dt>τ · מתח</dt><dd>המיפוי מייחס את τRel לצימוד דינמי יחסותי.</dd><dt>I · מידע</dt><dd>m, E ו־p הם דוגמאות לגדלים המייצגים מידע על המצב.</dd><dt>P · אפשרויות</dt><dd>הקשר ל־ZQM נפתח במיפוי המוצע ZQFT.</dd></dl></details><p class="reading-related"><a href="#zug-gr">יחסות כללית</a> · <a href="#zug-relativity">יחסות</a> · <a href="#zug-qft">שדות קוונטיים</a> · <a href="#zug-quantum">מכניקת קוונטים</a></p></article><article id="zug-gr"><h3>יחסות כללית</h3><p>במיפוי של הנוסחה, היחסות הכללית מפגישה בין גאומטריית המרחב־זמן לחומר־אנרגיה. הקשר בינה לבין מכניקת הקוונטים נפתח לזוגא המוצעת של כבידה קוונטית.</p><p class="reading-formula" dir="ltr">Gμν + Λgμν = (8πG/c⁴)Tμν<br>ZQG = Z(ZGR,ZQM,RQG,τQG,IQG,PQG)</p><p><strong>בפשטות:</strong> כאן הגאומטריה והחומר־אנרגיה מופיעים ביחס משותף; כדי להבין את המבנה צריך לבחון את הקשר ביניהם.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>גאומטריית המרחב־זמן ויחסה לחומר־אנרגיה.</dd><dt>τ · מתח</dt><dd>הצימוד בין גאומטריה לחומר־אנרגיה הוא מיפוי τRel במקרה הכללי.</dd><dt>I · מידע</dt><dd>Tμν מופיע במיפוי כמידע פיזיקלי על המצב.</dd><dt>P · אפשרויות</dt><dd>הקשר למכניקת הקוונטים נשאר מרחב חקירה ב־ZQG.</dd></dl></details><p class="reading-related"><a href="#zug-sr">יחסות פרטית</a> · <a href="#zug-relativity">יחסות</a> · <a href="#zug-qg">כבידה קוונטית</a> · <a href="#zug-quantum">מכניקת קוונטים</a></p></article><article id="zug-quantum"><h3>מכניקת קוונטים</h3><p>הנוסחה ממפה יחסים לקשרים, מתאמים ושזירה; מידע למצב הקוונטי; ואפשרויות למצבים ומעברים קבילים הקשורים למרחב הילברט. מכאן נפתחים קשרים ליחסות הפרטית והכללית.</p><p class="reading-formula" dir="ltr">iħ ∂|ψ〉/∂t = Ĥ|ψ〉<br>P(a) = Tr(ρΠa)<br>fQM : ZGenesis ⇝ ZQM</p><p><strong>בפשטות:</strong> המצב, היחסים והאפשרויות נבחנים יחד. המיפוי הזוגאי מארגן את הקשר הזה בשפה משותפת.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>יחסים קוונטיים, מתאמים ושזירה.</dd><dt>τ · מתח</dt><dd>צימוד דינמי קוונטי והתפתחות מצב.</dd><dt>I · מידע</dt><dd>מידע המצב מיוצג ב־|ψ〉 או ב־ρ.</dd><dt>P · אפשרויות</dt><dd>מצבים ומעברים קבילים הקשורים למרחב הילברט H. P(a) בנוסחת המדידה הוא הסתברות לתוצאה a.</dd></dl></details><p class="reading-related"><a href="#zug-qft">שדות קוונטיים</a> · <a href="#zug-qg">כבידה קוונטית</a> · <a href="#zug-relativity">יחסות</a> · <a href="#zug-reality">יחסות ⇄ קוונטים</a></p></article><article id="zug-qft"><h3>שדות קוונטיים</h3><p>כאן שתי התופעות הן ZSR ו־ZQM. הנוסחה מציעה מיפוי זוגאי של תורת השדות הקוונטית, ומציינת במפורש שמדובר במיפוי, ולא בגזירת תורת השדות מתוך בראשית.</p><p class="reading-formula" dir="ltr">ZQFT = Z(ZSR,ZQM,RQFT,τQFT,IQFT,PQFT)<br>fQFT : (ZSR,ZQM) ⇝ ZQFT</p><p><strong>בפשטות:</strong> מבנה זוגא מאפשר להציג את המפגש בין מסגרות. החישוב הפיזיקלי נשען על התורה הפיזיקלית עצמה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>היחסים בין היחסות הפרטית למכניקת הקוונטים.</dd><dt>τ · מתח</dt><dd>τQFT מסומן כחלק מהמבנה המוצע; הנוסחה אינה נותנת לו כאן הגדרה כמותית נוספת.</dd><dt>I · מידע</dt><dd>IQFT מסומן כחלק מהמיפוי; לא מוגדר כאן חישוב עצמאי שלו.</dd><dt>P · אפשרויות</dt><dd>PQFT שייך למיפוי המוצע. האתר אינו מחשב תחזיות של תורת השדות.</dd></dl></details><p class="reading-related"><a href="#zug-sr">יחסות פרטית</a> · <a href="#zug-quantum">מכניקת קוונטים</a> · <a href="#zug-reality">יחסות ⇄ קוונטים</a></p></article><article id="zug-qg"><h3>כבידה קוונטית</h3><p>שתי התופעות הן יחסות כללית ומכניקת הקוונטים. הנוסחה מציבה גם את היחס הבלתי פתור עצמו בתוך מבנה של יחסים, מתח, מידע ואפשרויות. פתרון הכבידה הקוונטית נותר פתוח.</p><p class="reading-formula" dir="ltr">ZQG = Z(ZGR,ZQM,RQG,τQG,IQG,PQG)<br>ZGR ⇄ Δ(RQG,τQG,IQG,PQG) ⇄ ZQM</p><p><strong>בפשטות:</strong> גם שאלה שעוד אין לה פתרון יכולה לקבל מבנה ברור של יחסים, מידע חסר ואפשרויות חקירה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>היחסים בין ZGR ל־ZQM.</dd><dt>τ · מתח</dt><dd>המתח היחסי הבלתי פתור בין היחסות הכללית למכניקת הקוונטים.</dd><dt>I · מידע</dt><dd>מידע המקשר בין התורות, לרבות מידע משותף, חסר או שעבר שינוי.</dd><dt>P · אפשרויות</dt><dd>מצבים, יחסים ומעברים אפשריים. הנוסחה משאירה במפורש את הפתרון הפיזיקלי בלתי פתור.</dd></dl></details><p class="reading-related"><a href="#zug-gr">יחסות כללית</a> · <a href="#zug-quantum">מכניקת קוונטים</a> · <a href="#zug-reality">יחסות ⇄ קוונטים</a> · <a href="#zug-information">גבולות הידיעה</a></p></article><article id="zug-state"><h3>מדינה</h3><p>המדינה האחודה מציעה מבנה שבו חופש הפרט, יזמות וקניין מתקיימים יחד עם אחריות משותפת, תשתיות וביטחון קיומי. המדינה נבחנת ביכולתה להכיל אנשים שונים ולאפשר להם לשנות מסלול במהלך חייהם. הזוגאות כאן הן הצבות הסבריות של רעיונות הספר במבנה זוגא.</p><p class="reading-formula" dir="ltr">Z = (פרט, כלל, R, τ, I, P)</p><p><strong>בפשטות:</strong> מדינה אחודה מאפשרת לאנשים לחיות אחרת זה מזה, ולהישען על יסודות משותפים.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>האזרח, הקהילה והמוסדות תלויים זה בזה ומשפיעים זה על זה.</dd><dt>τ · מתח</dt><dd>בין שאיפה לעצמאות לבין צורך בהשתייכות ובביטחון; המתח משתנה מאדם לאדם ולאורך החיים.</dd><dt>I · מידע</dt><dd>צורכי אזרחים, תוצאות השירותים, מידע מהמחוזות וביקורת ציבורית.</dd><dt>P · אפשרויות</dt><dd>מסלולי חיים שונים בתוך תשתית משותפת, עם אפשרות לעבור ביניהם.</dd></dl></details><p class="reading-related"><a href="#zug-economy">כלכלה רב־מסלולית</a> · <a href="#zug-institutions">מבנה הרשויות</a> · <a href="#zug-development">התפתחות האדם</a> · <a href="#zug-reflection">מדינה שלומדת</a> · <a href="#zug-territory">מרחב והתיישבות</a> · <a href="#zug-implementation">יישום מדורג</a></p></article><article id="zug-economy"><h3>כלכלה רב־מסלולית</h3><p>הונתנות היא מסלול היזמות, הקניין והתחרות; חברתנות היא מסלול של אחריות משותפת וביטחון חברתי. ההצעה בונה מסלולים מקבילים וקשרים ביניהם: בסיס יציב מאפשר לקחת סיכונים, ויצרנות יכולה לתמוך בבסיס המשותף.</p><p class="reading-formula" dir="ltr">Z = (הונתנות, חברתנות, R, τ, I, P)</p><p><strong>בפשטות:</strong> הביטחון מאפשר לנסות; היצרנות אמורה לעזור לממן את הביטחון.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>השוק הפרטי, המסלול הציבורי והאזרח הנע ביניהם.</dd><dt>τ · מתח</dt><dd>בין חופש לפעול ולהרוויח לבין שמירה על יציבות, תחרות הוגנת ולכידות.</dd><dt>I · מידע</dt><dd>נתוני תעסוקה, הכנסות, שירותים, תחרות ויכולת המימון של המערכת.</dd><dt>P · אפשרויות</dt><dd>יזמות, עבודה בקונצרן, הכשרה ומעבר בין מסלולים בהתאם לשינוי בחיים.</dd></dl></details><p class="reading-related"><a href="#zug-floor">רצפה אזרחית</a> · <a href="#zug-consortium">קונצרן לאומי אחוד</a> · <a href="#zug-development">התפתחות האדם</a> · <a href="#zug-state">מדינה</a></p></article><article id="zug-floor"><h3>רצפה אזרחית</h3><p>הספר מציע רצפת קיום ושירותים, תעסוקה זמינה ורף הכנסה שמתחתיו לא נגבה מס הכנסה. מעליו מוצע מיסוי פשוט ונמוך יותר. המעבר תלוי בהקמת מקורות הכנסה יצרניים, ולכן מתואר כתהליך הדרגתי.</p><p class="reading-formula" dir="ltr">Z = (ביטחון קיומי, חופש יוזמה, R, τ, I, P)</p><p><strong>בפשטות:</strong> כישלון כלכלי אינו צריך למחוק את האפשרות של אדם להתחיל שוב.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הקשר בין ביטחון האדם לבין יכולתו לעבוד, ליזום ולהחליף כיוון.</dd><dt>τ · מתח</dt><dd>בין עלות הבסיס המשותף לבין חופש כלכלי והמשאבים הנדרשים לקיימו.</dd><dt>I · מידע</dt><dd>עלויות השירותים, היקף ההכנסות ומצב האזרחים לאורך זמן.</dd><dt>P · אפשרויות</dt><dd>אפשרות להיכשל בעסק, להיכנס למסלול תעסוקה ולהתחיל מחדש.</dd></dl></details><p class="reading-related"><a href="#zug-economy">כלכלה רב־מסלולית</a> · <a href="#zug-consortium">קונצרן לאומי אחוד</a> · <a href="#zug-development">התפתחות האדם</a></p></article><article id="zug-consortium"><h3>קונצרן לאומי אחוד</h3><p>הקונצרן המוצע פועל בתעשייה, בפיננסים ובהכשרה. רווחים חוזרים להשקעה בתשתיות ובהון אנושי. הוא פועל לצד השוק הפרטי ונדרש לריסון עצמי ולתחרות הוגנת. ההנהלה מבצעת, הדירקטוריון בוחן כדאיות וסיכונים, ומועצת החכמים בוחנת את התכלית הציבורית.</p><p class="reading-formula" dir="ltr">Z = (ערך כלכלי, תכלית ציבורית, R, τ, I, P)</p><p><strong>בפשטות:</strong> הצלחה עסקית צריכה להפוך לערך לאזרחים, והערך הציבורי צריך להישען על פעילות בת־קיימא.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הקשר בין בעלות ציבורית, פעילות עסקית, עובדים ושוק פרטי.</dd><dt>τ · מתח</dt><dd>בין רווחיות לבין אחריות אזרחית; ובין כוחו של הקונצרן לבין מרחב הפעולה של מתחריו.</dd><dt>I · מידע</dt><dd>תזרים, חוב, סיכונים, תפוקה והשפעת הפעילות על האזרחים והשוק.</dd><dt>P · אפשרויות</dt><dd>השקעות, הכשרות ותעשיות שנבחנות מחדש לפי תוצאותיהן ותכליתן.</dd></dl></details><p class="reading-related"><a href="#zug-flywheel">גלגלי התנופה</a> · <a href="#zug-oversight">בקרה על התכלית</a> · <a href="#zug-economy">כלכלה רב־מסלולית</a> · <a href="#zug-floor">רצפה אזרחית</a></p></article><article id="zug-flywheel"><h3>גלגלי התנופה</h3><p>המודל מחבר בין מימון, תעשייה וחינוך: אשראי מממן ייצור והכשרה; ההכשרה מחזקת את הייצור; הכנסות הייצור חוזרות למימון ולהשקעות נוספות. זו לולאת משוב מוצעת, שתלויה בביקוש, בביצוע ובניהול הסיכונים.</p><p class="reading-formula" dir="ltr">Z = (הון, הון אנושי, R, τ, I, P)</p><p><strong>בפשטות:</strong> כשמימון, למידה ועבודה מתחברים, כל אחד מהם יכול לחזק את האחרים.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הכשרה, תעסוקה, אשראי והכנסות מזינים זה את זה.</dd><dt>τ · מתח</dt><dd>בין השקעה היום לבין יכולת להפיק ולהחזיר ערך בהמשך.</dd><dt>I · מידע</dt><dd>צורכי השוק, כישורי העובדים, עלות המימון ותוצאות ההשקעה.</dd><dt>P · אפשרויות</dt><dd>מחזורי השקעה חדשים, שינוי תחומי הכשרה ותיקון השקעות שלא הצליחו.</dd></dl></details><p class="reading-related"><a href="#zug-consortium">קונצרן לאומי אחוד</a> · <a href="#zug-education">חינוך אחוד</a> · <a href="#zug-implementation">יישום מדורג</a></p></article><article id="zug-institutions"><h3>מבנה הרשויות</h3><p>המודל מציע בחירה נפרדת לראש הממשלה, לבית העם ולבית המחוזות. הממשלה מובילה את הביצוע; בית העם מחוקק ומפקח ברמה הארצית; בית המחוזות מייצג את השטח. ההפרדה מבקשת לאפשר ביקורת שאינה תלויה בהישרדות הממשלה.</p><p class="reading-formula" dir="ltr">Z = (ביצוע, פיקוח, R, τ, I, P)</p><p><strong>בפשטות:</strong> אפשר לבחור מי יבצע, ובנפרד מי יבדוק את פעולתו.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>שלוש רשויות ייצוג וביצוע הנדרשות לתיאום ולבקרה הדדית.</dd><dt>τ · מתח</dt><dd>בין יכולת להחליט ולבצע לבין הצורך לרסן כוח ולשמור על זכויות.</dd><dt>I · מידע</dt><dd>תקציבים, תוכניות עבודה, תוצאות, ביקורת וצרכים העולים מהשטח.</dd><dt>P · אפשרויות</dt><dd>בחירה נפרדת במבצע, במפקח ובנציג המחוזי.</dd></dl></details><p class="reading-related"><a href="#zug-parliament">בית העם</a> · <a href="#zug-districts">בית המחוזות</a> · <a href="#zug-government">ממשלה מקצועית</a> · <a href="#zug-elections">תחלופה מדורגת</a> · <a href="#zug-oversight">בקרה על התכלית</a></p></article><article id="zug-parliament"><h3>בית העם</h3><p>בית העם המוצע מחליף את הכנסת כבית המחוקקים הארצי. הוא עוסק בחקיקה, ועדות, תקציבים, מינויים ופיקוח. הוא אינו בוחר מתוכו את הממשלה, ותפקידו כולל הגנה על זכויות יסוד ומיעוטים.</p><p class="reading-formula" dir="ltr">Z = (ייצוג, בקרה, R, τ, I, P)</p><p><strong>בפשטות:</strong> ייצוג הציבור כולל גם את היכולת לומר לממשלה שהיא טועה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הקשר בין הציבור, החקיקה והממשלה שעליה מפקחים.</dd><dt>τ · מתח</dt><dd>בין הכרעת רוב לבין זכויות יסוד; ובין תמיכה בתוכנית לבין בדיקה עצמאית שלה.</dd><dt>I · מידע</dt><dd>דיוני ועדות, דוחות ביצוע, תקציבים ועמדות ציבוריות.</dd><dt>P · אפשרויות</dt><dd>אישור, תיקון, בלימה או שינוי מדיניות באמצעות הליכי החקיקה והבקרה.</dd></dl></details><p class="reading-related"><a href="#zug-institutions">מבנה הרשויות</a> · <a href="#zug-districts">בית המחוזות</a> · <a href="#zug-government">ממשלה מקצועית</a> · <a href="#zug-elections">תחלופה מדורגת</a></p></article><article id="zug-districts"><h3>בית המחוזות</h3><p>נציגי המחוזות נבחרים ישירות בידי תושביהם במסלול שאינו מחייב רשימה מפלגתית. הם מחברים בין האזרחים, הרשויות המקומיות והחקיקה. הספר מציע גם העברת מקום המפגש המשותף בין מחוזות כדי להפחית ריכוז כוח.</p><p class="reading-formula" dir="ltr">Z = (מקומי, ארצי, R, τ, I, P)</p><p><strong>בפשטות:</strong> מי שחי במקום צריך להיות שותף בהגדרת מה שחסר בו.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>האזרח, הרשויות המקומיות והמערכת הארצית.</dd><dt>τ · מתח</dt><dd>בין צרכים ייחודיים של מקום לבין אחריות לכלל המדינה.</dd><dt>I · מידע</dt><dd>ידע מהשטח: נגישות שירותים, תשתיות, תעסוקה וצרכים מקומיים.</dd><dt>P · אפשרויות</dt><dd>פתרונות מחוזיים, תיאום בין מקומות והעלאת סוגיות לחקיקה ארצית.</dd></dl></details><p class="reading-related"><a href="#zug-institutions">מבנה הרשויות</a> · <a href="#zug-parliament">בית העם</a> · <a href="#zug-territory">מרחב והתיישבות</a> · <a href="#zug-elections">תחלופה מדורגת</a></p></article><article id="zug-government"><h3>ממשלה מקצועית</h3><p>ראש הממשלה המוצע נבחר ישירות ובנפרד וממנה שרים לפי מקצועיות, ניסיון ותוכנית עבודה. הוא מקבל מרחב ביצוע, בעוד בתי הנבחרים פועלים במסלולים עצמאיים של חקיקה ופיקוח.</p><p class="reading-formula" dir="ltr">Z = (עצמאות, אחריות, R, τ, I, P)</p><p><strong>בפשטות:</strong> מקצועיות נבחנת במה שנעשה וביכולת לתקן, לאורך זמן.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הממשלה, משרדי הביצוע והגופים המחוקקים והמפקחים.</dd><dt>τ · מתח</dt><dd>בין רציפות ניהולית וחופש פעולה לבין מניעת ריכוז כוח.</dd><dt>I · מידע</dt><dd>תוכניות עבודה, לוחות זמנים, תקציבים ומדדי תוצאה.</dd><dt>P · אפשרויות</dt><dd>ביצוע תוכניות ארוכות טווח לצד בקרה ותיקון מתמשך.</dd></dl></details><p class="reading-related"><a href="#zug-institutions">מבנה הרשויות</a> · <a href="#zug-parliament">בית העם</a> · <a href="#zug-elections">תחלופה מדורגת</a> · <a href="#zug-reflection">מדינה שלומדת</a></p></article><article id="zug-elections"><h3>תחלופה מדורגת</h3><p>מוצעות בחירות מדי שנתיים למחצית בית העם ולשליש בית המחוזות: כהונות של ארבע ושש שנים בהתאמה. לראש הממשלה מוצעת כהונה בת שש שנים בבחירות נפרדות. הכהונה בכל תפקיד מוגבלת לשתי כהונות.</p><p class="reading-formula" dir="ltr">Z = (רציפות, התחדשות, R, τ, I, P)</p><p><strong>בפשטות:</strong> שומרים ידע במערכת, ומשאירים את הדלת פתוחה לחדשים.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>נבחרים ותיקים וחדשים, ציבור בוחר ורציפות עבודת המוסדות.</dd><dt>τ · מתח</dt><dd>בין אובדן ניסיון בהחלפה כוללת לבין התאבנות כשאין תחלופה.</dd><dt>I · מידע</dt><dd>ניסיון מצטבר, משוב מהציבור והערכת תפקוד הנבחרים.</dd><dt>P · אפשרויות</dt><dd>כניסה מחזורית של אנשים ורעיונות, בלי להחליף את המערכת כולה בבת אחת.</dd></dl></details><p class="reading-related"><a href="#zug-institutions">מבנה הרשויות</a> · <a href="#zug-parliament">בית העם</a> · <a href="#zug-districts">בית המחוזות</a> · <a href="#zug-government">ממשלה מקצועית</a></p></article><article id="zug-oversight"><h3>בקרה על התכלית</h3><p>הדירקטוריון בוחן את הכלכלה והסיכונים של הקונצרן. מועצת החכמים בוחנת אם הוא ממשיך לשרת את האזרחים, בלי להחליף את ההנהלה. מוצעים נימוקים פומביים, תחלופה מדורגת ופיקוח נשיאותי גם על המועצה.</p><p class="reading-formula" dir="ltr">Z = (יעילות, תכלית, R, τ, I, P)</p><p><strong>בפשטות:</strong> צריך לבדוק גם אם עושים את הדבר היטב, וגם אם זה עדיין הדבר הנכון לעשות.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הנהלה, דירקטוריון, מועצת חכמים והגורמים המפקחים עליה.</dd><dt>τ · מתח</dt><dd>בין סמכות מקצועית לבין ביקורת; ובין השגת מדדים לבין הגשמת המטרה שבשמה נקבעו.</dd><dt>I · מידע</dt><dd>דוחות, נימוקים, עמדות מיעוט ובדיקת תחזיות מול תוצאות.</dd><dt>P · אפשרויות</dt><dd>תיקון מדיניות, בחינה מחודשת של החלטות והמלצה לשינוי בידי הגורם המוסמך.</dd></dl></details><p class="reading-related"><a href="#zug-consortium">קונצרן לאומי אחוד</a> · <a href="#zug-reflection">מדינה שלומדת</a> · <a href="#zug-institutions">מבנה הרשויות</a></p></article><article id="zug-development"><h3>התפתחות האדם</h3><p>הספר מחבר חינוך מותאם לאדם, בריאות מניעתית ושירות לאומי במגוון מסלולים. המשותף להם הוא יצירת תנאים להתפתחות אישית שיכולה גם לתרום לחברה.</p><p class="reading-formula" dir="ltr">Z = (ייחודיות, שותפות, R, τ, I, P)</p><p><strong>בפשטות:</strong> חברה יכולה לבנות בסיס משותף שמאפשר לכל אדם להתפתח בדרך שלו.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>האדם, סביבת הלמידה, העבודה, הבריאות והקהילה.</dd><dt>τ · מתח</dt><dd>בין רצונות וכישורים אישיים לבין צרכים משותפים.</dd><dt>I · מידע</dt><dd>היכרות עם יכולות האדם, התקדמותו ותנאי החיים סביבו.</dd><dt>P · אפשרויות</dt><dd>מסלולי לימוד ותרומה מגוונים שאפשר לשנות לאורך החיים.</dd></dl></details><p class="reading-related"><a href="#zug-education">חינוך אחוד</a> · <a href="#zug-health">בריאות מניעתית</a> · <a href="#zug-service">שירות לאומי אחוד</a> · <a href="#zug-human">האדם בצלם</a> · <a href="#zug-floor">רצפה אזרחית</a></p></article><article id="zug-education"><h3>חינוך אחוד</h3><p>המודל מציע לימודי יסוד משותפים לצד מסלולים מותאמים ליכולות ולעניין של התלמיד. לימוד עיוני מתחבר להתנסות מקצועית. המורה מלווה את ההתפתחות, ובינה מלאכותית יכולה לסייע בתרגול מותאם תחת בקרה.</p><p class="reading-formula" dir="ltr">Z = (בסיס משותף, מסלול אישי, R, τ, I, P)</p><p><strong>בפשטות:</strong> בחירה בדרך לימוד היום אינה צריכה לסגור את הדרכים של מחר.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>התלמיד, המורה, תחומי הידע וההתנסות בעולם.</dd><dt>τ · מתח</dt><dd>בין מסגרת משותפת לבין קצב, עניין ודרך למידה אישיים.</dd><dt>I · מידע</dt><dd>משוב על הבנה והתפתחות, ולא רק השוואה בין תלמידים בציון אחד.</dd><dt>P · אפשרויות</dt><dd>חשיפה למגוון מקצועות, התמחות ומעבר למסלול אחר כשהאדם משתנה.</dd></dl></details><p class="reading-related"><a href="#zug-development">התפתחות האדם</a> · <a href="#zug-flywheel">גלגלי התנופה</a> · <a href="#zug-reflection">מדינה שלומדת</a> · <a href="#zug-human">האדם בצלם</a></p></article><article id="zug-health"><h3>בריאות מניעתית</h3><p>המודל מציע לחבר טיפול רפואי לתנאים התומכים בבריאות לאורך זמן: חינוך, תנועה, נגישות למזון בסיסי איכותי ותזונה במוסדות החינוך. מטרתו לבחון בריאות גם דרך איכות החיים והפחתת חולי.</p><p class="reading-formula" dir="ltr">Z = (מניעה, טיפול, R, τ, I, P)</p><p><strong>בפשטות:</strong> דואגים לאדם כשהוא חולה, ובונים גם תנאים שיעזרו לו להישאר בריא.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>הרפואה, מערכת החינוך, הסביבה ותנאי החיים של האזרח.</dd><dt>τ · מתח</dt><dd>בין משאבים לטיפול בצורך מיידי לבין השקעה במניעה לטווח ארוך.</dd><dt>I · מידע</dt><dd>מדדי חולי, נגישות, איכות חיים ותוצאות השירותים.</dd><dt>P · אפשרויות</dt><dd>פעולות משלימות במוסדות, בקהילה ובתכנון הסביבה.</dd></dl></details><p class="reading-related"><a href="#zug-development">התפתחות האדם</a> · <a href="#zug-education">חינוך אחוד</a> · <a href="#zug-territory">מרחב והתיישבות</a></p></article><article id="zug-service"><h3>שירות לאומי אחוד</h3><p>הספר מציע מגוון אפיקי שירות לצד הביטחון: בריאות, חינוך, רווחה ושירותים קהילתיים. השאיפה היא לחבר את יכולות האדם וזהותו לצורכי החברה, בעזרת בסיס כלכלי שמפחית לחץ הישרדותי.</p><p class="reading-formula" dir="ltr">Z = (זהות אישית, תרומה לכלל, R, τ, I, P)</p><p><strong>בפשטות:</strong> שותפות אינה מחייבת שכל אדם יתרום בדיוק באותה דרך.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>יכולות האדם והמסגרות שבהן החברה זקוקה לתרומתו.</dd><dt>τ · מתח</dt><dd>בין שמירה על זהות אישית לבין שותפות באחריות הציבורית.</dd><dt>I · מידע</dt><dd>צורכי השירות, כישורים, התאמות ותועלת ממשית מהתרומה.</dd><dt>P · אפשרויות</dt><dd>מגוון מסגרות שבהן אנשים שונים יכולים להיות שותפים.</dd></dl></details><p class="reading-related"><a href="#zug-development">התפתחות האדם</a> · <a href="#zug-floor">רצפה אזרחית</a> · <a href="#zug-state">מדינה</a></p></article><article id="zug-reflection"><h3>מדינה שלומדת</h3><p>העיקרון המטא־קוגניטיבי מבקש מהמדינה לבדוק את דפוסי פעולתה, מטרותיה והכוחות המניעים אותה. מוסדות ומדדים נבחנים מחדש כשהנסיבות משתנות. גם מנגנוני הביקורת נדרשים להסביר, ללמוד ולהשתנות.</p><p class="reading-formula" dir="ltr">Z = (פעולה, התבוננות, R, τ, I, P)</p><p><strong>בפשטות:</strong> מערכת לומדת מסוגלת לשנות כיוון כשהמידע מראה שהיא טועה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>המערכת והיכולת שלה להתבונן בדרך שבה היא פועלת.</dd><dt>τ · מתח</dt><dd>בין התמדה שמאפשרת רציפות לבין נכונות לשנות הרגל שכבר אינו מועיל.</dd><dt>I · מידע</dt><dd>משוב, ביקורת, תוצאות וחשיפה של הנחות סמויות.</dd><dt>P · אפשרויות</dt><dd>תיקון מוסדות, שינוי מדדים ועדכון ההנחות שעליהן נבנתה המדיניות.</dd></dl></details><p class="reading-related"><a href="#zug-oversight">בקרה על התכלית</a> · <a href="#zug-institutions">מבנה הרשויות</a> · <a href="#zug-education">חינוך אחוד</a> · <a href="#zug-information">גבולות הידיעה</a> · <a href="#zug-witness">העד</a></p></article><article id="zug-territory"><h3>מרחב והתיישבות</h3><p>הספר מציע מטרופולין בנגב עם בנייה מודולרית, תעסוקה, חינוך ותשתיות משולבות. הוא מחבר פיתוח אזורי לייצור מקומי, חקלאות עירונית ומערכות עירוניות שנועדו להפחית תלות והוצאות תפעול.</p><p class="reading-formula" dir="ltr">Z = (מרכז, מרחבים נוספים, R, τ, I, P)</p><p><strong>בפשטות:</strong> מקום מגורים צריך להיות מחובר גם להזדמנות לעבוד, ללמוד ולחיות בו.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>דיור, עבודה, שירותים, תשתיות והסביבה המקיימת אותם.</dd><dt>τ · מתח</dt><dd>בין ריכוז יתר של הזדמנויות לבין פיזור שדורש תשתיות ותיאום.</dd><dt>I · מידע</dt><dd>ביקוש, נגישות, יכולת מימון, צורכי התושבים ומשאבי המקום.</dd><dt>P · אפשרויות</dt><dd>הקמת גרעין, התבססות והרחבה מדורגת של אזורי חיים וייצור.</dd></dl></details><p class="reading-related"><a href="#zug-implementation">יישום מדורג</a> · <a href="#zug-districts">בית המחוזות</a> · <a href="#zug-consortium">קונצרן לאומי אחוד</a> · <a href="#zug-health">בריאות מניעתית</a></p></article><article id="zug-implementation"><h3>יישום מדורג</h3><p>שלב היישום המוצע מתחיל בגרעין מצומצם: בנק חברתי, בנייה מודולרית והתיישבות ראשונה. החזרי המימון מיועדים לתמוך בהרחבה, ורק לאחר התבססות מתווספים שירותים, הכשרה ותעשייה.</p><p class="reading-formula" dir="ltr">Z = (חזון, ניסיון מצטבר, R, τ, I, P)</p><p><strong>בפשטות:</strong> בודקים מה עובד בקנה מידה קטן, ולומדים ממנו לפני שמרחיבים.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>מימון, דיור, תושבים ותשתיות שמאפשרים את השלב הבא.</dd><dt>τ · מתח</dt><dd>בין היקף החזון לבין יכולת הביצוע והמימון בפועל.</dd><dt>I · מידע</dt><dd>תוצאות הגרעין הראשון: עלויות, החזרים, ביקוש ואיכות חיים.</dd><dt>P · אפשרויות</dt><dd>הרחבה לאחר התבססות, או שינוי התכנון בהתאם למה שנלמד.</dd></dl></details><p class="reading-related"><a href="#zug-territory">מרחב והתיישבות</a> · <a href="#zug-flywheel">גלגלי התנופה</a> · <a href="#zug-reflection">מדינה שלומדת</a> · <a href="#zug-state">מדינה</a></p></article><article id="zug-existence"><h3>קיום ואי־קיום</h3><p>הנוסחה פותחת ב־1=0 בתוך ההקשר ZGenesis: אחדות בלתי מובחנת. המעבר ל־1≠0 מבטא הופעת הבדל. בקריאה הזאת, קיום מובחן הוא תופעה שאפשר לקיים עמה יחס ולתאר את השינוי שלה. אי־קיום אינו מוגדר בנוסחה פשוט כהיעדר חומר; Z₀ מוגדר כדממה, שבה שינוי יחסי אינו מוגדר. לכן אפשר לקרוא את הראשית כשאלה כיצד ההבחנה עצמה נעשית אפשרית, ולא רק איזה עצם הופיע ראשון.</p><p class="reading-formula" dir="ltr">(ZGenesis : 1=0) → (ZGenesis′ : 1≠0)<br>Z₀ ∼ (ΔR ¬∃, Δτ=0, ΔP ∼ 1)</p><p><strong>בפשטות:</strong> השאלה היא גם כיצד משהו נעשה מובחן מתוך השלם, ומה מאפשר לנו לפגוש אותו כתופעה.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>ההבדלה פותחת אפשרות להבחין בתופעות ולקיים יחס ביניהן.</dd><dt>τ · מתח</dt><dd>כשהיחס מובחן, מתאפשר לתאר גם שינוי במתח בין התופעות.</dd><dt>I · מידע</dt><dd>תיאור הקיום תלוי גם במידע של המתאר; Iself הוא חלק מן המידע.</dd><dt>P · אפשרויות</dt><dd>מצב מובחן מתקיים בתוך מרחב אפשרויות. ההבחנה אינה ממצה את כל מה שאפשרי.</dd></dl></details><p class="reading-related"><a href="#zug-zero">דממה</a> · <a href="#zug-genesis">בראשית</a> · <a href="#zug-space">המרחב שביניהם</a> · <a href="#zug-information">גבולות הידיעה</a></p></article><article id="zug-space"><h3>המרחב שביניהם</h3><p>בנוסחה, (Z₁,Z₂) הוא שדה יחסי המקיף יחסים, מתח, מידע ואפשרויות. המרחב שבין תופעות כולל לכן גם את האפשרות שלהן להשפיע זו על זו ולהשתנות. אין הכרח לקרוא כל מרחב כזה כמרחק גאומטרי: גם בין עד לעצמי או בין אדם לחברה נפתח שדה. המרחב־זמן הפיזיקלי מופיע במיפוי היחסות כמימוש מסוים של יחסים וגאומטריה.</p><p class="reading-formula" dir="ltr">(Z₁,Z₂) ⊃ (R,τ,I,P)<br>Pₓ ≺ (Zₓ₁,Zₓ₂)<br>Pₓ : Z₀ ⇄ Z∞</p><p><strong>בפשטות:</strong> כדי להבין את המרחב בין דברים, שואלים גם מה יכול לקרות ביניהם.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>היחס הוא חלק מהמרחב, ולא רק חיבור שמתווסף לשני דברים מבודדים.</dd><dt>τ · מתח</dt><dd>שינוי במתח משנה את אופי התנועה האפשרית בתוך השדה.</dd><dt>I · מידע</dt><dd>מידע חדש משנה את האופן שבו התופעות נפגשות ואת האפשרויות הנגישות ביניהן.</dd><dt>P · אפשרויות</dt><dd>P הוא מרחב מצבים ומעברים. אין בנוסחה דרישה שכל אפשרות תתממש.</dd></dl></details><p class="reading-related"><a href="#zug-water">המים שבין הטיפות</a> · <a href="#zug-movement">תנועה ומציאות</a> · <a href="#zug-relativity">יחסות</a> · <a href="#zug-genesis">בראשית</a></p></article><article id="zug-movement"><h3>תנועה ומציאות</h3><p>תנועה בזוגא כוללת שינוי ביחסים, במתח, במידע ובאפשרויות. היא יכולה להיות שינוי מקום, אך גם שינוי בהבנה או במבנה של מערכת. Zα ו־Zβ הם מצבים בתוך P, והעדות למעבר עשויה להשתתף בשינוי העצמי ובפתיחת מצב נוסף. רצף כזה מאפשר לקרוא את המציאות כתהליכים המקיימים זה את זה. הנוסחה מציעה את מבנה המעבר; במיפוי פיזיקלי נדרשים גם החוקים והגדלים של אותה תורה.</p><p class="reading-formula" dir="ltr">Δ(R,τ,I) ⇄ ΔP<br>ΔZ ≡ (Z∞ ⇄ Zα ⇄ Δ(R,τ,I,P) ⇄ Zβ ⇄ Z∞) ∈ P<br>ZWitness(ΔZ) → ΔZself</p><p><strong>בפשטות:</strong> מציאות אינה רק מה שנמצא ברגע מסוים; היא גם מה שמשתנה ומה שנפתח בעקבות השינוי.</p><details><summary>יחסים, מתח, מידע ואפשרויות</summary><dl><dt>R · יחסים</dt><dd>מעבר בין מצבים משנה יחסים, ויחסים משתנים מאפשרים מעברים נוספים.</dd><dt>τ · מתח</dt><dd>המתח יכול להשתנות בשני הכיוונים. τ∞ מציין מרחב מצבי מתח בלתי מוגבל.</dd><dt>I · מידע</dt><dd>למידה על מעבר היא בעצמה שינוי במידע של המערכת או העצמי.</dd><dt>P · אפשרויות</dt><dd>מצב חדש פותח אפשרויות נוספות; P כולל גם מעברים ולא רק רשימת מצבים.</dd></dl></details><p class="reading-related"><a href="#zug-witness">העד</a> · <a href="#zug-self">העצמי</a> · <a href="#zug-genesis">בראשית</a> · <a href="#zug-reality">יחסות ⇄ קוונטים</a></p></article><article id="traditions"><h3>הקבלות למקורות</h3><p>בבראשית א׳, ההבדלה בין אור לחושך ובין מים למים מלווה את התהוות העולם המסופר. בקריאה זוגאית אפשר להשוות זאת להופעת שדה של תופעות מובחנות ויחסים. זו פרשנות משווה של המבנה, ולא נוסחה המופיעה בפסוקים. <a href="https://mechon-mamre.org/p/pt/pt0101.htm">בראשית א׳</a>.</p><p>בטאו טה צ׳ינג, פרקים 1–2, מופיעים היחס בין מה שאין לו שם לבין העולם הנקרא בשם, וההתהוות ההדדית של יש ואין. ההקבלה לזוגא היא האפשרות לחשוב את ההבחנות בתוך שלם שאינו מתמצה בשם אחד. המונחים של שתי המסגרות אינם זהים. <a href="https://ctext.org/dao-de-jing/ens">טאו טה צ׳ינג</a>.</p></article></section></main><div id="announce" class="sr-only" aria-live="polite"></div>
-<script>'use strict';
-const DATA={
-ocean:{name:'אוקיינוס הזוגאות',symbol:'Ω',title:'אוקיינוס בתוך כל טיפה.',type:'כל זוגא היא טיפה — וגם מים',description:'כל תופעה היא זוגא, וכל זוגא נפתחת לתופעות, יחסים, מתח, מידע ואפשרויות. גם המרחב המקשר בין הטיפות הוא זוגא. היכנסו לטיפה וגלו את האוקיינוס שבתוכה.',formula:'Z = (Z₁, Z₂, R, τ, I, P)\n∀Zₙ ∈ Ω: Zₙ ≺ ZGenesis ≺ Zₙ',children:['god','reality','human','water','genesis','information'],fields:['זיקות של ניגוד, השלמה, תלות, עצמאות והשפעה הדדית. המים שבין הטיפות הם חלק מהמבנה.','המתח משתנה בין התופעות. מרחב מצבי המתח אינו מוגבל, ואינו מצטמצם לשני קצוות בלבד.','המידע משנה את היחסים ואת מרחב האפשרויות; גם מידע על השינוי משתתף במבנה.','מצבים, אפשרויות ומעברים: P : Z₀ ⇄ Z∞. כל טיפה פותחת מרחב אפשרויות פנימי.']},
-god:{name:'אלוהים',symbol:'Zuga',title:'אהיה אשר אהיה.',type:'המבנה · הבורא · הבריאה · העד · העצמי',description:'בתורת זוגא, אלוהים נפתח דרך בראשית, העד והעצמי. אלה מופעים בעלי הכלה הדדית: העד קיים בתוך בראשית, ובראשית בתוך העד; העצמי בתוך העד, והעד בתוך העצמי.',formula:'ZWitness ≺ ZGenesis ≺ ZWitness\nZself ≺ ZWitness ≺ Zself',children:['genesis','witness','self','human'],fields:['הכלה הדדית רקורסיבית: A ≺ B וגם B ≺ A. אפשר להיכנס לכל מופע ולחזור אל המופע המכיל אותו.','מתוך ההבדלה יכולים להתקיים מתח ותנועה. הדממה ואי־המוגבלות נוכחות בתוך המבנה.','מידע העצמי הוא חלק מן המידע. היחס המדויק בין Iself, Ω ו־ZGenesis נותר לא ידוע בנוסחה.','ZGenesis מכיל את הזוגאות, וכל זוגא מקיימת בתוכה יחס לבראשית.']},
-genesis:{name:'בראשית',symbol:'ZGenesis',title:'ההבדלה פותחת מרחב.',type:'מראשית בלתי מובחנת אל ריבוי',description:'1=0 מתאר בנוסחה אחדות בלתי מובחנת בהקשר בראשית. המעבר ל־1≠0 מבטא הבדלה: בין Z₀ ל־Z∞ נפתח מרחב לאינסוף זוגאות ותנועות.',formula:'(ZGenesis : 1=0) → (ZGenesis′ : 1≠0)\n(Z₀ = Z∞) → (Z₀ ≠ Z∞)',children:['zero','infinity','witness','reality','god'],fields:['הבדלה מאפשרת יחס. ZGenesis מכיל את (Z₀,Z∞) ומתקיים בתוכם.','שינוי ביחסים, במתח ובמידע קשור הדדית לשינוי במרחב האפשרויות.','הנוסחה משאירה את היחס המדויק בין הידע של העצמי לבראשית כגבול ידיעה.','Z₀ ⇄ Zₙ ⇄ Z∞ — כל זוגא מתקיימת בתוך בראשית, ובראשית בתוכה.']},
-zero:{name:'דממה',symbol:'Z₀',title:'לפני ששינוי ביחס מוגדר.',type:'Z₀ / Stillness',description:'Z₀ הוא דממה. בקירוב המופיע בנוסחה: שינוי ביחס אינו מוגדר, שינוי המתח הוא אפס, ושינוי מרחב האפשרויות מתקרב לאחדות בלתי מובחנת. זהו גם אופק של התקרבות בדרך העצמי.',formula:'Z₀ ∼ (ΔR ¬∃, Δτ = 0, ΔP ∼ 1)\n1 = Undifferentiated Unity',children:['genesis','infinity','self','humanWitness'],fields:['ΔR ¬∃: אין שינוי יחסי מוגדר. זו ההגדרה המפורשת של הסימון בנוסחה.','Δτ = 0 מתייחס להיעדר שינוי במתח. הוא אינו קובע שכל ערך מתח בכל הקשר שווה לאפס.','גבול שבו אין הבדלה רגילה בין מצבים. הנוסחה אינה קובעת I=0.','ΔP ∼ 1 — התקרבות לאחדות בלתי מובחנת. הסימון ∼ הוא קירוב.']},
-infinity:{name:'אי־מוגבלות',symbol:'Z∞',title:'המרחב אינו נסגר.',type:'Z∞ / Unboundedness',description:'Z∞ הוא אי־מוגבלות. הוא מקיף שינוי ותנועה בתוך מרחב האפשרויות. גם הטיפה המובחנת משתתפת בתנועה שבין דממה לאי־מוגבלות.',formula:'Z∞ ⊃ ΔZ\nΔZ ≡ (Z∞ ⇄ Zα ⇄ Δ(R,τ,I,P) ⇄ Zβ ⇄ Z∞) ∈ P',children:['zero','genesis','water','information'],fields:['אי־מוגבלות מקיפה את התנועה בין מצבים ואת היחסים המשתנים ביניהם.','τ∞ הוא מרחב בלתי מוגבל של מצבי מתח. אינו מספר שמייצג מתח יחיד.','היות המרחב בלתי מוגבל אינה מבטלת את גבולות המידע של העצמי.','P כולל אינסוף אפשרויות, מצבים ומעברים. המסך מציג רק חלון סופי לתוכם.']},
-water:{name:'המים שבין הטיפות',symbol:'R ⇄ P',title:'גם הבין הוא זוגא.',type:'הקשר הוא חלק מן האוקיינוס',description:'הטיפות אינן אוסף מנותק. כל זוגא היא גם המים שבין הטיפות: מרחב האפשרויות הפנימי מתקיים בתוך שדה התופעות, ומשתנה יחד עם היחסים, המתח והמידע.',formula:'Pₓ ≺ (Zₓ₁, Zₓ₂)\nΔ(Rₓ, τₓ, Iₓ) ⇄ ΔPₓ',children:['reality','human','information','genesis'],fields:['השדה (Z₁,Z₂) מקיף את R,τ,I,P. הקשר עצמו ניתן לחקירה כמבנה.','המתח אינו שייך בהכרח לטיפה אחת; הוא שייך גם ליחס שבין התופעות.','ΔIself ⇄ ΔIΩ — שינוי במידע של העצמי ושינוי במידע של האוקיינוס קשורים הדדית.','בכל מרחב פנימי: Pₓ : Z₀ ⇄ Z∞. מעבר פנימה פותח שוב את אותו מבנה.']},
-witness:{name:'העד',symbol:'ZWitness',title:'הרוח מרחפת מעל.',type:'עדות לתנועה · שינוי בעצמי',description:'העד פוגש את המעבר בין מצב אלפא למצב בטא. העדות לשינוי פועלת על העצמי, וממנה נפתחת אפשרות לתנועה אל מצב גמא. העד ובראשית מקיימים הכלה הדדית.',formula:'ZWitness(Zα,Zβ) = ZWitness(ΔZ)\nZWitness(ΔZ) → ΔZself\nZβ → ΔZself → Zγ',children:['self','genesis','humanWitness','god'],fields:['העד מתייחס למעבר בין מצבים. ZWitness ≺ ZGenesis ≺ ZWitness.','העדות לשינוי יכולה להיות מידע חדש בתוך מערכת היחסים והמתח של העצמי.','פגישה עם ΔZ נעשית שינוי בעצמי. העדות מחברת בין המצב שקדם לשינוי לבין המצב שנוצר אחריו.','המעבר α→β אינו סוף הדרך: שינוי בעצמי פותח את γ.']},
-self:{name:'העצמי',symbol:'Zself',title:'העצמי משתנה עם העדות.',type:'העצמי · החומר · הדרך',description:'העצמי מתקיים בתוך העד והעד בתוכו. בנוסחה העצמי משתנה שוב ושוב, ויכול להתקרב לדממה. זו רשת חיה של יחסים; הידע שלה נותר חלקי.',formula:'Zself ≺ ZWitness ≺ Zself\nZself → Δ → Zself′ → Δ → Zself′′ ∼ Z₀',children:['witness','human','zero','information'],fields:['העצמי והעד אינם שני איים. כל אחד מתקיים בתוך האחר.','בדרך מופיעה התקרבות מתח העצמי ל־Z₀, לצד יחסים הנפתחים אל Z∞.','Iself ≺ I — המידע של העצמי הוא חלק מן המידע, ותיאורו את המבנה הוא קירוב.','כל שינוי בעצמי פותח מצבים נוספים; אין צורך להציג מצב יחיד כעצמי קבוע.']},
-human:{name:'האדם בצלם',symbol:'Zhuman',title:'גם בך נפתח אוקיינוס.',type:'רשת רקורסיבית של זוגאות',description:'האדם הוא רשת של זוגאות. בנוסחה התופעות הן העד האנושי והעצמי, וביניהן יחסים, מתח, מידע ואפשרויות. האדם בתוך בראשית, ובראשית באדם.',formula:'Zhuman = (ZHumanWitness, Zself, R, τ, I, P)\nZhuman ≺ ZGenesis ≺ Zhuman',children:['humanWitness','self','genesis','information'],fields:['הקשר בין העד האנושי לעצמי מתקיים בתוך רשת זוגאות: Zhuman ≺ ZWitness ≺ Zhuman.','העד האנושי יכול לפנות אל מתח העצמי ולדרך הדממה: ZhumanWitness → Zselfτ ∼ Z₀.','העדות מאפשרת לעצמי לזהות שינוי. הידע שנוצר בה נותר חלק מן המידע הכולל.','האדם אינו מצב יחיד. שינוי, עדות ושינוי בעצמי פותחים אפשרות למצב הבא.']},
-humanWitness:{name:'העד האנושי',symbol:'ZHumanWitness',title:'להיות נוכח במעבר.',type:'בין דממה, עצמי ואי־מוגבלות',description:'העד האנושי מופיע בנוסחה ביחס לדממה, לעצמי ולאי־מוגבלות. אפשר להפנות את העדות לשינוי במתח העצמי, ולבחון מה השתנה בין לפני ואחרי.',formula:'ZhumanWitness ∼ (Z₀, Zself, Z∞)\nZhumanWitness → Zselfτ ∼ Z₀',children:['human','self','zero','witness'],fields:['העד האנושי מתקיים במבנה האדם, עם העצמי ועם היחסים ביניהם.','הדרך בנוסחה היא התקרבות מתח העצמי לדממה. זו התקרבות ∼, לא זהות מתמטית.','העדות למעבר היא מידע על השינוי. הידע הזה אינו נעשה ידיעה כוללת של האוקיינוס.','כל עדות יכולה להשתתף במעבר נוסף: Zβ → ΔZself → Zγ.']},
-information:{name:'גבולות הידיעה',symbol:'Iself ≺ I',title:'האוקיינוס גדול מן הידיעה.',type:'המידע של העצמי',description:'המידע של העצמי הוא חלק מן המידע. הוא מתאר בקירוב יחסים, מתח, מידע ואפשרויות. הנוסחה משאירה במפורש את היחס המדויק בין Iself, Ω ו־ZGenesis לא ידוע.',formula:'Iself ≺ I\nIself(R,τ,I,P) ∼ (R,τ,I,P)\nΔIself ⇄ ΔIΩ',children:['self','water','genesis','infinity'],fields:['מידע העצמי והמידע הכולל קשורים; אין כאן הצהרת זהות ביניהם.','עדכון מידע יכול לשנות מתח ויחסים, ולכן גם את האפשרויות.','היחס המדויק Iself ∼ Ω ∼ ZGenesis נשאר לא ידוע. הסימונים אינם הופכים את הקירוב לידיעה מלאה.','גבול ידיעה משאיר אפשרויות פתוחות. אפשר לחקור בלי לסגור מראש את המרחב.']},
-reality:{name:'יחסות ⇄ קוונטים',symbol:'ZReality',title:'היחס בין התורות הוא זוגא.',type:'מיפוי זוגאי מוצע של המציאות הפיזיקלית',description:'הנוסחה מציבה את היחסות ואת מכניקת הקוונטים כתופעות בזוגא אחת. היחסים, המתח והמידע ביניהן פותחים מרחב חקירה; בתוכו נמצאת גם שאלת הכבידה הקוונטית.',formula:'ZReality = Z(ZRel,ZQM,RᴿQ,τᴿQ,IᴿQ,PᴿQ)\nZQG ≺ ZReality ≺ ZGenesis',children:['relativity','quantum','qft','qg','genesis'],fields:['יחסים בין ZRel ל־ZQM; כל אחת מהתורות נפתחת גם למבנה משלה.','המתח היחסי כולל את המתח הבלתי פתור של הכבידה הקוונטית: τQG ≺ τRQ.','מידע משותף, חסר או משתנה בין התורות.','מצבים, יחסים ומעברים אפשריים בין התורות. זהו מיפוי מוצע בנוסחה.']},
-relativity:{name:'יחסות',symbol:'ZRel',title:'פרטית וכללית בתוך יחסות.',type:'מיפוי היחסות במבנה זוגא',description:'היחסות הפרטית והיחסות הכללית קיימות בתוך ZRel. הנוסחה ממפה יחסים לגאומטריית המרחב־זמן, מידע לגדלים פיזיקליים, ואפשרויות למצבים ולתנועות המותרים במסגרת היחסות.',formula:'ZSR ≺ ZRel ; ZGR ≺ ZRel\nfREL : ZGenesis ⇝ ZRel',children:['sr','gr','quantum','reality'],fields:['יחסי מרחב־זמן וגאומטריה gμν.','צימוד דינמי יחסותי; ביחסות כללית, צימוד בין גאומטריית המרחב־זמן לחומר־אנרגיה.','מידע על המצב באמצעות m, E, p ו־Tμν.','מצבים, תנועות ומעברים מותרים במסגרת היחסות.']},
-sr:{name:'יחסות פרטית',symbol:'ZSR',title:'תנע. אנרגיה. מסה.',type:'ZSR ≺ ZRel',description:'היחסות הפרטית מופיעה כתופעה בתוך זוגא של היחסות, וגם כאחת משתי התופעות במיפוי המוצע של תורת השדות הקוונטית. הנוסחה מביאה את קשר האנרגיה, התנע והמסה.',formula:'E² = p²c² + m²c⁴\nZQFT = Z(ZSR,ZQM,RQFT,τQFT,IQFT,PQFT)',children:['gr','relativity','qft','quantum'],fields:['היחס בין גדלי המצב: אנרגיה E, תנע p ומסה m.','המיפוי מייחס את τRel לצימוד דינמי יחסותי.','m, E ו־p הם דוגמאות לגדלים המייצגים מידע על המצב.','הקשר ל־ZQM נפתח במיפוי המוצע ZQFT.']},
-gr:{name:'יחסות כללית',symbol:'ZGR',title:'גאומטריה ⇄ חומר־אנרגיה.',type:'ZGR ≺ ZRel',description:'במיפוי של הנוסחה, היחסות הכללית מפגישה בין גאומטריית המרחב־זמן לחומר־אנרגיה. הקשר בינה לבין מכניקת הקוונטים נפתח לזוגא המוצעת של כבידה קוונטית.',formula:'Gμν + Λgμν = (8πG/c⁴)Tμν\nZQG = Z(ZGR,ZQM,RQG,τQG,IQG,PQG)',children:['sr','relativity','qg','quantum'],fields:['גאומטריית המרחב־זמן ויחסה לחומר־אנרגיה.','הצימוד בין גאומטריה לחומר־אנרגיה הוא מיפוי τRel במקרה הכללי.','Tμν מופיע במיפוי כמידע פיזיקלי על המצב.','הקשר למכניקת הקוונטים נשאר מרחב חקירה ב־ZQG.']},
-quantum:{name:'מכניקת קוונטים',symbol:'ZQM',title:'מצב. יחס. אפשרות.',type:'מיפוי הקוונטים במבנה זוגא',description:'הנוסחה ממפה יחסים לקשרים, מתאמים ושזירה; מידע למצב הקוונטי; ואפשרויות למצבים ומעברים קבילים הקשורים למרחב הילברט. מכאן נפתחים קשרים ליחסות הפרטית והכללית.',formula:'iħ ∂|ψ〉/∂t = Ĥ|ψ〉\nP(a) = Tr(ρΠa)\nfQM : ZGenesis ⇝ ZQM',children:['qft','qg','relativity','reality'],fields:['יחסים קוונטיים, מתאמים ושזירה.','צימוד דינמי קוונטי והתפתחות מצב.','מידע המצב מיוצג ב־|ψ〉 או ב־ρ.','מצבים ומעברים קבילים הקשורים למרחב הילברט H. P(a) בנוסחת המדידה הוא הסתברות לתוצאה a.']},
-qft:{name:'שדות קוונטיים',symbol:'ZQFT',title:'יחסות פרטית ⇄ קוונטים.',type:'מיפוי זוגאי מוצע',description:'כאן שתי התופעות הן ZSR ו־ZQM. הנוסחה מציעה מיפוי זוגאי של תורת השדות הקוונטית, ומציינת במפורש שמדובר במיפוי, ולא בגזירת תורת השדות מתוך בראשית.',formula:'ZQFT = Z(ZSR,ZQM,RQFT,τQFT,IQFT,PQFT)\nfQFT : (ZSR,ZQM) ⇝ ZQFT',children:['sr','quantum','reality'],fields:['היחסים בין היחסות הפרטית למכניקת הקוונטים.','τQFT מסומן כחלק מהמבנה המוצע; הנוסחה אינה נותנת לו כאן הגדרה כמותית נוספת.','IQFT מסומן כחלק מהמיפוי; לא מוגדר כאן חישוב עצמאי שלו.','PQFT שייך למיפוי המוצע. האתר אינו מחשב תחזיות של תורת השדות.']},
-qg:{name:'כבידה קוונטית',symbol:'ZQG',title:'גם היחס הלא פתור הוא זוגא.',type:'מבנה זוגאי מוצע לשאלה פתוחה',description:'שתי התופעות הן יחסות כללית ומכניקת הקוונטים. הנוסחה מציבה גם את היחס הבלתי פתור עצמו בתוך מבנה של יחסים, מתח, מידע ואפשרויות. פתרון הכבידה הקוונטית נותר פתוח.',formula:'ZQG = Z(ZGR,ZQM,RQG,τQG,IQG,PQG)\nZGR ⇄ Δ(RQG,τQG,IQG,PQG) ⇄ ZQM',children:['gr','quantum','reality','information'],fields:['היחסים בין ZGR ל־ZQM.','המתח היחסי הבלתי פתור בין היחסות הכללית למכניקת הקוונטים.','מידע המקשר בין התורות, לרבות מידע משותף, חסר או שעבר שינוי.','מצבים, יחסים ומעברים אפשריים. הנוסחה משאירה במפורש את הפתרון הפיזיקלי בלתי פתור.']}
-};
-
-Object.assign(DATA,{
-  "state": {
-    "name": "מדינה",
-    "symbol": "ZState",
-    "title": "האדם והחברה בתוך מבנה אחד.",
-    "type": "המדינה האחודה · פרט ⇄ כלל",
-    "description": "המדינה האחודה מציעה מבנה שבו חופש הפרט, יזמות וקניין מתקיימים יחד עם אחריות משותפת, תשתיות וביטחון קיומי. המדינה נבחנת ביכולתה להכיל אנשים שונים ולאפשר להם לשנות מסלול במהלך חייהם. הזוגאות כאן הן הצבות הסבריות של רעיונות הספר במבנה זוגא.",
-    "formula": "Z = (פרט, כלל, R, τ, I, P)",
-    "children": [
-      "economy",
-      "institutions",
-      "development",
-      "reflection",
-      "territory",
-      "implementation"
-    ],
-    "fields": [
-      "האזרח, הקהילה והמוסדות תלויים זה בזה ומשפיעים זה על זה.",
-      "בין שאיפה לעצמאות לבין צורך בהשתייכות ובביטחון; המתח משתנה מאדם לאדם ולאורך החיים.",
-      "צורכי אזרחים, תוצאות השירותים, מידע מהמחוזות וביקורת ציבורית.",
-      "מסלולי חיים שונים בתוך תשתית משותפת, עם אפשרות לעבור ביניהם."
-    ],
-    "conclusion": "מדינה אחודה מאפשרת לאנשים לחיות אחרת זה מזה, ולהישען על יסודות משותפים."
-  },
-  "economy": {
-    "name": "כלכלה רב־מסלולית",
-    "symbol": "ZEconomy",
-    "title": "תחרות וביטחון מזינים זה את זה.",
-    "type": "המדינה האחודה · הונתנות ⇄ חברתנות",
-    "description": "הונתנות היא מסלול היזמות, הקניין והתחרות; חברתנות היא מסלול של אחריות משותפת וביטחון חברתי. ההצעה בונה מסלולים מקבילים וקשרים ביניהם: בסיס יציב מאפשר לקחת סיכונים, ויצרנות יכולה לתמוך בבסיס המשותף.",
-    "formula": "Z = (הונתנות, חברתנות, R, τ, I, P)",
-    "children": [
-      "floor",
-      "consortium",
-      "development",
-      "state"
-    ],
-    "fields": [
-      "השוק הפרטי, המסלול הציבורי והאזרח הנע ביניהם.",
-      "בין חופש לפעול ולהרוויח לבין שמירה על יציבות, תחרות הוגנת ולכידות.",
-      "נתוני תעסוקה, הכנסות, שירותים, תחרות ויכולת המימון של המערכת.",
-      "יזמות, עבודה בקונצרן, הכשרה ומעבר בין מסלולים בהתאם לשינוי בחיים."
-    ],
-    "conclusion": "הביטחון מאפשר לנסות; היצרנות אמורה לעזור לממן את הביטחון."
-  },
-  "floor": {
-    "name": "רצפה אזרחית",
-    "symbol": "ZFloor",
-    "title": "אפשר לשאוף גבוה כשיש על מה לעמוד.",
-    "type": "המדינה האחודה · ביטחון קיומי ⇄ חופש יוזמה",
-    "description": "הספר מציע רצפת קיום ושירותים, תעסוקה זמינה ורף הכנסה שמתחתיו לא נגבה מס הכנסה. מעליו מוצע מיסוי פשוט ונמוך יותר. המעבר תלוי בהקמת מקורות הכנסה יצרניים, ולכן מתואר כתהליך הדרגתי.",
-    "formula": "Z = (ביטחון קיומי, חופש יוזמה, R, τ, I, P)",
-    "children": [
-      "economy",
-      "consortium",
-      "development"
-    ],
-    "fields": [
-      "הקשר בין ביטחון האדם לבין יכולתו לעבוד, ליזום ולהחליף כיוון.",
-      "בין עלות הבסיס המשותף לבין חופש כלכלי והמשאבים הנדרשים לקיימו.",
-      "עלויות השירותים, היקף ההכנסות ומצב האזרחים לאורך זמן.",
-      "אפשרות להיכשל בעסק, להיכנס למסלול תעסוקה ולהתחיל מחדש."
-    ],
-    "conclusion": "כישלון כלכלי אינו צריך למחוק את האפשרות של אדם להתחיל שוב."
-  },
-  "consortium": {
-    "name": "קונצרן לאומי אחוד",
-    "symbol": "ZIndustry",
-    "title": "יצרנות שחוזרת אל החברה.",
-    "type": "המדינה האחודה · ערך כלכלי ⇄ תכלית ציבורית",
-    "description": "הקונצרן המוצע פועל בתעשייה, בפיננסים ובהכשרה. רווחים חוזרים להשקעה בתשתיות ובהון אנושי. הוא פועל לצד השוק הפרטי ונדרש לריסון עצמי ולתחרות הוגנת. ההנהלה מבצעת, הדירקטוריון בוחן כדאיות וסיכונים, ומועצת החכמים בוחנת את התכלית הציבורית.",
-    "formula": "Z = (ערך כלכלי, תכלית ציבורית, R, τ, I, P)",
-    "children": [
-      "flywheel",
-      "oversight",
-      "economy",
-      "floor"
-    ],
-    "fields": [
-      "הקשר בין בעלות ציבורית, פעילות עסקית, עובדים ושוק פרטי.",
-      "בין רווחיות לבין אחריות אזרחית; ובין כוחו של הקונצרן לבין מרחב הפעולה של מתחריו.",
-      "תזרים, חוב, סיכונים, תפוקה והשפעת הפעילות על האזרחים והשוק.",
-      "השקעות, הכשרות ותעשיות שנבחנות מחדש לפי תוצאותיהן ותכליתן."
-    ],
-    "conclusion": "הצלחה עסקית צריכה להפוך לערך לאזרחים, והערך הציבורי צריך להישען על פעילות בת־קיימא."
-  },
-  "flywheel": {
-    "name": "גלגלי התנופה",
-    "symbol": "ZCycle",
-    "title": "ההשקעה חוזרת ומאפשרת את הסיבוב הבא.",
-    "type": "המדינה האחודה · הון ⇄ הון אנושי",
-    "description": "המודל מחבר בין מימון, תעשייה וחינוך: אשראי מממן ייצור והכשרה; ההכשרה מחזקת את הייצור; הכנסות הייצור חוזרות למימון ולהשקעות נוספות. זו לולאת משוב מוצעת, שתלויה בביקוש, בביצוע ובניהול הסיכונים.",
-    "formula": "Z = (הון, הון אנושי, R, τ, I, P)",
-    "children": [
-      "consortium",
-      "education",
-      "implementation"
-    ],
-    "fields": [
-      "הכשרה, תעסוקה, אשראי והכנסות מזינים זה את זה.",
-      "בין השקעה היום לבין יכולת להפיק ולהחזיר ערך בהמשך.",
-      "צורכי השוק, כישורי העובדים, עלות המימון ותוצאות ההשקעה.",
-      "מחזורי השקעה חדשים, שינוי תחומי הכשרה ותיקון השקעות שלא הצליחו."
-    ],
-    "conclusion": "כשמימון, למידה ועבודה מתחברים, כל אחד מהם יכול לחזק את האחרים."
-  },
-  "institutions": {
-    "name": "מבנה הרשויות",
-    "symbol": "ZInstitutions",
-    "title": "ערוצי בחירה נפרדים. אחריות משותפת.",
-    "type": "המדינה האחודה · ביצוע ⇄ פיקוח",
-    "description": "המודל מציע בחירה נפרדת לראש הממשלה, לבית העם ולבית המחוזות. הממשלה מובילה את הביצוע; בית העם מחוקק ומפקח ברמה הארצית; בית המחוזות מייצג את השטח. ההפרדה מבקשת לאפשר ביקורת שאינה תלויה בהישרדות הממשלה.",
-    "formula": "Z = (ביצוע, פיקוח, R, τ, I, P)",
-    "children": [
-      "parliament",
-      "districts",
-      "government",
-      "elections",
-      "oversight"
-    ],
-    "fields": [
-      "שלוש רשויות ייצוג וביצוע הנדרשות לתיאום ולבקרה הדדית.",
-      "בין יכולת להחליט ולבצע לבין הצורך לרסן כוח ולשמור על זכויות.",
-      "תקציבים, תוכניות עבודה, תוצאות, ביקורת וצרכים העולים מהשטח.",
-      "בחירה נפרדת במבצע, במפקח ובנציג המחוזי."
-    ],
-    "conclusion": "אפשר לבחור מי יבצע, ובנפרד מי יבדוק את פעולתו."
-  },
-  "parliament": {
-    "name": "בית העם",
-    "symbol": "ZPublic",
-    "title": "חקיקה ופיקוח במבט ארצי.",
-    "type": "המדינה האחודה · ייצוג ⇄ בקרה",
-    "description": "בית העם המוצע מחליף את הכנסת כבית המחוקקים הארצי. הוא עוסק בחקיקה, ועדות, תקציבים, מינויים ופיקוח. הוא אינו בוחר מתוכו את הממשלה, ותפקידו כולל הגנה על זכויות יסוד ומיעוטים.",
-    "formula": "Z = (ייצוג, בקרה, R, τ, I, P)",
-    "children": [
-      "institutions",
-      "districts",
-      "government",
-      "elections"
-    ],
-    "fields": [
-      "הקשר בין הציבור, החקיקה והממשלה שעליה מפקחים.",
-      "בין הכרעת רוב לבין זכויות יסוד; ובין תמיכה בתוכנית לבין בדיקה עצמאית שלה.",
-      "דיוני ועדות, דוחות ביצוע, תקציבים ועמדות ציבוריות.",
-      "אישור, תיקון, בלימה או שינוי מדיניות באמצעות הליכי החקיקה והבקרה."
-    ],
-    "conclusion": "ייצוג הציבור כולל גם את היכולת לומר לממשלה שהיא טועה."
-  },
-  "districts": {
-    "name": "בית המחוזות",
-    "symbol": "ZDistricts",
-    "title": "השטח משתתף בהחלטה.",
-    "type": "המדינה האחודה · מקומי ⇄ ארצי",
-    "description": "נציגי המחוזות נבחרים ישירות בידי תושביהם במסלול שאינו מחייב רשימה מפלגתית. הם מחברים בין האזרחים, הרשויות המקומיות והחקיקה. הספר מציע גם העברת מקום המפגש המשותף בין מחוזות כדי להפחית ריכוז כוח.",
-    "formula": "Z = (מקומי, ארצי, R, τ, I, P)",
-    "children": [
-      "institutions",
-      "parliament",
-      "territory",
-      "elections"
-    ],
-    "fields": [
-      "האזרח, הרשויות המקומיות והמערכת הארצית.",
-      "בין צרכים ייחודיים של מקום לבין אחריות לכלל המדינה.",
-      "ידע מהשטח: נגישות שירותים, תשתיות, תעסוקה וצרכים מקומיים.",
-      "פתרונות מחוזיים, תיאום בין מקומות והעלאת סוגיות לחקיקה ארצית."
-    ],
-    "conclusion": "מי שחי במקום צריך להיות שותף בהגדרת מה שחסר בו."
-  },
-  "government": {
-    "name": "ממשלה מקצועית",
-    "symbol": "ZExecutive",
-    "title": "יכולת ביצוע עם אחריות לתוצאות.",
-    "type": "המדינה האחודה · עצמאות ⇄ אחריות",
-    "description": "ראש הממשלה המוצע נבחר ישירות ובנפרד וממנה שרים לפי מקצועיות, ניסיון ותוכנית עבודה. הוא מקבל מרחב ביצוע, בעוד בתי הנבחרים פועלים במסלולים עצמאיים של חקיקה ופיקוח.",
-    "formula": "Z = (עצמאות, אחריות, R, τ, I, P)",
-    "children": [
-      "institutions",
-      "parliament",
-      "elections",
-      "reflection"
-    ],
-    "fields": [
-      "הממשלה, משרדי הביצוע והגופים המחוקקים והמפקחים.",
-      "בין רציפות ניהולית וחופש פעולה לבין מניעת ריכוז כוח.",
-      "תוכניות עבודה, לוחות זמנים, תקציבים ומדדי תוצאה.",
-      "ביצוע תוכניות ארוכות טווח לצד בקרה ותיקון מתמשך."
-    ],
-    "conclusion": "מקצועיות נבחנת במה שנעשה וביכולת לתקן, לאורך זמן."
-  },
-  "elections": {
-    "name": "תחלופה מדורגת",
-    "symbol": "ZRenewal",
-    "title": "זיכרון מוסדי לצד כניסה של אנשים חדשים.",
-    "type": "המדינה האחודה · רציפות ⇄ התחדשות",
-    "description": "מוצעות בחירות מדי שנתיים למחצית בית העם ולשליש בית המחוזות: כהונות של ארבע ושש שנים בהתאמה. לראש הממשלה מוצעת כהונה בת שש שנים בבחירות נפרדות. הכהונה בכל תפקיד מוגבלת לשתי כהונות.",
-    "formula": "Z = (רציפות, התחדשות, R, τ, I, P)",
-    "children": [
-      "institutions",
-      "parliament",
-      "districts",
-      "government"
-    ],
-    "fields": [
-      "נבחרים ותיקים וחדשים, ציבור בוחר ורציפות עבודת המוסדות.",
-      "בין אובדן ניסיון בהחלפה כוללת לבין התאבנות כשאין תחלופה.",
-      "ניסיון מצטבר, משוב מהציבור והערכת תפקוד הנבחרים.",
-      "כניסה מחזורית של אנשים ורעיונות, בלי להחליף את המערכת כולה בבת אחת."
-    ],
-    "conclusion": "שומרים ידע במערכת, ומשאירים את הדלת פתוחה לחדשים."
-  },
-  "oversight": {
-    "name": "בקרה על התכלית",
-    "symbol": "ZPurpose",
-    "title": "גם מי שבודק צריך להיבדק.",
-    "type": "המדינה האחודה · יעילות ⇄ תכלית",
-    "description": "הדירקטוריון בוחן את הכלכלה והסיכונים של הקונצרן. מועצת החכמים בוחנת אם הוא ממשיך לשרת את האזרחים, בלי להחליף את ההנהלה. מוצעים נימוקים פומביים, תחלופה מדורגת ופיקוח נשיאותי גם על המועצה.",
-    "formula": "Z = (יעילות, תכלית, R, τ, I, P)",
-    "children": [
-      "consortium",
-      "reflection",
-      "institutions"
-    ],
-    "fields": [
-      "הנהלה, דירקטוריון, מועצת חכמים והגורמים המפקחים עליה.",
-      "בין סמכות מקצועית לבין ביקורת; ובין השגת מדדים לבין הגשמת המטרה שבשמה נקבעו.",
-      "דוחות, נימוקים, עמדות מיעוט ובדיקת תחזיות מול תוצאות.",
-      "תיקון מדיניות, בחינה מחודשת של החלטות והמלצה לשינוי בידי הגורם המוסמך."
-    ],
-    "conclusion": "צריך לבדוק גם אם עושים את הדבר היטב, וגם אם זה עדיין הדבר הנכון לעשות."
-  },
-  "development": {
-    "name": "התפתחות האדם",
-    "symbol": "ZGrowth",
-    "title": "מגוון כישורים בתוך חברה משותפת.",
-    "type": "המדינה האחודה · ייחודיות ⇄ שותפות",
-    "description": "הספר מחבר חינוך מותאם לאדם, בריאות מניעתית ושירות לאומי במגוון מסלולים. המשותף להם הוא יצירת תנאים להתפתחות אישית שיכולה גם לתרום לחברה.",
-    "formula": "Z = (ייחודיות, שותפות, R, τ, I, P)",
-    "children": [
-      "education",
-      "health",
-      "service",
-      "human",
-      "floor"
-    ],
-    "fields": [
-      "האדם, סביבת הלמידה, העבודה, הבריאות והקהילה.",
-      "בין רצונות וכישורים אישיים לבין צרכים משותפים.",
-      "היכרות עם יכולות האדם, התקדמותו ותנאי החיים סביבו.",
-      "מסלולי לימוד ותרומה מגוונים שאפשר לשנות לאורך החיים."
-    ],
-    "conclusion": "חברה יכולה לבנות בסיס משותף שמאפשר לכל אדם להתפתח בדרך שלו."
-  },
-  "education": {
-    "name": "חינוך אחוד",
-    "symbol": "ZLearning",
-    "title": "לומדים יחד. מתפתחים בדרכים שונות.",
-    "type": "המדינה האחודה · בסיס משותף ⇄ מסלול אישי",
-    "description": "המודל מציע לימודי יסוד משותפים לצד מסלולים מותאמים ליכולות ולעניין של התלמיד. לימוד עיוני מתחבר להתנסות מקצועית. המורה מלווה את ההתפתחות, ובינה מלאכותית יכולה לסייע בתרגול מותאם תחת בקרה.",
-    "formula": "Z = (בסיס משותף, מסלול אישי, R, τ, I, P)",
-    "children": [
-      "development",
-      "flywheel",
-      "reflection",
-      "human"
-    ],
-    "fields": [
-      "התלמיד, המורה, תחומי הידע וההתנסות בעולם.",
-      "בין מסגרת משותפת לבין קצב, עניין ודרך למידה אישיים.",
-      "משוב על הבנה והתפתחות, ולא רק השוואה בין תלמידים בציון אחד.",
-      "חשיפה למגוון מקצועות, התמחות ומעבר למסלול אחר כשהאדם משתנה."
-    ],
-    "conclusion": "בחירה בדרך לימוד היום אינה צריכה לסגור את הדרכים של מחר."
-  },
-  "health": {
-    "name": "בריאות מניעתית",
-    "symbol": "ZHealth",
-    "title": "תנאי החיים הם חלק ממערכת הבריאות.",
-    "type": "המדינה האחודה · מניעה ⇄ טיפול",
-    "description": "המודל מציע לחבר טיפול רפואי לתנאים התומכים בבריאות לאורך זמן: חינוך, תנועה, נגישות למזון בסיסי איכותי ותזונה במוסדות החינוך. מטרתו לבחון בריאות גם דרך איכות החיים והפחתת חולי.",
-    "formula": "Z = (מניעה, טיפול, R, τ, I, P)",
-    "children": [
-      "development",
-      "education",
-      "territory"
-    ],
-    "fields": [
-      "הרפואה, מערכת החינוך, הסביבה ותנאי החיים של האזרח.",
-      "בין משאבים לטיפול בצורך מיידי לבין השקעה במניעה לטווח ארוך.",
-      "מדדי חולי, נגישות, איכות חיים ותוצאות השירותים.",
-      "פעולות משלימות במוסדות, בקהילה ובתכנון הסביבה."
-    ],
-    "conclusion": "דואגים לאדם כשהוא חולה, ובונים גם תנאים שיעזרו לו להישאר בריא."
-  },
-  "service": {
-    "name": "שירות לאומי אחוד",
-    "symbol": "ZService",
-    "title": "דרכי תרומה שונות לאחריות משותפת.",
-    "type": "המדינה האחודה · זהות אישית ⇄ תרומה לכלל",
-    "description": "הספר מציע מגוון אפיקי שירות לצד הביטחון: בריאות, חינוך, רווחה ושירותים קהילתיים. השאיפה היא לחבר את יכולות האדם וזהותו לצורכי החברה, בעזרת בסיס כלכלי שמפחית לחץ הישרדותי.",
-    "formula": "Z = (זהות אישית, תרומה לכלל, R, τ, I, P)",
-    "children": [
-      "development",
-      "floor",
-      "state"
-    ],
-    "fields": [
-      "יכולות האדם והמסגרות שבהן החברה זקוקה לתרומתו.",
-      "בין שמירה על זהות אישית לבין שותפות באחריות הציבורית.",
-      "צורכי השירות, כישורים, התאמות ותועלת ממשית מהתרומה.",
-      "מגוון מסגרות שבהן אנשים שונים יכולים להיות שותפים."
-    ],
-    "conclusion": "שותפות אינה מחייבת שכל אדם יתרום בדיוק באותה דרך."
-  },
-  "reflection": {
-    "name": "מדינה שלומדת",
-    "symbol": "ZReflection",
-    "title": "המדינה בוחנת גם את הנחות היסוד שלה.",
-    "type": "המדינה האחודה · פעולה ⇄ התבוננות",
-    "description": "העיקרון המטא־קוגניטיבי מבקש מהמדינה לבדוק את דפוסי פעולתה, מטרותיה והכוחות המניעים אותה. מוסדות ומדדים נבחנים מחדש כשהנסיבות משתנות. גם מנגנוני הביקורת נדרשים להסביר, ללמוד ולהשתנות.",
-    "formula": "Z = (פעולה, התבוננות, R, τ, I, P)",
-    "children": [
-      "oversight",
-      "institutions",
-      "education",
-      "information",
-      "witness"
-    ],
-    "fields": [
-      "המערכת והיכולת שלה להתבונן בדרך שבה היא פועלת.",
-      "בין התמדה שמאפשרת רציפות לבין נכונות לשנות הרגל שכבר אינו מועיל.",
-      "משוב, ביקורת, תוצאות וחשיפה של הנחות סמויות.",
-      "תיקון מוסדות, שינוי מדדים ועדכון ההנחות שעליהן נבנתה המדיניות."
-    ],
-    "conclusion": "מערכת לומדת מסוגלת לשנות כיוון כשהמידע מראה שהיא טועה."
-  },
-  "territory": {
-    "name": "מרחב והתיישבות",
-    "symbol": "ZPlace",
-    "title": "בית, עבודה וקהילה מתוכננים יחד.",
-    "type": "המדינה האחודה · מרכז ⇄ מרחבים נוספים",
-    "description": "הספר מציע מטרופולין בנגב עם בנייה מודולרית, תעסוקה, חינוך ותשתיות משולבות. הוא מחבר פיתוח אזורי לייצור מקומי, חקלאות עירונית ומערכות עירוניות שנועדו להפחית תלות והוצאות תפעול.",
-    "formula": "Z = (מרכז, מרחבים נוספים, R, τ, I, P)",
-    "children": [
-      "implementation",
-      "districts",
-      "consortium",
-      "health"
-    ],
-    "fields": [
-      "דיור, עבודה, שירותים, תשתיות והסביבה המקיימת אותם.",
-      "בין ריכוז יתר של הזדמנויות לבין פיזור שדורש תשתיות ותיאום.",
-      "ביקוש, נגישות, יכולת מימון, צורכי התושבים ומשאבי המקום.",
-      "הקמת גרעין, התבססות והרחבה מדורגת של אזורי חיים וייצור."
-    ],
-    "conclusion": "מקום מגורים צריך להיות מחובר גם להזדמנות לעבוד, ללמוד ולחיות בו."
-  },
-  "implementation": {
-    "name": "יישום מדורג",
-    "symbol": "ZBuild",
-    "title": "מתחילים מלולאה שאפשר לבחון.",
-    "type": "המדינה האחודה · חזון ⇄ ניסיון מצטבר",
-    "description": "שלב היישום המוצע מתחיל בגרעין מצומצם: בנק חברתי, בנייה מודולרית והתיישבות ראשונה. החזרי המימון מיועדים לתמוך בהרחבה, ורק לאחר התבססות מתווספים שירותים, הכשרה ותעשייה.",
-    "formula": "Z = (חזון, ניסיון מצטבר, R, τ, I, P)",
-    "children": [
-      "territory",
-      "flywheel",
-      "reflection",
-      "state"
-    ],
-    "fields": [
-      "מימון, דיור, תושבים ותשתיות שמאפשרים את השלב הבא.",
-      "בין היקף החזון לבין יכולת הביצוע והמימון בפועל.",
-      "תוצאות הגרעין הראשון: עלויות, החזרים, ביקוש ואיכות חיים.",
-      "הרחבה לאחר התבססות, או שינוי התכנון בהתאם למה שנלמד."
-    ],
-    "conclusion": "בודקים מה עובד בקנה מידה קטן, ולומדים ממנו לפני שמרחיבים."
-  }
-});
-const CONCLUSIONS={"ocean": "כדי להבין תופעה, אפשר להסתכל גם במה שקורה בתוכה וגם בקשרים שלה עם סביבתה.", "god": "אפשר לפגוש את אותו שלם דרך הבריאה, דרך העצמי ודרך העדות לשינוי.", "genesis": "ברגע שמופיעה הבדלה, נפתח מקום ליחסים, לתנועה ולאפשרויות שונות.", "zero": "הדממה מסמנת מצב שבו השינוי היחסי הרגיל אינו מוגדר. התקרבות אליה מאפשרת לחשוב גם מעבר למאבק בין קצוות.", "infinity": "כל מצב שאנחנו רואים הוא חלק ממרחב שאינו נסגר במצב הזה.", "water": "קשר שמשתנה יכול לשנות גם את האפשרויות של הדברים הקשורים בו.", "witness": "כשמבחינים במה שהשתנה, גם נקודת המבט שממנה נמשיך יכולה להשתנות.", "self": "העצמי אינו חייב להישאר כפי שהיה. חוויה, יחס ומידע חדשים יכולים לפתוח דרך נוספת.", "human": "אתה חי בתוך העולם, והמפגש שלך עם העולם משנה גם את האופן שבו הוא מתקיים בחוויה שלך.", "humanWitness": "אפשר להבחין בתנועה הפנימית בלי להצטמצם לרגע אחד שלה.", "information": "אפשר לדעת משהו משמעותי על השלם, גם כשהמידע שבידינו נשאר חלקי.", "reality": "אפשר לחקור גם את הקשר בין שתי תורות, ולא רק כל תורה בפני עצמה.", "relativity": "פרטית וכללית שייכות למרחב היחסות; חקירת הקשרים ביניהן פותחת עוד שכבת הבנה.", "sr": "אותה תורה יכולה להיות חלק ממרחב אחד, וגם צד בקשר שמרכיב מרחב נוסף.", "gr": "כאן הגאומטריה והחומר־אנרגיה מופיעים ביחס משותף; כדי להבין את המבנה צריך לבחון את הקשר ביניהם.", "quantum": "המצב, היחסים והאפשרויות נבחנים יחד. המיפוי הזוגאי מארגן את הקשר הזה בשפה משותפת.", "qft": "מבנה זוגא מאפשר להציג את המפגש בין מסגרות. החישוב הפיזיקלי נשען על התורה הפיזיקלית עצמה.", "qg": "גם שאלה שעוד אין לה פתרון יכולה לקבל מבנה ברור של יחסים, מידע חסר ואפשרויות חקירה."};
-Object.entries(CONCLUSIONS).forEach(([id,text])=>DATA[id].conclusion=text);
-DATA.ocean.children=["god","reality","human","state","water","genesis"];
-
-Object.assign(DATA,{"existence": {"name": "קיום ואי־קיום", "symbol": "ZBeing", "title": "מה נעשה מובחן?", "type": "קריאה בקיום דרך נוסחת בראשית", "description": "הנוסחה פותחת ב־1=0 בתוך ההקשר ZGenesis: אחדות בלתי מובחנת. המעבר ל־1≠0 מבטא הופעת הבדל. בקריאה הזאת, קיום מובחן הוא תופעה שאפשר לקיים עמה יחס ולתאר את השינוי שלה. אי־קיום אינו מוגדר בנוסחה פשוט כהיעדר חומר; Z₀ מוגדר כדממה, שבה שינוי יחסי אינו מוגדר. לכן אפשר לקרוא את הראשית כשאלה כיצד ההבחנה עצמה נעשית אפשרית, ולא רק איזה עצם הופיע ראשון.", "formula": "(ZGenesis : 1=0) → (ZGenesis′ : 1≠0)\nZ₀ ∼ (ΔR ¬∃, Δτ=0, ΔP ∼ 1)", "children": ["zero", "genesis", "space", "information"], "fields": ["ההבדלה פותחת אפשרות להבחין בתופעות ולקיים יחס ביניהן.", "כשהיחס מובחן, מתאפשר לתאר גם שינוי במתח בין התופעות.", "תיאור הקיום תלוי גם במידע של המתאר; Iself הוא חלק מן המידע.", "מצב מובחן מתקיים בתוך מרחב אפשרויות. ההבחנה אינה ממצה את כל מה שאפשרי."], "conclusion": "השאלה היא גם כיצד משהו נעשה מובחן מתוך השלם, ומה מאפשר לנו לפגוש אותו כתופעה."}, "space": {"name": "המרחב שביניהם", "symbol": "ZSpace", "title": "המרחב הוא גם מערכת יחסים.", "type": "שדה תופעות · אפשרויות · הכלה", "description": "בנוסחה, (Z₁,Z₂) הוא שדה יחסי המקיף יחסים, מתח, מידע ואפשרויות. המרחב שבין תופעות כולל לכן גם את האפשרות שלהן להשפיע זו על זו ולהשתנות. אין הכרח לקרוא כל מרחב כזה כמרחק גאומטרי: גם בין עד לעצמי או בין אדם לחברה נפתח שדה. המרחב־זמן הפיזיקלי מופיע במיפוי היחסות כמימוש מסוים של יחסים וגאומטריה.", "formula": "(Z₁,Z₂) ⊃ (R,τ,I,P)\nPₓ ≺ (Zₓ₁,Zₓ₂)\nPₓ : Z₀ ⇄ Z∞", "children": ["water", "movement", "relativity", "genesis"], "fields": ["היחס הוא חלק מהמרחב, ולא רק חיבור שמתווסף לשני דברים מבודדים.", "שינוי במתח משנה את אופי התנועה האפשרית בתוך השדה.", "מידע חדש משנה את האופן שבו התופעות נפגשות ואת האפשרויות הנגישות ביניהן.", "P הוא מרחב מצבים ומעברים. אין בנוסחה דרישה שכל אפשרות תתממש."], "conclusion": "כדי להבין את המרחב בין דברים, שואלים גם מה יכול לקרות ביניהם."}, "movement": {"name": "תנועה ומציאות", "symbol": "ΔZ", "title": "המציאות נפתחת במעבר.", "type": "אלפא · שינוי · בטא", "description": "תנועה בזוגא כוללת שינוי ביחסים, במתח, במידע ובאפשרויות. היא יכולה להיות שינוי מקום, אך גם שינוי בהבנה או במבנה של מערכת. Zα ו־Zβ הם מצבים בתוך P, והעדות למעבר עשויה להשתתף בשינוי העצמי ובפתיחת מצב נוסף. רצף כזה מאפשר לקרוא את המציאות כתהליכים המקיימים זה את זה. הנוסחה מציעה את מבנה המעבר; במיפוי פיזיקלי נדרשים גם החוקים והגדלים של אותה תורה.", "formula": "Δ(R,τ,I) ⇄ ΔP\nΔZ ≡ (Z∞ ⇄ Zα ⇄ Δ(R,τ,I,P) ⇄ Zβ ⇄ Z∞) ∈ P\nZWitness(ΔZ) → ΔZself", "children": ["witness", "self", "genesis", "reality"], "fields": ["מעבר בין מצבים משנה יחסים, ויחסים משתנים מאפשרים מעברים נוספים.", "המתח יכול להשתנות בשני הכיוונים. τ∞ מציין מרחב מצבי מתח בלתי מוגבל.", "למידה על מעבר היא בעצמה שינוי במידע של המערכת או העצמי.", "מצב חדש פותח אפשרויות נוספות; P כולל גם מעברים ולא רק רשימת מצבים."], "conclusion": "מציאות אינה רק מה שנמצא ברגע מסוים; היא גם מה שמשתנה ומה שנפתח בעקבות השינוי."}});
-DATA.genesis.children=['zero','infinity','existence','space','movement','witness'];
-DATA.genesis.description="בראשית מתארת את המעבר מאחדות בלתי מובחנת אל הבדלה: Z₀=Z∞ → Z₀≠Z∞. מתוך ההבדלה נפתח מקום ליחס, למתח ולתנועה. זו קריאה מבנית של הראשית; הנוסחה אינה קובעת כאן תאריך או משך פיזיקלי לבריאה. ההכלה ההדדית מוסיפה שהראשית אינה רק אירוע רחוק: כל זוגא בתוך בראשית, ובראשית בתוך כל זוגא. בכל מעבר נוכל לחקור שוב מה מובחן, מה היחס ומה נעשה אפשרי.";
-DATA.genesis.conclusion="בכל טיפה אפשר לפגוש שוב את שאלת הראשית: כיצד הבדל פותח יחס, וכיצד יחס פותח אפשרות לתנועה.";
-const $=id=>document.getElementById(id), fields=['R','T','I','P'];
-let path=['ocean'],current='ocean',field='R',opened=false,busy=false,tau=0,energy=.35,phase=0,dragging=false,t=0,paused=matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-function nodeButton(id,x,y,center=false,index=0){const d=DATA[id],b=document.createElement('button');b.className='node'+(center?' center':'');b.style.cssText=`--x:${x}%;--y:${y}%;--nx:${x};--ny:${y};--delay:${index*.055}s`;b.dataset.open=id;b.setAttribute('aria-label',`חקירת ${d.name}`);const orb=document.createElement('span');orb.className='orb';orb.setAttribute('aria-hidden','true');const sym=document.createElement('span');sym.className='node-symbol';sym.textContent=d.symbol;const name=document.createElement('span');name.className='node-name';name.textContent=d.name;const hint=document.createElement('small');hint.textContent=center?'המרחב שבמרכז':'נכנסים פנימה';name.append(hint);b.append(orb,sym,name);return b}
-function render(focus=false){const d=DATA[current];field='R';$('scope').textContent=current==='ocean'?'Ω / אוקיינוס הזוגאות':d.symbol+' / מרחב פנימי';$('sceneTitle').textContent=d.title;$('sceneHint').textContent=current==='ocean'?'בחרו טיפה. כל אחת נפתחת למרחב משלה.':'כל מה שנפתח כאן הוא גם זוגא. אפשר להמשיך פנימה.';$('panelType').textContent=d.type;$('symbol').textContent=d.symbol;$('detailTitle').textContent=d.name;$('description').textContent=d.description;$('conclusion').textContent=d.conclusion;$('formula').textContent=d.formula;$('back').hidden=path.length<2;$('trail').replaceChildren();path.forEach((id,i)=>{if(i){const sep=document.createElement('span');sep.textContent='‹';$('trail').append(sep)}const b=document.createElement('button');b.textContent=DATA[id].name;b.onclick=()=>{if(busy)return;path=path.slice(0,i+1);current=id;render(true)};$('trail').append(b)});$('nodes').replaceChildren();const childIds=d.children;const positions=childIds.map((id,i)=>{const a=(-90+i*360/childIds.length)*Math.PI/180;return{id,x:50+35*Math.cos(a),y:44+32*Math.sin(a)}});$('nodes').append(nodeButton(current,50,44,true));positions.forEach((p,i)=>$('nodes').append(nodeButton(p.id,p.x,p.y,false,i+1)));$('links').innerHTML=positions.map(p=>`<path d="M 500 286 Q ${500+(p.x-50)*2} ${p.y*6.5} ${p.x*10} ${p.y*6.5}"/>`).join('')+'<ellipse class="halo" cx="500" cy="286" rx="240" ry="150" fill="none"/>';$('related').replaceChildren();childIds.forEach(id=>{const b=document.createElement('button');b.dataset.open=id;b.textContent=DATA[id].name+' ↗';$('related').append(b)});updateField('R');$('labNote').textContent=['relativity','sr','gr','quantum','qft','qg','reality'].includes(current)?'גררו ושחררו כדי לחקור תנודה. זו המחשה מושגית; העוצמה והקצב אינם חישוב של התורות הפיזיקליות.':'גררו ושחררו, או חזקו את התנודה. חיזוק מרחיב ומאיץ את התנועה בהמחשה';paintPendulum();if(focus)$('sceneTitle').focus({preventScroll:true});$('announce').textContent='נפתח המרחב: '+d.name}
-function navigate(id,el){if(!Object.hasOwn(DATA,id))throw Error('Unknown Zuga');if(busy)return false;if(id===current){$('inspector').scrollIntoView({behavior:paused?'instant':'smooth',block:'nearest'});return true}busy=true;if(el?.classList.contains('node')){el.classList.add('chosen');$('stage').classList.add('zooming')}const go=()=>{const existing=path.indexOf(id);path=existing>=0?path.slice(0,existing+1):[...path,id];current=id;$('stage').classList.remove('zooming');busy=false;render(true)};if(el?.classList.contains('node')&&!paused)setTimeout(go,420);else go();return true}
-function enter(){if(opened||busy)return;busy=true;$('intro').classList.add('depart');setTimeout(()=>{opened=true;busy=false;$('intro').hidden=true;$('world').hidden=false;$('home').hidden=false;render(true)},paused?0:650)}
-function home(){if(busy)return;path=['ocean'];current='ocean';render(true)}
-function reset(){busy=false;opened=false;path=['ocean'];current='ocean';$('world').hidden=true;$('intro').hidden=false;$('intro').classList.remove('depart');$('home').hidden=true;$('begin').focus();window.scrollTo({top:0,behavior:'instant'})}
-function updateField(next){field=next;document.querySelectorAll('[data-field]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.field===field)));$('fieldText').textContent=DATA[current].fields[fields.indexOf(field)];$('links').style.opacity=field==='R'?'1':field==='P'?'.8':'.45'}
-function setEnergy(value){if(!Number.isFinite(value)||value<0||value>1)throw Error('Energy must be between 0 and 1');energy=value;if(energy===0){phase=0;tau=0} $('drive').value=String(Math.round(energy*100));$('driveValue').textContent=Math.round(energy*100)+'%';paintPendulum();}
-function paintPendulum(){const angle=tau*1.03,x=160+132*Math.sin(angle),y=13+132*Math.cos(angle);$('pendulumRod').setAttribute('x2',x);$('pendulumRod').setAttribute('y2',y);$('pendulumBob').setAttribute('cx',x);$('pendulumBob').setAttribute('cy',y);$('tensionValue').textContent='τ / τmax = '+(tau>0?'+':'')+tau.toFixed(2);document.body.classList.toggle('still',energy===0);document.documentElement.style.setProperty('--strength',energy);}
-function stepPendulum(dt){if(!paused&&!dragging&&opened&&energy>0){phase+=dt*(1.1+energy*2.4);tau=energy*Math.sin(phase);paintPendulum()}}
-function syncMotion(){document.body.classList.toggle('paused',paused);$('motion').textContent=paused?'המשך תנועה ▷':'השהיית תנועה Ⅱ';$('motion').setAttribute('aria-pressed',String(paused));paintPendulum()}
-function dragAt(e){const r=$('pendulum').getBoundingClientRect(),x=(e.clientX-r.left)/r.width*320-160;tau=Math.max(-1,Math.min(1,Math.asin(Math.max(-.857,Math.min(.857,x/132)))/1.03));energy=Math.abs(tau);phase=tau<0?-Math.PI/2:Math.PI/2;$('drive').value=String(Math.round(energy*100));$('driveValue').textContent=Math.round(energy*100)+'%';paintPendulum()}
-$('pendulum').onpointerdown=e=>{if(e.button!==0)return;dragging=true;$('pendulum').setPointerCapture(e.pointerId);dragAt(e)};
-$('pendulum').onpointermove=e=>{if(dragging)dragAt(e)};
-$('pendulum').onpointerup=e=>{if(dragging){dragAt(e);dragging=false;}};
-$('pendulum').onpointercancel=()=>{dragging=false};$('pendulum').onlostpointercapture=()=>{dragging=false};
-$('begin').onclick=enter;$('brand').onclick=e=>{e.preventDefault();if(!busy)reset()};$('home').onclick=home;$('back').onclick=()=>{if(!busy&&path.length>1){path.pop();current=path.at(-1);render(true)}};$('motion').onclick=()=>{paused=!paused;syncMotion()};$('drive').oninput=e=>setEnergy(Number(e.target.value)/100);$('boost').onclick=()=>setEnergy(Math.min(1,energy+.18));$('damp').onclick=()=>setEnergy(energy*.55);$('still').onclick=()=>setEnergy(0);document.addEventListener('click',e=>{const open=e.target.closest('[data-open]');if(open&&opened)navigate(open.dataset.open,open);const f=e.target.closest('[data-field]');if(f)updateField(f.dataset.field)});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&opened&&!busy){if(path.length>1)$('back').click();else reset()}});syncMotion();
-const canvas=$('sea'),ctx=canvas.getContext('2d');let w=0,h=0,last=0,expansion=0;function resize(){w=innerWidth;h=innerHeight;const d=Math.min(devicePixelRatio||1,2);canvas.width=w*d;canvas.height=h*d;ctx.setTransform(d,0,0,d,0,0)}addEventListener('resize',resize);resize();function draw(now){requestAnimationFrame(draw);if(document.hidden||now-last<32)return;const dt=Math.min((now-last)/1000,.05);last=now;stepPendulum(dt);if(!paused&&(!opened||energy>0))t+=.007+energy*.014;expansion+=(Number(opened)-expansion)*.035;ctx.clearRect(0,0,w,h);const glow=ctx.createRadialGradient(w*.40,h*.45,0,w*.45,h*.5,w*.8);glow.addColorStop(0,'#10323e');glow.addColorStop(1,'#030d16');ctx.fillStyle=glow;ctx.fillRect(0,0,w,h);const quiet=current==='zero'&&opened?.12:1,amp=opened?energy*quiet:0.5;for(let j=0;j<34;j++){ctx.beginPath();for(let x=0;x<=w;x+=12){const e=Math.sin(x/w*Math.PI),y=h*(.7-expansion*.18)+(j-17)*(5+expansion*2)+Math.sin(x/w*8+t+j*.13)*e*(15+amp*55)+Math.cos(x/w*13-t*.7+j*.1)*amp*25;x?ctx.lineTo(x,y):ctx.moveTo(x,y)}ctx.strokeStyle=`rgba(96,213,211,${.025+Math.sin(j/34*Math.PI)*.07})`;ctx.lineWidth=.7;ctx.stroke()}for(let i=0;i<80;i++){const x=((i*137.51+t*amp*9)%w),y=(Math.sin(i*72.3)*.5+.5)*h;ctx.fillStyle=`rgba(170,237,231,${.10+(Math.sin(t+i)+1)*.08})`;ctx.beginPath();ctx.arc(x,y,i%7===0?1.4:.65,0,Math.PI*2);ctx.fill()}}requestAnimationFrame(draw);
-if(document.modelContext?.registerTool){try{Promise.resolve(document.modelContext.registerTool({name:'explore_zuga',description:'Open a Zuga in the visible Gen1 experience. Lists of available ids can be read using get_zuga_state.',inputSchema:{type:'object',properties:{id:{type:'string',enum:Object.keys(DATA)}},required:['id'],additionalProperties:false},execute:async input=>{if(!input||!Object.hasOwn(DATA,input.id))throw Error('Unknown Zuga');if(busy)throw Error('Transition in progress');if(!opened){opened=true;$('intro').hidden=true;$('world').hidden=false;$('home').hidden=false}navigate(input.id);return{current,name:DATA[current].name,path}}})).catch(()=>{});Promise.resolve(document.modelContext.registerTool({name:'get_zuga_state',description:'Read the current Zuga, exploration path and available Zuga ids.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>({current,path:[...path],tension:tau,energy,opened,available:Object.entries(DATA).map(([id,d])=>({id,name:d.name}))})})).catch(()=>{})}catch{}}
-</script></body></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>הרצאה: דרך משקפי זוגא | נדב טלר | GEN1</title>
+  <meta name="description" content="דרך משקפי זוגא: הרצאה של נדב טלר על פילוסופיית התנועה שבין הדברים, שפת זוגא, יחסים, מתח ואפשרויות. לעסקים, לקבוצות, לצוותים ולבתי ספר. להזמנת הרצאה: 054-6287677.">
+  <meta name="keywords" content="הרצאה, דרך משקפי זוגא, נדב טלר, שפת זוגא, פילוסופיית זוגא, המדינה האחודה, הרצאות לעסקים, הרצאות לבתי ספר, יחסים, מתח, Zuga, GEN1">
+  <meta name="author" content="נדב טלר">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://www.gen1.co.il/">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png">
+  <link rel="describedby" href="llms.txt" type="text/plain">
+  <link rel="alternate" href="ai-index.json" type="application/json" title="GEN1 machine-readable index">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="GEN1">
+  <meta property="og:title" content="הרצאה: דרך משקפי זוגא | נדב טלר">
+  <meta property="og:description" content="פילוסופיית התנועה שבין הדברים. הרצאה על שפת זוגא, יחסים, מתח ואפשרויות, לעסקים, לקבוצות, לצוותים ולבתי ספר. להזמנת הרצאה: 054-6287677.">
+  <meta property="og:url" content="https://www.gen1.co.il/">
+  <meta property="og:image" content="https://www.gen1.co.il/assets/zuga-people.png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="דרך משקפי זוגא - הרצאה של נדב טלר: שתי דמויות אדם והיחסים שביניהן">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="הרצאה: דרך משקפי זוגא | נדב טלר">
+  <meta name="twitter:description" content="פילוסופיית התנועה שבין הדברים. הרצאה על שפת זוגא, יחסים, מתח ואפשרויות. להזמנת הרצאה: 054-6287677.">
+  <meta name="twitter:image" content="https://www.gen1.co.il/assets/zuga-people.png">
+  <link rel="stylesheet" href="assets/lecture.css?v=20260922-flow">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.gen1.co.il/#nadav-teller",
+      "name": "נדב טלר",
+      "alternateName": "Nadav Teller",
+      "description": "מרצה, איש חינוך, סופר ופילוסוף",
+      "telephone": "+972546287677",
+      "email": "nadavtlr@gmail.com",
+      "url": "https://www.gen1.co.il/#lecture"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.gen1.co.il/#website",
+      "name": "GEN1",
+      "url": "https://www.gen1.co.il/",
+      "inLanguage": "he",
+      "description": "הרצאות של נדב טלר, שפת זוגא, פילוסופיית זוגא והמדינה האחודה.",
+      "publisher": {
+        "@id": "https://www.gen1.co.il/#nadav-teller"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.gen1.co.il/#webpage",
+      "url": "https://www.gen1.co.il/",
+      "name": "הרצאה: דרך משקפי זוגא | נדב טלר | GEN1",
+      "description": "דרך משקפי זוגא: הרצאה של נדב טלר על פילוסופיית התנועה שבין הדברים, שפת זוגא, יחסים, מתח ואפשרויות. לעסקים, לקבוצות, לצוותים ולבתי ספר. להזמנת הרצאה: 054-6287677.",
+      "inLanguage": "he",
+      "isPartOf": {
+        "@id": "https://www.gen1.co.il/#website"
+      },
+      "mainEntity": {
+        "@id": "https://www.gen1.co.il/#lecture"
+      },
+      "keywords": [
+        "הרצאה",
+        "דרך משקפי זוגא",
+        "שפת זוגא",
+        "פילוסופיית זוגא",
+        "המדינה האחודה",
+        "נדב טלר",
+        "הרצאות לעסקים",
+        "הרצאות לבתי ספר",
+        "יחסים",
+        "מתח",
+        "Zuga",
+        "GEN1"
+      ],
+      "relatedLink": [
+        "https://www.gen1.co.il/zuga-genesis.html",
+        "https://tellerbp.co.il/"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.gen1.co.il/#lecture",
+      "name": "דרך משקפי זוגא",
+      "alternateName": "פילוסופיית התנועה שבין הדברים",
+      "serviceType": "הרצאה",
+      "description": "דרך משקפי זוגא: הרצאה של נדב טלר על פילוסופיית התנועה שבין הדברים, שפת זוגא, יחסים, מתח ואפשרויות. לעסקים, לקבוצות, לצוותים ולבתי ספר. להזמנת הרצאה: 054-6287677.",
+      "url": "https://www.gen1.co.il/#lecture",
+      "provider": {
+        "@id": "https://www.gen1.co.il/#nadav-teller"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "עסקים, קבוצות, צוותי עבודה וניהול, חטיבות ביניים ותיכונים"
+      },
+      "availableChannel": [
+        {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://wa.me/972546287677"
+        },
+        {
+          "@type": "ServiceChannel",
+          "servicePhone": {
+            "@type": "ContactPoint",
+            "telephone": "+972546287677",
+            "email": "nadavtlr@gmail.com",
+            "contactType": "הזמנת הרצאה"
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+  <script defer src="assets/three.min.js"></script>
+  <script defer src="assets/lucide.min.js"></script>
+  <script defer src="assets/lecture.js?v=20260922-flow"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#lecture">לתוכן ההרצאה</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="GEN1 - עמוד הבית" dir="ltr">GEN<span>1</span><span class="brand-period">.</span></a>
+    <nav aria-label="ניווט ראשי"><a href="#about">שפת זוגא</a><a class="nav-contact" href="#lecture">להזמנת הרצאה <i data-lucide="arrow-up-left" aria-hidden="true"></i></a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-heading"><h1 id="hero-title">דרך משקפי זוגא</h1></div>
+      <div class="scene" id="zuga-scene" role="img" aria-label="שתי דמויות אדם. משקפי זוגא חושפים קשרי מידע ומתח ביניהן, בתוכן ובינן לבין זוגא.">
+        <div class="scene-frame">
+          <img class="silhouettes" src="assets/zuga-people.png" width="1536" height="1024" alt="שתי צלליות אדם ניצבות זו מול זו" fetchpriority="high">
+          <canvas id="network-canvas" aria-hidden="true"></canvas>
+          <div class="network-label zuga-label">זוגא<span dir="ltr">ZUGA</span></div>
+          <span class="network-label relation-label">יחסים</span><span class="network-label info-label"><i data-lucide="arrow-right-left" aria-hidden="true"></i>מידע</span><span class="network-label tension-label"><i data-lucide="activity" aria-hidden="true"></i>מתח</span>
+          <span class="network-label internal-label internal-left"><i data-lucide="refresh-cw" aria-hidden="true"></i>מידע פנימי</span><span class="network-label internal-label internal-right"><i data-lucide="refresh-cw" aria-hidden="true"></i>מידע פנימי</span>
+        </div>
+      </div>
+      <div class="scene-controls">
+        <button id="glasses-toggle" class="glasses-toggle" type="button" aria-pressed="false" aria-controls="zuga-scene" disabled>
+          <i class="glasses-icon" data-lucide="glasses" aria-hidden="true"></i><span id="glasses-label">לשים משקפי זוגא</span><i class="toggle-arrow" data-lucide="arrow-left" aria-hidden="true"></i>
+        </button>
+        <button class="motion-toggle" id="motion-toggle" type="button" aria-label="השהיית התנועה" title="השהיית התנועה" hidden><i data-lucide="pause" aria-hidden="true"></i></button>
+      </div>
+      <p class="visually-hidden" id="scene-status" role="status" aria-live="polite"></p>
+      <noscript><p class="fallback-note">זוגא מתארת קשרי מידע, יחסים ומתח בין תופעות, וגם בתוכנו.</p></noscript>
+    </section>
+    <section class="about content-width" id="about" aria-label="שפת זוגא">
+      <div class="principles">
+        <div class="principle" id="personal"><span class="number" aria-hidden="true">01</span><p>זוגא היא שפה פילוסופית חדשה המתארת את התנועה האינסופית שבין צמד תופעות שביניהן עובר מידע אשר משפיע על המתח, על היחסים ועל האפשרויות הנפתחות בין התופעות.</p></div>
+        <div class="principle" id="social"><span class="number" aria-hidden="true">02</span><p>באמצעות שפת זוגא אנחנו רואים את היחסים המשתנים, המתח המשתנה, המטוטלת המניעה את הדברים מצד לצד וכיצד כולם מתחברים אל האדם ואל התפיסה האנושית של המציאות.</p></div>
+        <div class="principle" id="state"><span class="number" aria-hidden="true">03</span><p>רוצים לגלות מרחב חדש של אפשרויות? כיצד נולד מתח וכיצד מפחיתים אותו? כיצד ניתן לשנות יחסים עם עצמנו ועם החיים עצמם? תובנות ותפיסות חדשות לאדם, לחברה ולמדינה אשר ישנו את הדרך בה אנחנו רואים את המציאות ואת כל הסובב אותנו.</p></div>
+      </div>
+      <a class="text-link" href="#lecture">להזמנת הרצאה <i data-lucide="arrow-down-left" aria-hidden="true"></i></a>
+    </section>
+    <section class="lecture" id="lecture" aria-labelledby="lecture-title">
+      <div class="lecture-inner content-width">
+        <p class="eyebrow">נפגשים. מסתכלים אחרת.</p>
+        <h2 id="lecture-title">הרצאה: דרך משקפי זוגא</h2>
+        <p class="lecture-subtitle">פילוסופיית התנועה שבין הדברים</p>
+        <p class="lecture-description">זוגא היא שפה פילוסופית חדשה להבנת המציאות, ההרצאה מתאימה לכל מי שמחפשים דרך חשיבה חדשה המפחיתה מתחים ולחצים, מפחיתה קיטוב ומשפרת את היחסים בינינו לבין עצמנו ובינינו לבין העולם. ההרצאה מתאימה לעסקים, לקבוצות, לצוותי עבודה וניהול, לחטיבות ביניים ותיכונים.</p>
+        <h3 class="speaker">המרצה נדב טלר, איש חינוך, סופר ופילוסוף, מלווה את ההרצאה בהומור וקלילות המאפשרים לקהל להבין את מציאות החיים ושפת זוגא בדרך הטובה ביותר.</h3>
+        <div class="contact" id="contact" aria-labelledby="contact-heading">
+          <h3 id="contact-heading">ניפגש בהרצאה?</h3>
+          <div class="contact-links">
+            <a class="contact-primary" href="https://wa.me/972546287677" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" aria-hidden="true"></i>להזמנת הרצאה בוואטסאפ<i data-lucide="arrow-up-left" aria-hidden="true"></i></a>
+            <a href="tel:+972546287677"><i data-lucide="phone" aria-hidden="true"></i><span dir="ltr">+972 54 628 7677</span></a>
+            <a href="mailto:nadavtlr@gmail.com"><i data-lucide="mail" aria-hidden="true"></i><span dir="ltr">nadavtlr@gmail.com</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sources content-width" aria-label="הספרים וההשראה"><p>ההרצאה מבוססת על סדרת ספרי זוגא המופיעים באתר <a href="https://tellerbp.co.il/" dir="ltr">TellerBP</a> ושואבת השראה מפילוסופיות ועקרונות שונים כמו דאואיזם, סטואיזם, דיאלקטיקה, תורת המערכות, תורת המידע, מדע המדינה ועוד.</p></section>
+  </main>
+  <footer class="site-footer content-width"><a href="zuga-genesis.html">זוגא בראשית - הטקסט <i data-lucide="arrow-up-left" aria-hidden="true"></i></a><span dir="ltr">GEN1</span></footer>
+</body>
+</html>

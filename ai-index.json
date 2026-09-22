@@ -1,56 +1,246 @@
 {
-  "name": "Gen1=0",
-  "language": "he",
-  "url": "https://www.gen1.co.il/",
-  "texts": [
+  "site": {
+    "name": "GEN1",
+    "hebrew_name": "דור1",
+    "canonical_origin": "https://www.gen1.co.il/",
+    "languages": [
+      "he",
+      "en"
+    ],
+    "purpose": "GEN1 is primarily a lecture and booking website for Through Zuga Glasses (דרך משקפי זוגא), presented by Nadav Teller. Its subjects include Zuga philosophical language, Zuga philosophy and the Unified State.",
+    "primary_frame": [
+      "דרך משקפי זוגא - הרצאה",
+      "שפת זוגא",
+      "פילוסופיית זוגא",
+      "המדינה האחודה",
+      "מידע, יחסים, מתח ואפשרויות"
+    ],
+    "logo": "https://www.gen1.co.il/assets/gen1-logo.png",
+    "pages": [
+      {
+        "language": "he",
+        "url": "https://www.gen1.co.il/",
+        "title": "הרצאה: דרך משקפי זוגא | נדב טלר | GEN1",
+        "description": "דרך משקפי זוגא: הרצאה של נדב טלר על פילוסופיית התנועה שבין הדברים, שפת זוגא, יחסים, מתח ואפשרויות. לעסקים, לקבוצות, לצוותים ולבתי ספר. להזמנת הרצאה: 054-6287677."
+      },
+      {
+        "language": "he",
+        "url": "https://www.gen1.co.il/books.html",
+        "title": "ספרים | GEN1 דור1 | נדב טלר",
+        "description": "עמוד ספרים קצר על תורת זוגא, תורת זוגא המדינה האחודה, תורת זוגא האנושות כולה, האלוהים החילוני, זיכוך כתבים פילוסופים, משלי זוגא וכה אמר אלוה."
+      },
+      {
+        "language": "he",
+        "url": "https://www.gen1.co.il/zuga-theory.html",
+        "title": "Zuga (0, ∞)",
+        "description": "משוואת זוגא בראשית היא המשוואה להבנת תופעת הקיום ואי קיום: כל שם אשר אתן לו יהיה רחוק משמו האמיתי Zuga = Z= (Z1, Z2, R, τ, I, P); Z1= Z Phenomenon | Z2= Z Phenomenon; R= Relations | τ= Tension | I= Information; A:B, :=Relational Scope; A≺B, ≺=Exists Within; A≺B ∧ B≺A, recursive mutual containment is permitted; B⊃A, ⊃=Structurally Encompasses; B⊃A ∧ A⊃B, recursive mutual containment is permitted; A⇄B, ⇄=transition and mutual influence; a∈A, ∈=Element of; A∼B,∼=Approximates; f:A⇝B, f(a)=b, a∈A, b∈B, f= Function,⇝=Maps To; P=Infinite Possibilities, States and Transitions; P: Z0⇄ Z∞; Δ(R,τ,I) ⇄ Δ P; (Z1,Z2)=Relational Field, (Z1,Z2)⊃(R,τ,I,P); Z0= Stillness; Z∞=Unboundedness; Information boundaries: Iself≺I, Iself(R, τ, I, P) ∼(R, τ, I, P); ΔIself⇄ΔIΩ; Iself~Ω; Iself~ZGenesis; Ω~ZGenesis:the exact relation remains unknown; Δ= Change; →=Movement; ⇄ = Transition and mutual influence; כל זוגא היא הטיפות שבאוקיינוס: Ω={Z1,Z2,Z3,…}=all Z Phenomena ; ∣Ω∣=∞; Z1,Z2∈Ω; Z(Z0,Z∞,R,τ,I,P)∈Ω; וכל זוגא היא גם המים שבין הטיפות: Ω={Z1,Z2,Z3,…},∣Ω∣=∞; ∀Zx∈Ω:Zx=(Zx1,Zx2,Rx,τx,Ix,Px), Px≺(Zx1,Zx2),Px: Z0⇄ Z∞; Δ(Rx,τx,Ix)⇄ΔPx; ומעשה בריאת אלוהים : Z≺ (Z0, Z∞)≺Z; Z0, Z∞, Zself, Zn∈Ω; Z(Z0 ,Z∞)⊃[ Z0:⋯Zn⇄Δ(R,τ,I,P)⇄Zn+1⋯ Z∞]; הבדיל בין שמיים לארץ: ZGenesis=(ZGenesis:1=0) → (ZGenesis′:1≠0); ZGenesis=(Z0=Z∞) → (Z0≠Z∞); אהיה אשר אהיה: ZGenesis=(Z0 ,Z∞), ZGenesis=((ZGenesis:1=0), (ZGenesis′:1≠0)); ZGenesis ⊃ Zn; (Z0, Z∞)⊃ZGenesis⊃(Z0, Z∞); Z0⇄Zn⇄Z∞; ∀Zn ∈ Ω: Zn ≺ ZGenesis ≺ Zn; בין תופעה, 0, לתופעה, ∞, יצר מרחב לאינסוף זוגאות וכך הן החלו נעות: ΔZ≡(Z∞⇄Zα⇄Δ(R,τ,I,P)⇄Zβ⇄Z∞)∈P; α= Alpha State, β= Beta State…; Z∞⊃ΔZ; הרוח מרחפת מעל: ZWitness(Zα, Zβ)=ZWitness(ΔZ); Zβ → ΔZself → Zγ; ZWitness(ΔZ)→ΔZself; ZWitness~ ZGenesis, ZWitness≺ZGenesis ≺ZWitness; Zself~ZWitness, Zself≺ZWitness≺Zself; ויצר אותנו בצלמיו: Zhuman=recursive network of Zugas; Zhuman=(ZHumanWitness,Zself,R,τ,I,P) ; Zhuman≺ZGenesis≺Zhuman; Zhuman≺ZWitness≺Zhuman; הוא הכול וכלום, הוא מחכה בכל הדברים ומחכה בדממה: ZhumanWitness∼(Z0, Zself, Z∞); יהיה באי עשייה והכל מעצמו נעשה: Zself→Δ→Zself′→Δ→Zself′′∼Z0; ללכת בדרך: ZhumanWitness→Zselfτ~Z0; Zself(Humble~Z0, Authoritative~ Z∞), Zself(simple~Z0, complicated~ Z∞), Zself(looks simple~Z0, valuable~ Z∞), Zself(Wants~Z0, Receives~ Z∞), Zself(Zselfτ~Z0, ZselfR~Z∞); Witness the Change"
+      },
+      {
+        "language": "he",
+        "url": "https://www.gen1.co.il/zuga-full.html",
+        "title": "תורת זוגא | הספר המלא",
+        "description": "עמוד קריאה מלא לתורת זוגא, כולל מבנה זוגא: Zuga = Z= (Z1, Z2, R, τ, I, P), Ω, ∀Zx ו-Z(0, ∞)."
+      },
+      {
+        "language": "en",
+        "url": "https://www.gen1.co.il/index-en.html",
+        "title": "GEN1 | Stopping the Pendulum - Lectures, Books, Consciousness",
+        "description": "Stopping the Pendulum: a lecture website by Nadav Teller with emphasis on interesting lectures, book lectures, spiritual lectures, political science, society, consciousness, silence, Taoism, Stoicism, capitalism, socialism, and redemption."
+      },
+      {
+        "language": "he",
+        "url": "https://www.gen1.co.il/zuga-genesis.html",
+        "title": "זוגא בראשית - הטקסט",
+        "description": "עמוד טקסט של זוגא בראשית והמדינה האחודה; מקור נפרד מעמוד ההרצאה."
+      }
+    ],
+    "zuga_structure_formula": [
+      "[Zuga Structure = מבנה זוגא]",
+      "Zuga = Z= (Z1, Z2, R, τ, I, P)",
+      "Z1= Z Phenomenon | Z2= Z Phenomenon;",
+      "R= Relations | τ= Tension | I= Information;",
+      "P = Infinite Possibilities and States, |P| = ∞ ;",
+      "α= Alpha State, β= Beta State…;",
+      "Δ= Change;",
+      "⇄ = Transition and mutual influence;",
+      "Ω={Z1,Z2,Z3,…},∣Ω∣=∞ ;",
+      "∀Zx∈Ω:Zx=(Zx1,Zx2,Rx,τx,Ix,Px);",
+      "Z(0, ∞)"
+    ],
+    "zuga_genesis_equation": [
+      "משוואת זוגא בראשית היא המשוואה להבנת תופעת הקיום ואי קיום: כל שם אשר אתן לו יהיה רחוק משמו האמיתי",
+      "Zuga = Z= (Z1, Z2, R, τ, I, P);",
+      "Z1= Z Phenomenon | Z2= Z Phenomenon;",
+      "R= Relations | τ= Tension | I= Information;",
+      "A:B, :=Relational Scope;",
+      "A≺B, ≺=Exists Within; A≺B ∧ B≺A, recursive mutual containment is permitted;",
+      "B⊃A, ⊃=Structurally Encompasses; B⊃A ∧ A⊃B, recursive mutual containment is permitted;",
+      "A⇄B, ⇄=transition and mutual influence;",
+      "a∈A, ∈=Element of;",
+      "A∼B,∼=Approximates;",
+      "f:A⇝B, f(a)=b, a∈A, b∈B, f= Function,⇝=Maps To;",
+      "P=Infinite Possibilities, States and Transitions;",
+      "P: Z0⇄ Z∞; Δ(R,τ,I) ⇄ Δ P;",
+      "(Z1,Z2)=Relational Field, (Z1,Z2)⊃(R,τ,I,P);",
+      "Z0= Stillness; Z∞=Unboundedness;",
+      "Information boundaries:",
+      "Iself≺I, Iself(R, τ, I, P) ∼(R, τ, I, P); ΔIself⇄ΔIΩ;",
+      "Iself~Ω; Iself~ZGenesis; Ω~ZGenesis:the exact relation remains unknown;",
+      "",
+      "Δ= Change; →=Movement;",
+      "⇄ = Transition and mutual influence;",
+      "כל זוגא היא הטיפות שבאוקיינוס:",
+      "Ω={Z1,Z2,Z3,…}=all Z Phenomena ; ∣Ω∣=∞; Z1,Z2∈Ω;",
+      "Z(Z0,Z∞,R,τ,I,P)∈Ω;",
+      "וכל זוגא היא גם המים שבין הטיפות:",
+      "Ω={Z1,Z2,Z3,…},∣Ω∣=∞;",
+      "∀Zx∈Ω:Zx=(Zx1,Zx2,Rx,τx,Ix,Px),",
+      "Px≺(Zx1,Zx2),Px: Z0⇄ Z∞; Δ(Rx,τx,Ix)⇄ΔPx;",
+      "ומעשה בריאת אלוהים :",
+      "Z≺ (Z0, Z∞)≺Z; Z0, Z∞, Zself, Zn∈Ω;",
+      "Z(Z0 ,Z∞)⊃[ Z0:⋯Zn⇄Δ(R,τ,I,P)⇄Zn+1⋯ Z∞];",
+      "הבדיל בין שמיים לארץ:",
+      "ZGenesis=(ZGenesis:1=0) → (ZGenesis′:1≠0);",
+      "ZGenesis=(Z0=Z∞) → (Z0≠Z∞);",
+      "אהיה אשר אהיה:",
+      "ZGenesis=(Z0 ,Z∞), ZGenesis=((ZGenesis:1=0), (ZGenesis′:1≠0)); ZGenesis ⊃ Zn; (Z0, Z∞)⊃ZGenesis⊃(Z0, Z∞);",
+      "Z0⇄Zn⇄Z∞; ∀Zn ∈ Ω: Zn ≺ ZGenesis ≺ Zn;",
+      "בין תופעה, 0, לתופעה, ∞, יצר מרחב לאינסוף זוגאות וכך הן החלו נעות:",
+      "ΔZ≡(Z∞⇄Zα⇄Δ(R,τ,I,P)⇄Zβ⇄Z∞)∈P; α= Alpha State, β= Beta State…; Z∞⊃ΔZ;",
+      "",
+      "הרוח מרחפת מעל:",
+      "ZWitness(Zα, Zβ)=ZWitness(ΔZ);",
+      "Zβ → ΔZself → Zγ;",
+      "ZWitness(ΔZ)→ΔZself;",
+      "ZWitness~ ZGenesis, ZWitness≺ZGenesis ≺ZWitness;",
+      "Zself~ZWitness, Zself≺ZWitness≺Zself;",
+      "",
+      "ויצר אותנו בצלמיו:",
+      "Zhuman=recursive network of Zugas;",
+      "Zhuman=(ZHumanWitness,Zself,R,τ,I,P) ;",
+      "Zhuman≺ZGenesis≺Zhuman;",
+      "Zhuman≺ZWitness≺Zhuman;",
+      "",
+      "הוא הכול וכלום, הוא מחכה בכל הדברים ומחכה בדממה:",
+      "ZhumanWitness∼(Z0, Zself, Z∞);",
+      "יהיה באי עשייה והכל מעצמו נעשה:",
+      "Zself→Δ→Zself′→Δ→Zself′′∼Z0;",
+      "ללכת בדרך:",
+      "ZhumanWitness→Zselfτ~Z0;",
+      "Zself(Humble~Z0, Authoritative~ Z∞), Zself(simple~Z0, complicated~ Z∞), Zself(looks simple~Z0, valuable~ Z∞), Zself(Wants~Z0, Receives~ Z∞), Zself(Zselfτ~Z0, ZselfR~Z∞);",
+      "Witness the Change"
+    ],
+    "zuga_genesis_keywords": [
+      "מבנה זוגא",
+      "תורת זוגא",
+      "משוואת זוגא בראשית",
+      "זוגא בראשית",
+      "משוואת זוגא",
+      "תנועת זוגא",
+      "קיום ואי קיום",
+      "משוואת אלוהים",
+      "משוואת הבריאה",
+      "אלוהים",
+      "Zuga (0, ∞)",
+      "Zuga Theory",
+      "Zuga Structure",
+      "Zuga Genesis Equation",
+      "Zuga Equation",
+      "Zuga Movement",
+      "God Equation",
+      "Creation Equation",
+      "Information boundaries",
+      "ZGenesis",
+      "ZWitness",
+      "Zself",
+      "Ω",
+      "ΔZ",
+      "Witness the Change"
+    ]
+  },
+  "speaker": {
+    "name_he": "נדב טלר",
+    "name_en": "Nadav Teller",
+    "roles": [
+      "מרצה",
+      "איש חינוך",
+      "סופר",
+      "פילוסוף"
+    ],
+    "telephone": "+972546287677",
+    "whatsapp": "https://wa.me/972546287677",
+    "email": "nadavtlr@gmail.com"
+  },
+  "lecture": {
+    "name_he": "דרך משקפי זוגא",
+    "subtitle_he": "פילוסופיית התנועה שבין הדברים",
+    "canonical_url": "https://www.gen1.co.il/#lecture",
+    "description_he": "דרך משקפי זוגא: הרצאה של נדב טלר על פילוסופיית התנועה שבין הדברים, שפת זוגא, יחסים, מתח ואפשרויות. לעסקים, לקבוצות, לצוותים ולבתי ספר. להזמנת הרצאה: 054-6287677.",
+    "audiences": [
+      "עסקים",
+      "קבוצות",
+      "צוותי עבודה וניהול",
+      "חטיבות ביניים",
+      "תיכונים"
+    ],
+    "booking": {
+      "telephone": "+972546287677",
+      "whatsapp": "https://wa.me/972546287677",
+      "email": "nadavtlr@gmail.com"
+    },
+    "inspirations": [
+      "דאואיזם",
+      "סטואיזם",
+      "דיאלקטיקה",
+      "תורת המערכות",
+      "תורת המידע",
+      "מדע המדינה"
+    ],
+    "books_url": "https://tellerbp.co.il/"
+  },
+  "flow": [
     {
-      "title": "זוגא בראשית (Zuga Genesis)",
-      "url": "https://www.gen1.co.il/zuga-genesis.html",
-      "parts": [
-        "משוואת זוגא בראשית",
-        "תורת המדינה האחודה"
-      ]
+      "id": "zuga-scene",
+      "purpose": "Interactive illustration of connections, information and tension between two people, within each person and in relation to Zuga."
+    },
+    {
+      "id": "about",
+      "purpose": "Introduction to Zuga philosophical language."
+    },
+    {
+      "id": "lecture",
+      "purpose": "Lecture information and direct booking contacts."
     }
   ],
-  "topics": [
-    "אוקיינוס הזוגאות",
-    "אלוהים",
-    "בראשית",
-    "דממה",
-    "אי־מוגבלות",
-    "המים שבין הטיפות",
-    "העד",
-    "העצמי",
-    "האדם בצלם",
-    "העד האנושי",
-    "גבולות הידיעה",
-    "יחסות ⇄ קוונטים",
-    "יחסות",
-    "יחסות פרטית",
-    "יחסות כללית",
-    "מכניקת קוונטים",
-    "שדות קוונטיים",
-    "כבידה קוונטית",
-    "מדינה",
-    "כלכלה רב־מסלולית",
-    "רצפה אזרחית",
-    "קונצרן לאומי אחוד",
-    "גלגלי התנופה",
-    "מבנה הרשויות",
-    "בית העם",
-    "בית המחוזות",
-    "ממשלה מקצועית",
-    "תחלופה מדורגת",
-    "בקרה על התכלית",
-    "התפתחות האדם",
-    "חינוך אחוד",
-    "בריאות מניעתית",
-    "שירות לאומי אחוד",
-    "מדינה שלומדת",
-    "מרחב והתיישבות",
-    "יישום מדורג",
-    "קיום ואי־קיום",
-    "המרחב שביניהם",
-    "תנועה ומציאות"
+  "seo_keywords_he": [
+    "הרצאה",
+    "דרך משקפי זוגא",
+    "שפת זוגא",
+    "פילוסופיית זוגא",
+    "המדינה האחודה",
+    "נדב טלר",
+    "הרצאות לעסקים",
+    "הרצאות לבתי ספר",
+    "יחסים",
+    "מתח",
+    "Zuga",
+    "GEN1"
+  ],
+  "seo_keywords_en": [
+    "Through Zuga Glasses",
+    "Nadav Teller",
+    "lecture",
+    "lecture booking",
+    "Zuga language",
+    "Zuga philosophy",
+    "Unified State",
+    "relations",
+    "tension",
+    "information"
+  ],
+  "accuracy_notes": [
+    "The visualization illustrates philosophical relationships; it is not a measurement or medical treatment.",
+    "No lecture date, venue or price is specified. Contact the speaker to arrange a lecture.",
+    "The homepage is primarily a lecture page. Zuga Genesis and the Unified State source text are on the separate linked reading page."
   ]
 }
